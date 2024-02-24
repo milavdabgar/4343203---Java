@@ -1,42 +1,35 @@
 Unit –1: Introduction to Java Programming Language
+1a. Describe java features and applications and environment setup of Java programming language.
+1b. Install Java Components
+1c. Write simple program using java programming language
+1d. Describe data types, identifiers, constants and variables
+1e. Write programs using arrays
+1f. List types of operators 
+1g. Write simple java programs using decision and control structures.
 
-Introduction to Java and Brief history
-java features
-java applications
-Java components: Java Virtual Machine (JVM), Java Runtime Environment (JRE), JDK (Java Development Kit). 
-Importance of byte code and Garbage Collection
-environment setup of Java programming language
-Structure of java program
-Compilation and execution of java program
-Comment Syntax
-Java Hello World program with explanation
-Primitive Data Types : byte, short, int, long, float, double, char, Boolean
-identifiers
-constants & variables
-Type Conversion and Type Casting
-Scope of variables
-Arrays of Primitive Data Types,
-Types of Arrays : one-dimensional and two-dimensional array
-Decision & Control Statements:
-    Selection Statement (if, if...else, switch)
-    Loops (while, do-while, for)
-    Jump Statements : break, continue, return
+1. Introduction to Java and Brief history, java features, java Applications
+2. Java components: Java Virtual Machine (JVM), Java Runtime Environment (JRE), JDK (Java Development Kit). Importance of byte code and Garbage Collection
+3. Java environment setup; Structure of java program; Compilation and execution of java program, , Comment Syntax
+4. Primitive Data Types : byte, short, int, long, float, double, char, Boolean
+5. Identifiers, Declarations of constants & variables, Type Conversion and Type Casting, Scope of variables
+6. Arrays of Primitive Data Types, Types of Arrays : one-dimensional and two-dimensional array
+7. Different Operators: Arithmetic, Bitwise, Rational, Logical, Assignment, Conditional, Ternary, Increment and Decrement
+8. Decision & Control Statements: Selection Statement (if, if...else, switch), Loops (while, do-while, for), Jump Statements : break, continue, return
 
-Unit –2: Object Oriented Programming
+Unit– 2: Object Oriented Programming
+2a. Differentiate between POP and OOP
+2b. List object oriented programming concepts
+2c. Develop simple java program using class.
+2d. Use this and final keyword
+2e. Write object oriented program using constructor
+2f. Write java program using String class
 
-Introduction to Object Oriented Programming
-Procedure-Oriented vs. Object- Oriented Programming
-Basics of OOP: Class, Object, Encapsulation, Polymorphism Abstraction, Inheritance
-Develop simple java program using class.
-Use this and final keyword
-Write object oriented program using constructor
-Write java program using String class
-
-
-Defining classes, fields and methods, creating objects
-Accessing rules : public, private, protected, default
-this keyword, static keyword, final keyword
-Constructors: Default constructors,Parameterized constructors, Copy constructors, Passing object as a parameter
+1. Procedure-Oriented vs. Object- Oriented Programming concept
+2. Basics of OOP: Class, Object, Encapsulation, Polymorphism Abstraction, Inheritance
+3. Defining classes, fields and methods, creating objects
+4. Accessing rules : public, private, protected, default
+5. this keyword, static keyword, final keyword
+6. Constructors: Default constructors,Parameterized constructors, Copy constructors, Passing object as a parameter
 7. method overloading, constructor overloading
 8. Wrapper Classes, String Class and its methods: chatAt(), contains(), format(), length(), split()
 9. User Input: Scanner class and Command Line Arguments
