@@ -6,7 +6,7 @@
   * Java Features
   * Java Applications (desktop, web, mobile, enterprise)
 
-* **Java Environment Setup** & **Basic Java Syntax**
+* **Java Environment Setup & Basic Java Syntax**
 
   * Java Components (JVM, JRE, JDK)
   * Setting up Java Development Environment
@@ -19,7 +19,6 @@
   * Primitive data types (byte, short, int, long, float, double, char, boolean)
   * Type conversion and casting
   * Identifiers and Naming Conventions
-
   * Variable Declaration and Initialization
   * Scope of variables
   * Declaring constants (final keyword)
@@ -51,7 +50,6 @@
   * Characteristics and Differences
 
 * **OOP Concepts**
-  * Procedure-Oriented vs. Object-Oriented Programming: Characteristics and Differences
   * Classes and objects
   * Encapsulation
   * Abstraction
@@ -59,7 +57,7 @@
   * Polymorphism
 * **Classes and Objects**
   * Defining classes
-  * Fields and Methods
+  * Attributes and Methods
   * Creating objects (`new` keyword, `this` keyword)
   * Access modifiers (public, protected, private, default)
 * **Methods**
@@ -89,7 +87,6 @@
   * Method Overloading
   * Method Overriding
     * Overriding Object Class Methods: equals(), toString(), finalize(), hashCode()
-
   * Method Dynamic Dispatch
 
 * **Interfaces**
