@@ -95,13 +95,17 @@ public static void main(String[] args) {
 
 ##### Output in Java
 
-Output in Java is typically achieved using the `System.out.println()` method. `System` is a built-in Java class that contains useful members, such as `out`, which is short for "output". The `println()` method, short for "print line", is used to print a value to the screen (or a file). You should also note that each code statement must end with a semicolon (`;`).
+Output in Java is typically achieved using the `System.out.println()` method. `System` is a built-in Java class that contains useful members, such as `out`, which is short for "output". 
+
+###### The `println()` Method
+
+The `println()` method, short for "print line", is used to print a value to the screen (or a file). You should also note that each code statement must end with a semicolon (`;`).
 
 ```java
 System.out.println("Hello, World!");
 ```
 
-###### The Print() Method
+###### The `print()` Method
 
 There is also a `print()` method, which is similar to `println()`. The only difference is that it does not insert a new line at the end of the output:
 
@@ -109,8 +113,6 @@ There is also a `print()` method, which is similar to `println()`. The only diff
 System.out.print("Hello World! ");
 System.out.print("I will print on the same line.");
 ```
-
-###### Print Numbers
 
 You can also use the `println()` method to print numbers. However, unlike text, we don't put numbers inside double quotes:
 
@@ -143,7 +145,7 @@ This example uses a single-line comment at the end of a line of code:
 System.out.println("Hello World"); // This is a comment
 ```
 
-###### Java Multi-line Comments
+###### Multi-line Comments
 
 Multi-line comments start with `/*` and ends with `*/`. Any text between `/*` and `*/` will be ignored by Java. This example uses a multi-line comment (a comment block) to explain the code:
 
@@ -177,7 +179,7 @@ To compile and execute a Java program:
 
 - **Garbage Collection**: Java employs automatic memory management through garbage collection. It automatically deallocates memory occupied by objects that are no longer in use, preventing memory leaks and simplifying memory management for developers. Garbage collection helps ensure memory efficiency and program stability in Java applications.
 
-### Data Types, Identifiers, Constants, and Variables
+### Data Types
 
 A variable in Java must be a specified data type:
 
@@ -236,57 +238,65 @@ Examples of non-primitive types are Strings, Arrays, Classes, Interface, etc.
 
 #### Type Conversion and Casting
 
-- **Implicit Conversion (Widening)**: Java automatically converts smaller data types to larger ones to prevent loss of data. For example, `int` can be implicitly converted to `long`.
-  
-  `byte` -> `short` -> `char` -> `int` -> `long` -> `float` -> `double`
-  
-  ```java
-  public class Main {
-    public static void main(String[] args) {
-      int myInt = 9;
-      double myDouble = myInt; // Automatic casting: int to double
-  
-      System.out.println(myInt);      // Outputs 9
-      System.out.println(myDouble);   // Outputs 9.0
-    }
+##### Implicit Conversion (Widening)
+
+Java automatically converts smaller data types to larger ones to prevent loss of data. For example, `int` can be implicitly converted to `long`.
+
+`byte` -> `short` -> `char` -> `int` -> `long` -> `float` -> `double`
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt; // Automatic casting: int to double
+
+    System.out.println(myInt);      // Outputs 9
+    System.out.println(myDouble);   // Outputs 9.0
   }
-  ```
-  
-- **Explicit Conversion (Narrowing)**: When converting larger data types to smaller ones, explicit casting is required to avoid loss of data. For example: `int myInt = (int) 3.14;`
+}
+```
 
-  `double` -> `float` -> `long` -> `int` -> `char` -> `short` -> `byte`
+##### Explicit Conversion (Narrowing)
 
-  ```java
-  public class Main {
-    public static void main(String[] args) {
-      double myDouble = 9.78d;
-      int myInt = (int) myDouble; // Manual casting: double to int
-  
-      System.out.println(myDouble);   // Outputs 9.78
-      System.out.println(myInt);      // Outputs 9
-    }
+When converting larger data types to smaller ones, explicit casting is required to avoid loss of data. For example: `int myInt = (int) 3.14;`
+
+`double` -> `float` -> `long` -> `int` -> `char` -> `short` -> `byte`
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    double myDouble = 9.78d;
+    int myInt = (int) myDouble; // Manual casting: double to int
+
+    System.out.println(myDouble);   // Outputs 9.78
+    System.out.println(myInt);      // Outputs 9
   }
-  ```
+}
+```
 
-#### Identifiers and Naming Conventions
+### Identifiers
 
-- **Identifiers**: Identifiers are names given to classes, methods, variables, etc., in Java. They must start with a letter, underscore (_), or dollar sign ($), followed by letters, digits, underscores, or dollar signs.
-  
-- **Naming Rules**:
-  - Names can contain letters, digits, underscores, and dollar signs
-  
-  - Names must begin with a letter
-  - Names should start with a lowercase letter, and cannot contain whitespace
-  - Names can also begin with $ and _ (but we will not use it here)
-  - Names are case-sensitive ("myVar" and "myvar" are different variables)
-  - Reserved words (like Java keywords, such as `int` or `boolean`) cannot be used as names
-  
--  **Naming Conventions**:
-  - Class names should start with an uppercase letter and follow CamelCase (e.g., `MyClass`).
-  - Variable and method names should start with a lowercase letter and follow camelCase (e.g., `myVariable`, `myMethod`).
-  - Constants should be all uppercase with underscores separating words (e.g., `MAX_SIZE`).
+Identifiers are names given to classes, methods, variables, etc., in Java. They must start with a letter, underscore (_), or dollar sign ($), followed by letters, digits, underscores, or dollar signs.
 
-#### Variable Declaration and Initialization
+#### Naming Rules & Conventions
+
+##### Naming Rules
+
+- Names can contain letters, digits, underscores, and dollar signs
+
+- Names must begin with a letter
+- Names should start with a lowercase letter, and cannot contain whitespace
+- Names can also begin with $ and _ (but we will not use it here)
+- Names are case-sensitive ("myVar" and "myvar" are different variables)
+- Reserved words (like Java keywords, such as `int` or `boolean`) cannot be used as names
+
+##### Naming Conventions
+
+- Class names should start with an uppercase letter and follow CamelCase (e.g., `MyClass`).
+- Variable and method names should start with a lowercase letter and follow camelCase (e.g., `myVariable`, `myMethod`).
+- Constants should be all uppercase with underscores separating words (e.g., `MAX_SIZE`).
+
+#### Variables
 
 - **Variable Declaration**: Variables are containers for storing data values. Variables are declared with a data type followed by a name:
   
@@ -316,10 +326,25 @@ Examples of non-primitive types are Strings, Arrays, Classes, Interface, etc.
   System.out.println(x + y + z);
   ```
 
+#### Constants (`final` Keyword)
+
+If you don't want others (or yourself) to overwrite existing values, use the `final` keyword (this will declare the variable as "final" or "constant", which means unchangeable and read-only):
+
+- **Declaration:** Constants in Java are declared using the `final` keyword.
+  
+  ```java
+  final int myNum = 15;
+  myNum = 20;  // will generate an error: cannot assign a value to a final variable
+  ```
+  
+- **Immutable:** The value of a constant cannot be changed once initialized.
+
+- By convention, constant names are written in uppercase letters with underscores separating words.
+
 #### Scope of Variables
 
 - **Instance Variables**: Variables declared within a class but outside any method are instance variables. They exist as long as the object they belong to exists.
-  
+
 - **Local Variables**: Variables declared within a method or block have local scope. They exist only within the method or block where they are declared.
 
 ```csharp
@@ -339,24 +364,7 @@ public class Main {
 
 - **Class Variables (Static Variables)**: Variables declared with the `static` keyword within a class are class variables. They are shared among all instances of the class.
 
-#### Declaring Constants (Final Keyword)
-
-If you don't want others (or yourself) to overwrite existing values, use the `final` keyword (this will declare the variable as "final" or "constant", which means unchangeable and read-only):
-
-- **Declaration:** Constants in Java are declared using the `final` keyword.
-  
-  ```java
-  final int myNum = 15;
-  myNum = 20;  // will generate an error: cannot assign a value to a final variable
-  ```
-  
-- **Immutable:** The value of a constant cannot be changed once initialized.
-
-- By convention, constant names are written in uppercase letters with underscores separating words.
-
 ### Arrays
-
-#### Definition
 
 An array is a data structure that stores a fixed-size collection of elements of the same data type. Each element is accessed by its index (position) within the array.
 
@@ -388,7 +396,7 @@ An array is a data structure that stores a fixed-size collection of elements of 
 
   - Trying to access an element outside the array bounds will result in an `ArrayIndexOutOfBoundsException`.
 
-#### Multidimensional Arrays (Two-dimensional)
+#### Multidimensional Arrays
 
 - **Declaration**: To declare a two-dimensional array, specify the type of elements followed by two sets of square brackets [][]:
   
@@ -451,7 +459,7 @@ Java divides the operators into the following groups:
 - Logical operators
 - Bitwise operators
 
-#### Arithmetic Operators (+, -, *, /, %)
+#### Arithmetic Operators
 
 Arithmetic operators are used to perform mathematical operations.
 
@@ -465,19 +473,17 @@ Arithmetic operators are used to perform mathematical operations.
 | ++       | Increment      | Increases the value of a variable by 1 | ++x     |
 | --       | Decrement      | Decreases the value of a variable by 1 | --x     |
 
-- **Example**:
+```java
+int a = 10;
+int b = 3;
+int sum = a + b;        // Addition
+int difference = a - b; // Subtraction
+int product = a * b;    // Multiplication
+int quotient = a / b;   // Division
+int remainder = a % b;  // Modulus (remainder)
+```
 
-  ```java
-  int a = 10;
-  int b = 3;
-  int sum = a + b;        // Addition
-  int difference = a - b; // Subtraction
-  int product = a * b;    // Multiplication
-  int quotient = a / b;   // Division
-  int remainder = a % b;  // Modulus (remainder)
-  ```
-
-#### Assignment Operators (=, +=, -=, etc.)
+#### Assignment Operators
 
 Assignment operators are used to assign values to variables.
 
@@ -495,14 +501,12 @@ Assignment operators are used to assign values to variables.
 | >>=      | x >>= 3 | x = x >> 3 |
 | <<=      | x <<= 3 | x = x << 3 |
 
-- **Example**:
+```java
+int a = 10;
+a += 5; // Equivalent to a = a + 5;
+```
 
-  ```java
-  int a = 10;
-  a += 5; // Equivalent to a = a + 5;
-  ```
-
-#### Relational/Comparison Operators (>, <, >=, <=, ==, !=)
+#### Relational (Comparison) Operators
 
 Relational operators are used to establish relationships between two values. This is important in programming, because it helps us to find answers and make decisions. The return value of a comparison is either `true` or `false`. These values are known as *Boolean values*, and you will learn more about them in the Booleans and If..Else topic.
 
@@ -515,18 +519,16 @@ Relational operators are used to establish relationships between two values. Thi
 | >=       | Greater than or equal to | x >= y  |
 | <=       | Less than or equal to    | x <= y  |
 
-- **Example**:
+```java
+int a = 10;
+int b = 5;
+boolean greater = a > b;
+boolean lesserOrEqual = a <= b;
+boolean isEqual = a == b;
+boolean notEqual = a != b;
+```
 
-  ```java
-  int a = 10;
-  int b = 5;
-  boolean greater = a > b;
-  boolean lesserOrEqual = a <= b;
-  boolean isEqual = a == b;
-  boolean notEqual = a != b;
-  ```
-
-#### Logical Operators (&&, ||, !)
+#### Logical Operators
 
 You can also test for `true` or `false` values with logical operators. Logical operators are used to determine the logic between variables or values.
 
@@ -536,21 +538,17 @@ You can also test for `true` or `false` values with logical operators. Logical o
 | \|\|     | Logical or  | Returns true if one of the statements is true           | x < 5 \|\| x < 4   |
 | !        | Logical not | Reverse the result, returns false if the result is true | !(x < 5 && x < 10) |
 
-- **Example**:
-
-  ```java
-  boolean x = true;
-  boolean y = false;
-  boolean result1 = x && y; // Logical AND
-  boolean result2 = x || y; // Logical OR
-  boolean result3 = !x;     // Logical NOT (negation)
-  ```
+```java
+boolean x = true;
+boolean y = false;
+boolean result1 = x && y; // Logical AND
+boolean result2 = x || y; // Logical OR
+boolean result3 = !x;     // Logical NOT (negation)
+```
 
 #### Bitwise Operators
 
 Bitwise operators perform bitwise operations on integer operands.
-
-- **Example**:Increment/Decrement Operators (++ ,--)
 
 ```java
 int a = 5;  // Binary: 101
@@ -563,25 +561,41 @@ int leftShift = a << 1;       // Left shift
 int rightShift = a >> 1;      // Right shift
 ```
 
-#### Conditional (Ternary) Operator(?:)
+#### Conditional (Ternary) Operator
 
 The conditional operator is a ternary operator that evaluates a boolean expression and returns one of two values depending on whether the expression is true or false.
 
-- **Example**:
+- This is also called as a short-hand if else. 
+- It is known as the **ternary operator** because it consists of three operands.
+- It can be used to replace multiple lines of code with a single line, and is most often used to replace simple if else statements:
 
-  ```java
-  int a = 10;
-  int b = 5;
-  int max = (a > b) ? a : b; // max will be assigned the value of a if a is greater than b, otherwise b
-  ```
+
+**Syntax**: *`\*variable\* = (\*condition\*) ? \*expressionTrue\* :  \*expressionFalse\*; `*
+
+Instead of writing:
+
+```java
+int time = 20;
+if (time < 18) {
+  System.out.println("Good day.");
+} else {
+  System.out.println("Good evening.");
+}
+```
+
+You can simply write:
+
+```java
+int time = 20;
+String result = (time < 18) ? "Good day." : "Good evening.";
+System.out.println(result);
+```
 
 These operators are fundamental in Java for performing various operations and making decisions based on conditions.
 
 #### Operator Precedence
 
 Java follows a specific order for evaluating expressions with multiple operators (similar to mathematical order of operations). You can find a detailed precedence table online.
-
-**Examples**
 
 ```java
 int x = 5 + 3 * 2;  // x will be 11 (Multiplication first)
@@ -596,7 +610,7 @@ int result = (2 > 3) ? 10 : 20; // result will be 20
 
 Control flow statements in Java are used to control the flow of execution in a program based on certain conditions or loops.
 
-#### Selection Statements (if, if-else, switch-case)
+#### Selection Statements
 
 Java has the following conditional statements:
 
@@ -609,9 +623,8 @@ Java has the following conditional statements:
 
 Use the `if` statement to specify a block of Java code to be executed if a condition is `true`.
 
-###### Syntax
-
 ```java
+//  Syntax
 if (condition) {
   // block of code to be executed if the condition is true
 }
@@ -621,17 +634,14 @@ Note that `if` is in lowercase letters. Uppercase letters (If or IF) will genera
 
 In the example below, we test two values to find out if 20 is greater than 18. If the condition is `true`, print some text:
 
-###### Example
-
 ```java
+// Example
 if (20 > 18) {
   System.out.println("20 is greater than 18");
 }
 ```
 
 We can also test variables:
-
-###### Example
 
 ```java
 int x = 20;
@@ -641,17 +651,14 @@ if (x > y) {
 }
 ```
 
-###### Example explained
-
 In the example above we use two variables, **x** and **y**, to test whether x is greater than y (using the `>` operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that "x is greater than y".
 
-##### The else Statement
+##### The if-else Statement
 
 Use the `else` statement to specify a block of code to be executed if the condition is `false`.
 
-###### Syntax
-
 ```java
+// Syntax
 if (condition) {
   // block of code to be executed if the condition is true
 } else {
@@ -659,9 +666,8 @@ if (condition) {
 }
 ```
 
-###### Example
-
 ```java
+// Example
 int time = 20;
 if (time < 18) {
   System.out.println("Good day.");
@@ -672,17 +678,14 @@ if (time < 18) {
  
 ```
 
-###### Example explained
-
 In the example above, time (20) is greater than 18, so the condition is `false`. Because of this, we move on to the `else` condition and print to the screen "Good evening". If the time was less than 18, the program would print "Good day".
 
 ##### The if-else-if Ladder
 
 Use the `else if` statement to specify a new condition if the first condition is `false`.
 
-###### Syntax
-
 ```java
+// Syntax
 if (condition1) {
   // block of code to be executed if condition1 is true
 } else if (condition2) {
@@ -692,9 +695,8 @@ if (condition1) {
 }
 ```
 
-###### Example
-
 ```java
+// Example
 int time = 22;
 if (time < 10) {
   System.out.println("Good morning.");
@@ -707,8 +709,6 @@ if (time < 10) {
  
 ```
 
-###### Example explained
-
 In the example above, time (22) is greater than 10, so the **first condition** is `false`. The next condition, in the `else if` statement, is also `false`, so we move on to the `else` condition since **condition1** and **condition2** is both `false` - and print to the screen "Good evening".
 
 However, if the time was 14, our program would print "Good day."
@@ -719,9 +719,8 @@ Instead of writing **many** `if..else` statements, you can use the `switch` stat
 
 The `switch` statement selects one of many code blocks to be executed:
 
-###### Syntax
-
 ```java
+// Syntax
 switch(expression) {
   case x:
     // code block
@@ -743,9 +742,8 @@ This is how it works:
 
 The example below uses the weekday number to calculate the weekday name:
 
-###### Example
-
 ```java
+// Example
 int day = 4;
 switch (day) {
   case 1:
@@ -773,11 +771,11 @@ switch (day) {
 // Outputs "Thursday" (day 4)
 ```
 
-###### The break Keyword
+###### `break` Keyword
 
 When Java reaches a `break` keyword, it breaks out of the switch block.
 
-###### The default Keyword
+###### `default` Keyword
 
 The `default` keyword specifies some code to run if there is no case match:
 
@@ -799,7 +797,7 @@ switch (day) {
 
 Note that if the `default` statement is used as the last statement in a switch block, it does not need a break.
 
-#### Looping Statements (while, do-while, for, for-each)
+#### Looping Statements
 
 Loops can execute a block of code as long as a specified condition is reached. Loops are handy because they save time, reduce errors, and they make code more readable.
 
@@ -807,9 +805,8 @@ Loops can execute a block of code as long as a specified condition is reached. L
 
 The `while` loop loops through a block of code as long as a specified condition is `true`:
 
-###### Syntax
-
 ```java
+// Syntax
 while (condition) {
   // code block to be executed
 }
@@ -831,9 +828,8 @@ while (i < 5) {
 
 The `do/while` loop is a variant of the `while` loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
 
-###### Syntax
-
 ```java
+// Syntax
 do {
   // code block to be executed
 }
@@ -856,9 +852,8 @@ Do not forget to increase the variable used in the condition, otherwise the loop
 
 When you know exactly how many times you want to loop through a block of code, use the `for` loop instead of a `while` loop:
 
-###### Syntax
-
 ```java
+// Syntax
 for (statement 1; statement 2; statement 3) {
   // code block to be executed
 }
@@ -874,11 +869,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-###### Example explained
-
 Statement 1 sets a variable before the loop starts (int i = 0). Statement 2 defines the condition for the loop to run (i must be less than 5). If the condition is true, the loop will start over again, if it is false, the loop will end. Statement 3 increases a value (i++) each time the code block in the loop has been executed.
-
-###### Another Example
 
 This example will only print even values between 0 and 10:
 
@@ -888,7 +879,33 @@ for (int i = 0; i <= 10; i = i + 2) {
 }
 ```
 
-###### Nested Loops
+##### The For-Each Loop
+
+The for-each loop, also known as the enhanced for loop, provides a simple way to iterate over collections and arrays in Java. 
+
+The following example outputs all elements in the **cars** array, using a "**for-each**" loop:
+
+```java
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (String i : cars) {
+  System.out.println(i);
+}
+```
+
+The for-each loop iterates over each element in the collection sequentially, without the need for explicit indexing or iterators.
+
+```java
+ArrayList<String> list = new ArrayList<>();
+list.add("Java");
+list.add("Python");
+list.add("C++");
+
+for (String language : list) {
+    System.out.println(language);
+}
+```
+
+##### Nested Loops
 
 It is also possible to place a loop inside another loop. This is called a **nested loop**. The "inner loop" will be executed one time for each iteration of the "outer loop":
 
@@ -904,58 +921,43 @@ for (int i = 1; i <= 2; i++) {
 } 
 ```
 
-##### For-Each Loop
+#### Jump Statements
 
-There is also a "**for-each**" loop, which is used exclusively to loop through elements in an **array**:
+##### `break` Statement
 
-###### Syntax
+Terminates the loop or switch statement and transfers control to the statement immediately following the loop or switch.
 
 ```java
-for (type variableName : arrayName) {
-  // code block to be executed
+for (int i = 0; i < 5; i++) {
+    if (i == 3) {
+        break; // Terminates the loop when i equals 3
+    }
+    System.out.println("Iteration: " + i);
 }
 ```
 
-The following example outputs all elements in the **cars** array, using a "**for-each**" loop:
+##### `continue` Statement
+
+The `continue` statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
 
 ```java
-String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
-for (String i : cars) {
-  System.out.println(i);
+for (int i = 0; i < 5; i++) {
+    if (i == 3) {
+        continue; // Skips iteration when i equals 3
+    }
+    System.out.println("Iteration: " + i);
 }
 ```
 
-#### Jump Statements (break, continue, return)
+##### `return` Statement
 
-- **break Statement**: Terminates the loop or switch statement and transfers control to the statement immediately following the loop or switch.
+Exits the current method and returns a value (if applicable) to the caller.
 
-  ```java
-  for (int i = 0; i < 5; i++) {
-      if (i == 3) {
-          break; // Terminates the loop when i equals 3
-      }
-      System.out.println("Iteration: " + i);
-  }
-  ```
-
-- **continue Statement**: The `continue` statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
-
-  ```java
-  for (int i = 0; i < 5; i++) {
-      if (i == 3) {
-          continue; // Skips iteration when i equals 3
-      }
-      System.out.println("Iteration: " + i);
-  }
-  ```
-
-- **return Statement**: Exits the current method and returns a value (if applicable) to the caller.
-
-  ```java
-  public int add(int a, int b) {
-      return a + b; // Returns the sum of a and b
-  }
-  ```
+```java
+public int add(int a, int b) {
+    return a + b; // Returns the sum of a and b
+}
+```
 
 These control flow statements provide essential mechanisms for directing the flow of execution in Java programs, allowing developers to implement conditional logic and repetitive tasks efficiently.
 
@@ -1105,9 +1107,9 @@ class Dog extends Animal {
 
 #### 5. Polymorphism
 
-Polymorphism allows objects to be treated as instances of their superclass or as instances of their subclass. It enables flexibility and dynamic behavior in the program.
+Polymorphism allows objects to be treated as instances of their superclass or as instances of their subclass. It enables flexibility and dynamic behaviour in the program.
 
-- **"Many Forms":** The ability of an object to take on different forms or behaviors depending on the situation.
+- **Many Forms:** The ability of an object to take on different forms or behaviours depending on the situation.
 - **Method Overloading:** Multiple methods in a class with the same name but different parameters.
 - **Method Overriding:** A subclass provides a specific implementation of a method inherited from its superclass.
 
@@ -1279,7 +1281,7 @@ public class Person {
 }
 ```
 
-#### Class Attributes
+### Class Attributes
 
 Attributes are variables that define the state of objects. They represent the data associated with objects of the class.
 
@@ -1412,7 +1414,7 @@ public class Main {
   ```
 
 
-### Methods
+### Class Methods
 
 - A **method** is a block of code which only runs when it is called.
 
@@ -1434,10 +1436,7 @@ public class Main {
     // code to be executed
   }
 }
- 
 ```
-
-##### Example Explained
 
 - `myMethod()` is the name of the method
 - `static` means that the method belongs to the Main class and not an object of the Main class. You will learn more about objects and how to access methods through objects later here.
@@ -1663,54 +1662,6 @@ public int add(int a, int b) {
 }
 ```
 
-#### `static` Keyword
-
-The `static` keyword is used to create class-level variables and methods. These belong to the class rather than to individual objects of the class. They can be accessed without creating an instance of the class.
-
-- **Class-level Methods:** Methods declared `static` don't require an instance of the class to be called. They belong to the class itself. Use Cases:
-
-  - Utility methods not tied to a specific object.
-  - The `main` method  is `static` since it's your program's entry point.
-
-- **Accessing Members:** `static` methods can only directly access other `static` members and cannot use the `this` keyword (since they don't operate on an object).
-
-  **Example:**
-
-  ```java
-  public class MathUtils {
-      public static double findCircumference(double radius) {
-          return 2 * Math.PI * radius;
-      }
-  }
-  ```
-
-
-- **Static Variables**:
-
-  ```java
-  public class MyClass {
-      static int count;
-  }
-  ```
-
-- **Static Methods**:
-
-  ```java
-  public class MyClass {
-      static void printMessage() {
-          System.out.println("Hello, world!");
-      }
-  }
-  ```
-
-Static methods can be accessed using the class name:
-
-```java
-MyClass.printMessage();
-```
-
-Static variables and methods are shared among all instances of the class and can be accessed directly from the class itself.
-
 These concepts help in organizing code, improving code reusability, and managing resources effectively in Java programs.
 
 ### Constructors
@@ -1749,7 +1700,7 @@ All classes have constructors by default: if you do not create a class construct
 
 ##### Parameterized Constructors
 
-Parameterized constructors allow initialization of object attributes with specific values passed as arguments during object creation. Used to provide flexibility when creating objects.
+Parameterized constructors allow initialisation of object attributes with specific values passed as arguments during object creation. Used to provide flexibility when creating objects.
 
 ```java
 public class Student {
@@ -1764,7 +1715,7 @@ public class Student {
 }
 ```
 
-##### Copy Constructors, Passing Object as a Parameter
+##### Copy Constructors
 
 A copy constructor creates a new object by copying the attributes of an existing object. It takes an object of the same class as a parameter.
 
@@ -1883,7 +1834,7 @@ For **attributes and methods**, you can use the one of the following:
 | `synchronized` | Methods can only be accessed by one thread at a time         |
 | `volatile`     | The value of an attribute is not cached thread-locally, and is always read from the "main memory" |
 
-##### Final
+##### `final`
 
 If you don't want the ability to override existing attribute values, declare attributes as `final`:
 
@@ -1901,9 +1852,17 @@ public class Main {
 } 
 ```
 
-##### Static
+##### `static`
 
-A `static` method means that it can be accessed without creating an object of the class, unlike `public`:
+The `static` keyword is used to create class-level variables and methods. These belong to the class rather than to individual objects of the class. They can be accessed without creating an instance of the class.
+
+- **Class-level Methods:** Methods declared `static` don't require an instance of the class to be called. They belong to the class itself. Use Cases:
+
+  - Utility methods not tied to a specific object.
+
+  - The `main` method  is `static` since it's your program's entry point.
+
+A `static` method means that it can be accessed without creating an object of the class, unlike `public`.
 
 An example to demonstrate the differences between `static` and `public` methods:
 
@@ -1927,12 +1886,47 @@ public class Main {
     Main myObj = new Main(); // Create an object of Main
     myObj.myPublicMethod(); // Call the public method
   }
-}
- 
- 
+} 
 ```
 
-##### Abstract
+- **Accessing Members:** `static` methods can only directly access other `static` members and cannot use the `this` keyword (since they don't operate on an object).
+
+  ```java
+  public class MathUtils {
+      public static double findCircumference(double radius) {
+          return 2 * Math.PI * radius;
+      }
+  }
+  ```
+
+
+- **Static Variables**:
+
+  ```java
+  public class MyClass {
+      static int count;
+  }
+  ```
+
+- **Static Methods**:
+
+  ```java
+  public class MyClass {
+      static void printMessage() {
+          System.out.println("Hello, world!");
+      }
+  }
+  ```
+
+Static methods can be accessed using the class name:
+
+```java
+MyClass.printMessage();
+```
+
+Static variables and methods are shared among all instances of the class and can be accessed directly from the class itself.
+
+##### `abstract`
 
 An `abstract` method belongs to an `abstract` class, and it does not have a body. The body is provided by the subclass:
 
@@ -1966,9 +1960,7 @@ class Second {
 }
 ```
 
-### Strings
-
-#### `String` Class
+### `String` Class
 
 - In Java, strings are treated as objects of the `String` class. This class provides numerous methods for manipulating and working with strings.
 - **Immutability:**  It's important to remember that `String` objects in Java are immutable. Once a String is created, its contents cannot be changed.
@@ -2109,7 +2101,7 @@ These are some of the commonly used methods provided by the `String` class in Ja
   - `==` in the case of strings compares object references, not always the content.
 - **StringBuilder:** For frequent modifications, look into the `StringBuilder` class, which is mutable and may be more efficient.
 
-### User Input (Scanner Class)
+### `Scanner` Class (User Input)
 
 In Java, the `Scanner` class is commonly used to read user input from the console. It provides various methods to read different types of input, such as integers, floating-point numbers, and strings.
 
@@ -2128,7 +2120,7 @@ In the example above, we used the `nextLine()` method, which is used to read Str
 | `nextLong()`    | Reads a `long` value from the user    |
 | `nextShort()`   | Reads a `short` value from the user   |
 
-#### Using `Scanner` Class for User Input
+#### Using `Scanner` Class
 
 1. **Import `Scanner` class**: First, import the `Scanner` class from the `java.util` package.
 
@@ -2188,7 +2180,7 @@ class Main {
 
 **Note:** If you enter wrong input (e.g. text in a numerical input), you will get an exception/error message (like "`InputMismatchException`").
 
-#### Command-line Arguments
+### Command-line Arguments
 
 Java programs can also accept command-line arguments, which are passed to the `main` method when the program is executed from the command line.
 
@@ -2313,11 +2305,70 @@ The `super` keyword is used to refer to the superclass or call superclass constr
 
 In summary, inheritance allows classes to inherit properties and behavior from other classes, promoting code reuse and establishing a hierarchical relationship between classes. Java supports various types of inheritance, and the `extends` and `super` keywords are used to implement and work with inheritance in Java programs.
 
-### Polymorphism: Method Overloading, Overriding & Dynamic Dispatch
-
-#### Polymorphism
+### Polymorphism
 
 The word "polymorphism" means "many forms." In Java, it refers to the ability of objects to behave differently depending on their specific type, enabling us to write more flexible and reusable code.
+
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+
+Like we specified in the previous topic; **Inheritance** lets us inherit attributes and methods from another class. **Polymorphism** uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+
+For example, think of a superclass called `Animal` that has a method called `animalSound()`. Subclasses of Animals could be Pigs, Cats, Dogs, Birds - And they also have their own implementation of an animal sound (the pig oinks, and the cat meows, etc.):
+
+```java
+class Animal {
+  public void animalSound() {
+    System.out.println("The animal makes a sound");
+  }
+}
+
+class Pig extends Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Dog extends Animal {
+  public void animalSound() {
+    System.out.println("The dog says: bow wow");
+  }
+}
+```
+
+Remember from the Inheritance topic that we use the `extends` keyword to inherit from a class.
+
+Now we can create `Pig` and `Dog` objects and call the `animalSound()` method on both of them:
+
+```java
+class Animal {
+  public void animalSound() {
+    System.out.println("The animal makes a sound");
+  }
+}
+
+class Pig extends Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Dog extends Animal {
+  public void animalSound() {
+    System.out.println("The dog says: bow wow");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Animal myAnimal = new Animal();  // Create a Animal object
+    Animal myPig = new Pig();  // Create a Pig object
+    Animal myDog = new Dog();  // Create a Dog object
+    myAnimal.animalSound();
+    myPig.animalSound();
+    myDog.animalSound();
+  }
+}
+```
 
 #### Method Overloading
 
@@ -2361,7 +2412,7 @@ class Dog extends Animal {
 }
 ```
 
-#### Overriding Object Class Methods
+##### Overriding Object Class Methods
 
 Java provides a set of methods in the `Object` class that can be overridden in subclasses to provide custom behavior. Commonly overridden methods include:
 
@@ -2404,17 +2455,10 @@ Polymorphism, achieved through method overloading, overriding, and dynamic dispa
 
 ### Interfaces
 
-#### Defining and Implementing Interfaces
-
 - An interface is like a contract. It defines a set of methods that a class must implement, ensuring certain behaviors are guaranteed by the class.
 - **Abstract:** Interfaces cannot be instantiated directly. They are used to achieve abstraction and provide a way to achieve multiple inheritance in Java through interface implementation.
 - **Methods without Bodies:** Methods in an interface are by default abstract (without a body).
 - **`implements` Keyword:** Classes implement interfaces using the `implements` keyword.
-- **Benefits of Interfaces**
-  - **Polymorphism:** You can treat objects of different classes that implement the same interface uniformly.
-  - **Multiple Inheritance (via Interfaces):** A class can implement multiple interfaces, overcoming Java's restriction on direct multiple inheritance of classes.
-  - **Abstraction:** Interfaces help to enforce a separation between interface (what an object can do) and implementation (how it does it).
-  - **Loose Coupling:** Using interfaces helps to reduce dependencies between classes, making your code more flexible and maintainable.
 
 #### Defining Interfaces
 
@@ -2479,15 +2523,70 @@ class Rectangle implements Drawable, Colorable {
 
 In the example above, the `Rectangle` class implements both the `Drawable` and `Colorable` interfaces, allowing it to provide implementations for methods defined in both interfaces.
 
+#### Notes on Interfaces:
+
+- Like **abstract classes**, interfaces **cannot** be used to create objects (in the example above, it is not possible to create an "Animal" object in the MyMainClass)
+- Interface methods do not have a body - the body is provided by the "implement" class
+- On implementation of an interface, you must override all of its methods
+- Interface methods are by default `abstract` and `public`
+- Interface attributes are by default `public`, `static` and `final`
+- An interface cannot contain a constructor (as it cannot be used to create objects)
+
+#### Why And When To Use Interfaces?
+
+1) To achieve security - hide certain details and only show the important details of an object (interface).
+2) Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can **implement** multiple interfaces. **Note:** To implement multiple interfaces, separate them with a comma (see example below).
+
+#### Benefits of Interfaces
+
+- **Polymorphism:** You can treat objects of different classes that implement the same interface uniformly.
+- **Multiple Inheritance (via Interfaces):** A class can implement multiple interfaces, overcoming Java's restriction on direct multiple inheritance of classes.
+- **Abstraction:** Interfaces help to enforce a separation between interface (what an object can do) and implementation (how it does it).
+- **Loose Coupling:** Using interfaces helps to reduce dependencies between classes, making your code more flexible and maintainable.
+
 Interfaces provide a way to achieve abstraction, decoupling the definition of methods from their implementation. They also enable code reuse and multiple inheritance, making Java programs more flexible and maintainable.
 
-### Abstract Class & Final Class
+### Abstraction
+
+Data **abstraction** is the process of hiding certain details and showing only essential information to the user.
+Abstraction can be achieved with either **abstract classes** or **interfaces** (which you will learn more about in the next topic).
+
+The `abstract` keyword is a non-access modifier, used for classes and methods:
+
+- **Abstract class:** is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+- **Abstract method:** can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+
+```java
+// Abstract class
+abstract class Animal {
+  // Abstract method (does not have a body)
+  public abstract void animalSound();
+  // Regular method
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+// Subclass (inherit from Animal)
+class Pig extends Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig(); // Create a Pig object
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+```
 
 #### Abstract Class
 
 An abstract class in Java is a class that cannot be instantiated directly and may contain abstract methods, which are declared but not implemented in the abstract class itself. Abstract classes are used to define a common interface for a group of subclasses while allowing subclasses to provide specific implementations for abstract methods.
-
-#### Abstract Class Syntax
 
 An abstract class is declared using the `abstract` keyword. It can contain both abstract and non-abstract methods.
 
@@ -2504,7 +2603,7 @@ abstract class Shape {
 }
 ```
 
-#### Abstract Methods
+#### Abstract Method
 
 An abstract method is declared using the `abstract` keyword and does not have an implementation in the abstract class. Subclasses must provide implementations for all abstract methods.
 
@@ -2543,7 +2642,7 @@ abstract class Vehicle {
 - Default implementations exist for some behaviors.
 - You want to enforce a certain structure on your class hierarchy.
 
-#### Final Class
+### Final Class
 
 - **Definition:** A class declared `final` cannot have any subclasses. It's like the end of an inheritance chain.
 - Use Cases:
@@ -2589,55 +2688,238 @@ class Child extends Parent {
 - Abstract classes are used when a class should not be instantiated directly, while final classes are used when a class should not be extended.
 - You cannot have a class that is both `abstract` and `final`. They represent opposite concepts in terms of inheritance.
 
-### Packages in Java
+### Inner Classes
+
+In Java, it is also possible to nest classes (a class within a class). The purpose of nested classes is to group classes that belong together, which makes your code more readable and maintainable.
+
+To access the inner class, create an object of the outer class, and then create an object of the inner class:
+
+```java
+class OuterClass {
+  int x = 10;
+
+  class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.y + myOuter.x);
+  }
+}
+
+// Outputs 15 (5 + 10) 
+```
+
+#### Private Inner Class
+
+Unlike a "regular" class, an inner class can be `private` or `protected`. If you don't want outside objects to access the inner class, declare the class as `private`:
+
+```java
+class OuterClass {
+  int x = 10;
+
+  private class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.y + myOuter.x);
+  }
+} 
+```
+
+If you try to access a private inner class from an outside class, an error occurs:
+
+```
+Main.java:13: error: OuterClass.InnerClass has private access in OuterClass  OuterClass.InnerClass myInner = myOuter.new InnerClass();       ^
+```
+
+#### Static Inner Class
+
+An inner class can also be `static`, which means that you can access it without creating an object of the outer class:
+
+```java
+class OuterClass {
+  int x = 10;
+
+  static class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass.InnerClass myInner = new OuterClass.InnerClass();
+    System.out.println(myInner.y);
+  }
+}
+
+// Outputs 5 
+```
+
+**Note:** just like `static` attributes and methods, a `static` inner class does not have access to members of the outer class.
+
+#### Access Outer Class From Inner Class
+
+One advantage of inner classes, is that they can access attributes and methods of the outer class:
+
+```java
+class OuterClass {
+  int x = 10;
+
+  class InnerClass {
+    public int myInnerMethod() {
+      return x;
+    }
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.myInnerMethod());
+  }
+}
+
+// Outputs 10
+```
+
+### Packages & API
+
+A package in Java is used to group related classes. Think of it as **a folder in a file directory**. We use packages to avoid name conflicts, and to write a better maintainable code. 
 
 Packages in Java are used to group related classes, interfaces, and sub-packages, making the code easier to manage and modularize. They help avoid naming conflicts and can also control access to classes and class members (methods and fields) due to their access levels.
 
 They provide:
 
-- **Organization:** Help manage large projects by avoiding naming conflicts.
+- **Organisation:** Help manage large projects by avoiding naming conflicts.
 - **Access Control:** Control the visibility of classes and members.
 - **Namespace:** Create a unique namespace for your classes and interfaces.
 
-#### Creating Packages
+Packages are divided into two categories:
 
-To create a package, you use the `package` keyword at the top of your Java source file. Each file can only declare one package, and all types (classes, interfaces, enums) declared in the file will belong to that package.
+- Built-in Packages (packages from the Java API)
+- User-defined Packages (create your own packages)
 
-**Package Declaration:** At the top of your `.java` files, use the `package` keyword followed by the package name.
+#### Built-in Packages
+
+The Java API is a library of prewritten classes, that are free to use, included in the Java Development Environment.
+
+The library contains components for managing input, database programming, and much much more. The complete list can be found at Oracles website: https://docs.oracle.com/javase/8/docs/api/.
+
+The library is divided into **packages** and **classes**. Meaning you can either import a single class (along with its methods and attributes), or a whole package that contain all the classes that belong to the specified package.
+
+Java comes with a rich set of built-in packages in the Java API. Examples:
+
+- `java.lang` (String, Math, System, etc.)
+- `java.util`  (List, ArrayList, Scanner, etc.)
+- `java.io`   (File, InputStream, etc.)
+
+To use a class or a package from the library, you need to use the `import` keyword:
 
 ```java
-// File: MyPackageClass.java
-package com.example.mypackage; 
+import package.name.Class;   // Import a single class
+import package.name.*;   // Import the whole package
+```
 
-public class MyPackageClass {
-    // Class contents
+#### Import a Class
+
+If you find a class you want to use, for example, the `Scanner` class, **which is used to get user input**, write the following code:
+
+```java
+import java.util.Scanner;
+```
+
+In the example above, `java.util` is a package, while `Scanner` is a class of the `java.util` package.
+
+To use the `Scanner` class, create an object of the class and use any of the available methods found in the `Scanner` class documentation. In our example, we will use the `nextLine()` method, which is used to read a complete line:
+
+Using the `Scanner` class to get user input:
+
+```java
+import java.util.Scanner;
+
+class MyClass {
+  public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in);
+    System.out.println("Enter username");
+
+    String userName = myObj.nextLine();
+    System.out.println("Username is: " + userName);
+  }
 }
 ```
 
-**Directory Structure:** Your project directory structure must reflect the package structure. The `com.example.mypackage` package would map to directories: `<project-folder>/com/example/mypackage`
+#### Import a Package
 
-#### Importing Packages
+There are many packages to choose from. In the previous example, we used the `Scanner` class from the `java.util` package. This package also contains date and time facilities, random-number generator and other utility classes.
 
-You can use types from other packages by importing them. The `import` statement is used for this purpose and can be placed after the package declaration and before class declarations in a Java file.
-
-- **Importing a Single Class**: Imports a specific class from a package.
-
-```java
-import java.util.ArrayList;
-```
-
-- **Importing an Entire Package**: Uses the asterisk (*) as a wildcard character to import all classes from the specified package.
+To import a whole package, end the sentence with an asterisk sign (`*`). The following example will import ALL the classes in the `java.util` package:
 
 ```java
 import java.util.*;
 ```
 
-**Built-in Packages**
+#### User-defined Packages
 
-- Java comes with a rich set of built-in packages in the Java API. Examples:
-  - `java.lang` (String, Math, System, etc.)
-  - `java.util`  (List, ArrayList, Scanner, etc.)
-  - `java.io`   (File, InputStream, etc.)
+To create a package, you use the `package` keyword at the top of your Java source file. Each file can only declare one package, and all types (classes, interfaces, enums) declared in the file will belong to that package.
+
+**Package Declaration:** At the top of your `.java` files, use the `package` keyword followed by the package name.
+
+To create your own package, you need to understand that Java uses a file system directory to store them. Just like folders on your computer:
+
+```
+└── root  
+	└── mypack    
+		└── MyPackageClass.java 
+```
+
+To create a package, use the `package` keyword:
+
+```java
+// MyPackageClass.java
+package mypack;
+class MyPackageClass {
+  public static void main(String[] args) {
+    System.out.println("This is my package!");
+  }
+}
+```
+
+Save the file as **MyPackageClass.java**, and compile it:
+
+C:\Users\*Your Name*>javac MyPackageClass.java
+
+Then compile the package:
+
+C:\Users\*Your Name*>javac -d . MyPackageClass.java
+
+This forces the compiler to create the "mypack" package.
+
+The `-d` keyword specifies the destination for where to save the class file. You can use any directory name, like c:/user (windows), or, if you want to keep the package within the same directory, you can use the dot sign "`.`", like in the example above.
+
+**Note:** The package name should be written in lower case to avoid conflict with class names.
+
+When we compiled the package in the example above, a new folder was created, called "mypack".
+
+To run the **MyPackageClass.java** file, write the following:
+
+C:\Users\*Your Name*>java mypack.MyPackageClass
+
+The output will be:
+
+```
+This is my package!
+```
 
 #### Access Rules: Access Control Within Packages
 
@@ -3091,7 +3373,7 @@ The `File` class has many useful methods for creating and getting information ab
 | `list()`            | String[] | Returns an array of the files in the directory |
 | `mkdir()`           | Boolean  | Creates a directory                            |
 
-#### Create a File
+##### Create a File
 
 To create a file in Java, you can use the `createNewFile()` method. This method returns a boolean value: `true` if the file was successfully created, and `false` if the file already exists. Note that the method is enclosed in a `try...catch` block. This is necessary because it throws an `IOException` if an error occurs (if the file cannot be created for some reason):
 
@@ -3128,7 +3410,7 @@ To create a file in a specific directory (requires permission), specify the path
 File myObj = new File("C:\\Users\\MyName\\filename.txt");
 ```
 
-#### Write To a File
+##### Write To a File
 
 In the following example, we use the `FileWriter` class together with its `write()` method to write some text to the file we created in the example above. Note that when you are done writing to the file, you should close it with the `close()` method:
 
@@ -3157,7 +3439,7 @@ The output will be:
 Successfully wrote to the file.
 ```
 
-#### Read a File
+##### Read a File
 
 In the previous topic, you learned how to create and write to a file.
 
@@ -3192,7 +3474,7 @@ The output will be:
 Files in Java might be tricky, but it is fun enough!
 ```
 
-#### Get File Information
+##### Get File Information
 
 To get more information about a file, use any of the `File` methods:
 
@@ -3224,7 +3506,7 @@ File name: filename.txtAbsolute path: C:\Users\MyName\filename.txtWriteable: tru
 
 **Tip:** To delete a file, read our Java Delete Files topic.
 
-#### Delete a File
+##### Delete a File
 
 To delete a file in Java, use the `delete()` method:
 
@@ -3249,7 +3531,7 @@ The output will be:
 Deleted the file: filename.txt
 ```
 
-#### Delete a Folder
+##### Delete a Folder
 
 You can also delete a folder. However, it must be empty:
 
@@ -3274,7 +3556,9 @@ The output will be:
 Deleted the folder: Test
 ```
 
-#### Streams and Stream Classes
+#### File Handling using `Streams` Class
+
+##### Streams and Stream Classes
 
 File handling in Java can be achieved using streams and various stream classes provided by the `java.io` package.
 
@@ -3284,7 +3568,7 @@ File handling in Java can be achieved using streams and various stream classes p
   - **Character Streams:**  Handle character-based data (text files).
 - **Stream Classes**: Java provides a variety of stream classes for handling input and output operations. These include byte streams (`InputStream`, `OutputStream`) and character streams (`Reader`, `Writer`).
 
-#### `FileInputStream` and `FileOutputStream`
+##### `FileInputStream` and `FileOutputStream`
 
 - **`FileInputStream`**: Used for reading data from a file as a stream of bytes.
 - **`FileOutputStream`**: Used for writing data to a file as a stream of bytes.
@@ -3308,8 +3592,6 @@ try (FileOutputStream fos = new FileOutputStream("output.txt")) {
     e.printStackTrace();
 }
 ```
-
-#### Reading, and Writing Files using `FileOutputStream` & `FileOutputStream`
 
 ##### `FileOutputStream` to Write to File
 
@@ -3605,7 +3887,7 @@ public class Main {
 }
 ```
 
-#### Java LinkedList
+#### `LinkedList`
 
 In the previous topic, you learned about the `ArrayList` class. The `LinkedList` class is almost identical to the `ArrayList`.
 
@@ -3663,7 +3945,7 @@ For many cases, the `ArrayList` is more efficient as it is common to need access
 | getFirst()    | Get the item at the beginning of the list      |
 | getLast()     | Get the item at the end of the list            |
 
-#### Java HashMap
+#### `HashMap`
 
 In the `ArrayList` topic, you learned that Arrays store items as an ordered collection, and you have to access them with an index number (`int` type). A `HashMap` however, store items in "**key**/**value**" pairs, and you can access them by an index of another type (e.g. a `String`).
 
@@ -3787,7 +4069,7 @@ public class Main {
 }
 ```
 
-#### Java HashSet
+#### `HashSet`
 
 A HashSet is a collection of items where every item is unique, and it is found in the `java.util` package.
 
@@ -3899,23 +4181,6 @@ public class Main {
 }
 ```
 
-#### The For-Each Loop
-
-The for-each loop, also known as the enhanced for loop, provides a simple way to iterate over collections and arrays in Java.
-
-```java
-ArrayList<String> list = new ArrayList<>();
-list.add("Java");
-list.add("Python");
-list.add("C++");
-
-for (String language : list) {
-    System.out.println(language);
-}
-```
-
-The for-each loop iterates over each element in the collection sequentially, without the need for explicit indexing or iterators.
-
 The Collections Framework in Java provides a powerful and efficient way to work with collections of objects. Understanding its interfaces and implementations, such as `ArrayList`, `LinkedList`, `HashMap`, and `HashSet`, along with the for-each loop, is essential for effective Java programming.
 
 #### Iterator
@@ -3992,3 +4257,4 @@ public class Main {
 ```
 
 **Note:** Trying to remove items using a **for loop** or a **for-each loop** would not work correctly because the collection is changing size at the same time that the code is trying to loop.
+
