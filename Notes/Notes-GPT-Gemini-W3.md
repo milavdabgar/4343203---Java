@@ -4257,4 +4257,3 @@ public class Main {
 ```
 
 **Note:** Trying to remove items using a **for loop** or a **for-each loop** would not work correctly because the collection is changing size at the same time that the code is trying to loop.
-
