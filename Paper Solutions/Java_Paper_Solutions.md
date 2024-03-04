@@ -1,7 +1,8 @@
-[TOC]
+# Java GTU Paper Solution
 
-# 4341602 - Java: Winter 2023 Paper Solution
-## Q1a: List out basic concepts of Java OOP. Explain any one in detail.
+## 4341602 - Java: Winter 2023 Paper Solution
+
+### Q1a: List out basic concepts of Java OOP. Explain any one in detail.
 
 Basic Concepts of Java OOP (Object-Oriented Programming):
 
@@ -57,7 +58,7 @@ Inheritance supports the concept of **code extensibility**, as the subclass can 
 
 Inheritance also facilitates **polymorphism**, as objects of the subclass can be treated as objects of the superclass, enabling more flexible and generic code.
 
-## Q1b: Explain JVM in detail.
+### Q1b: Explain JVM in detail.
 
 The Java Virtual Machine (JVM) is a crucial component of the Java Runtime Environment (JRE). It plays a central role in executing Java bytecode, which is the compiled form of Java source code. Below, I'll explain the JVM in detail:
 
@@ -92,7 +93,7 @@ The Java Virtual Machine (JVM) is a crucial component of the Java Runtime Enviro
 
 In summary, the JVM provides a robust execution environment for Java programs, abstracting away hardware and operating system details while offering features such as memory management, dynamic class loading, security, and performance monitoring. Its ability to execute Java bytecode efficiently makes it a key component of the Java platform, enabling the development of portable and scalable applications.
 
-## Q1c: Write a program in java to print Fibonacci series for n terms.
+### Q1c: Write a program in java to print Fibonacci series for n terms.
 
 Sure, here's a Java program to print the Fibonacci series for n terms:
 
@@ -125,7 +126,7 @@ public class FibonacciSeries {
 
 This program prompts the user to enter the number of terms (n) they want in the Fibonacci series. It then calculates and prints the Fibonacci series for n terms. The Fibonacci series starts with 0 and 1, and each subsequent term is the sum of the previous two terms. The loop iterates from the third term onwards, calculating each term based on the previous two terms. Finally, it prints each term of the Fibonacci series.
 
-## Q1c: Write a program in java to find out minimum from any ten numbers using command line argument.
+### Q1c: Write a program in java to find out minimum from any ten numbers using command line argument.
 
 Sure, here's a Java program that finds the minimum from any ten numbers using command-line arguments:
 
@@ -166,7 +167,7 @@ The minimum number among the given ten numbers is: 1
 
 Ensure that exactly ten numbers are provided as command-line arguments when running the program, otherwise, it will display an error message.
 
-## Q2a: What is Java wrapper class? Explain with example.
+### Q2a: What is Java wrapper class? Explain with example.
 
 In Java, a wrapper class is a class that encapsulates (or "wraps") primitive data types into objects. While primitive data types represent simple values, wrapper classes provide a way to treat these values as objects. This is particularly useful when dealing with collections, as many collection classes in Java require objects, not primitives.
 
@@ -211,7 +212,7 @@ In this example, we have primitive variables (`num1`, `num2`, `letter`, `flag`) 
 
 Wrapper classes also provide utility methods to convert strings into primitive values and vice versa, and to perform various operations on the wrapped values. They also facilitate interoperability between primitive types and objects in Java.
 
-## Q2b: List out different features of java. Explain any two.
+### Q2b: List out different features of java. Explain any two.
 
 Java is a versatile programming language known for its rich set of features that contribute to its popularity and widespread use. Here are some key features of Java:
 
@@ -239,7 +240,7 @@ Java achieves platform-independence through its bytecode compilation. When you c
 **2. Object-Oriented**:
 Java is a pure object-oriented programming language, which means it revolves around the concept of objects. Everything in Java is an object, which has attributes (fields or properties) and behaviors (methods). Object-oriented programming promotes modularity, reusability, and extensibility of code. Encapsulation ensures that the internal state of an object is hidden from the outside world, providing data security and abstraction. Inheritance allows classes to inherit properties and behaviors from other classes, facilitating code reuse and hierarchical organization. Polymorphism enables objects to exhibit different behaviors based on their types, enhancing flexibility and code maintainability. Java's object-oriented features make it well-suited for building large-scale, maintainable software systems.
 
-## Q2c: What is method overload in Java ? Explain with example.
+### Q2c: What is method overload in Java ? Explain with example.
 
 Method overloading in Java refers to the ability to define multiple methods within the same class with the same name but different parameter lists. These methods can have different numbers or types of parameters. Java distinguishes between overloaded methods based on the number, type, and sequence of their parameters.
 
@@ -318,7 +319,7 @@ Sum 4: 8.7
 
 In this example, depending on the type and number of arguments provided, Java resolves the method calls to the appropriate overloaded `add` method during compilation.
 
-## Q2a: Explain Garbage collection in java.
+### Q2a: Explain Garbage collection in java.
 
 Garbage collection in Java is the automatic process of reclaiming memory occupied by objects that are no longer in use or reachable by the application. It is a fundamental feature of the Java Virtual Machine (JVM) that helps manage memory efficiently, prevents memory leaks, and reduces the risk of memory-related errors such as segmentation faults.
 
@@ -344,7 +345,7 @@ Here are some key benefits of garbage collection in Java:
 
 Overall, garbage collection is a critical feature of the Java platform that helps manage memory efficiently, allowing developers to focus on writing robust and reliable software.
 
-## Q2b: Explain final keyword in Java with example.
+### Q2b: Explain final keyword in Java with example.
 
 In Java, the `final` keyword is used to restrict the behavior of classes, methods, and variables. When applied to different elements, it signifies different meanings:
 
@@ -409,7 +410,7 @@ In this example, the `FinalClass` is declared as a final class. Attempting to su
 
 In summary, the `final` keyword in Java is used to create constants, prevent method overriding, and prevent class inheritance, depending on where it's applied. It helps enforce immutability, security, and design constraints in Java programs.
 
-## Q2c: What is constructor in Java? Explain parameterized constructor with example.
+### Q2c: What is constructor in Java? Explain parameterized constructor with example.
 
 In Java, a constructor is a special type of method that is automatically called when an instance (object) of a class is created. It is used to initialize the newly created object and perform any necessary setup operations. Constructors have the same name as the class and do not have a return type, not even `void`.
 
@@ -461,7 +462,7 @@ In this example:
 - We then create two `Person` objects (`person1` and `person2`) using the parameterized constructor, passing different values for `name` and `age`.
 - Finally, we use getter methods (`getName()` and `getAge()`) to retrieve the values of `name` and `age` for each object and print them out.
 
-## Q3a: Explain super keyword in Java with example.
+### Q3a: Explain super keyword in Java with example.
 
 In Java, the `super` keyword is used to refer to the superclass (parent class) of the current object or to access members (fields or methods) of the superclass. It is often used in subclasses (child classes) to access superclass constructors, methods, or variables. The `super` keyword is particularly useful when there is a need to differentiate between superclass and subclass members with the same name.
 
@@ -516,7 +517,7 @@ In this example:
 - The `Car` class also overrides the `display()` method of the superclass. Inside the overridden `display()` method, we use `super.display()` to call the `display()` method of the superclass before displaying the `mileage` of the car.
 - In the `main()` method, we create an instance of the `Car` class and invoke its `display()` method. This will print both the vehicle speed and the car mileage.
 
-## Q3b: List out different types of inheritance in Java. Explain multilevel inheritance.
+### Q3b: List out different types of inheritance in Java. Explain multilevel inheritance.
 
 In Java, there are several types of inheritance, each representing different relationships between classes. These types include:
 
@@ -579,7 +580,7 @@ In this example:
 
 Multilevel inheritance allows for the creation of a hierarchy of classes, where each subclass can inherit and extend the functionality of its parent classes, leading to better code organization and reuse. However, it's important to use multilevel inheritance judiciously to avoid creating overly complex class hierarchies.
 
-## Q3c: What is Java interface? Explain multiple inheritance with example.
+### Q3c: What is Java interface? Explain multiple inheritance with example.
 
 In Java, an interface is a reference type similar to a class that defines a set of abstract methods and constants. An interface can also contain default methods, static methods, and nested types. It provides a way to achieve abstraction and multiple inheritance of type. Interfaces are used to specify a contract that classes must adhere to by implementing the methods declared in the interface.
 
@@ -646,7 +647,7 @@ In this example:
 
 By implementing multiple interfaces, `MyClass` inherits the abstract method signatures from both `A` and `B`, effectively achieving multiple inheritance of type. This allows for increased flexibility and code reuse while avoiding the complications associated with multiple inheritance of implementation.
 
-## Q3a: Explain Java static keyword with example.
+### Q3a: Explain Java static keyword with example.
 
 In Java, the `static` keyword is used to define members (variables and methods) that belong to the class itself, rather than to instances of the class (objects). These members are shared among all instances of the class and can be accessed directly through the class name, without the need to create an object of the class.
 
@@ -702,7 +703,7 @@ In this example, `add` is a static method of the `MathUtils` class. It can be ca
 - Static methods cannot access non-static members directly, as they are not associated with any specific instance of the class.
 - Static members are commonly used for utility methods, constants, and for maintaining global state within a class.
 
-## Q3b: Explain different access controls in Java.
+### Q3b: Explain different access controls in Java.
 
 In Java, access controls are used to restrict the visibility and accessibility of classes, variables, methods, and constructors. This helps in encapsulating the implementation details, promoting code reusability, and enhancing security. Java provides four types of access controls, also known as access modifiers:
 
@@ -769,7 +770,7 @@ public class MyClass {
 
 These access controls provide a way to manage the visibility and accessibility of members in Java classes, allowing developers to design and implement classes with appropriate encapsulation and access restrictions based on their requirements. Proper use of access controls helps in creating more modular, maintainable, and secure Java applications.
 
-## Q3c: What is Java package? Write steps to create a package in Java and give example of it.
+### Q3c: What is Java package? Write steps to create a package in Java and give example of it.
 
 In Java, a package is a way to organize related classes and interfaces into a single namespace. It helps in avoiding naming conflicts, improving code organization, and providing access control. Packages can contain classes, interfaces, sub-packages, and other resources.
 
@@ -846,7 +847,7 @@ public class Main {
 
 By following these steps, you've created and used a package in Java, demonstrating the organization and encapsulation benefits it provides.
 
-## Q4a: Explain Java thread priorities with suitable example.
+### Q4a: Explain Java thread priorities with suitable example.
 
 In Java, thread priorities are used to indicate the importance or urgency of a thread's execution relative to other threads. Thread priorities are represented by integer values ranging from 1 to 10, where 1 is the lowest priority and 10 is the highest priority. The default priority for a thread is typically inherited from its parent thread, but it can be explicitly set using the `setPriority()` method.
 
@@ -894,7 +895,7 @@ In this example:
 - Each thread runs a simple loop printing numbers from 1 to 5 with a one-second delay between each iteration.
 - When you run this program, the output may vary depending on the thread scheduler's behavior, but in general, you may observe that `thread3` (highest priority) gets more CPU time compared to the other threads, followed by `thread2` (default priority), and finally `thread1` (lowest priority). However, thread scheduling behavior is platform-dependent, and thread priorities should be used with caution as they may not always have the desired effect.
 
-## Q4b: What is Java Thread? Explain Thread life cycle.
+### Q4b: What is Java Thread? Explain Thread life cycle.
 
 In Java, a thread is the smallest unit of execution within a process. It represents an independent path of execution that can run concurrently with other threads in a Java program. Threads allow programs to perform multiple tasks simultaneously, making efficient use of CPU resources and enabling concurrent and parallel processing.
 
@@ -927,7 +928,7 @@ New       ->     Runnable    ->    Running   ->   Terminated
 
 Understanding the thread life cycle is crucial for writing multithreaded Java applications efficiently, as it helps in managing and coordinating the execution of concurrent tasks. It allows developers to control thread behavior, handle synchronization, and avoid common concurrency issues such as race conditions and deadlocks.
 
-## Q4c: Write a program in java that create the multiple threads by implementing the Thread class.
+### Q4c: Write a program in java that create the multiple threads by implementing the Thread class.
 
 Here's a simple Java program that creates multiple threads by implementing the `Thread` class:
 
@@ -976,7 +977,7 @@ In this program:
 
 This example demonstrates how to create multiple threads by extending the `Thread` class and starting them concurrently to achieve parallel execution of tasks.
 
-## Q4a: List four different inbuilt exceptions of Java. Explain any one inbuilt exception.
+### Q4a: List four different inbuilt exceptions of Java. Explain any one inbuilt exception.
 
 In Java, there are many built-in exceptions provided by the Java API, which are organized in a hierarchy under the `java.lang.Exception` class. Here are four commonly encountered built-in exceptions:
 
@@ -1033,7 +1034,7 @@ public class NullPointerExceptionExample {
 
 It's important to handle `NullPointerExceptions` properly in your code to prevent unexpected crashes and ensure the robustness of your Java applications.
 
-## Q4b: Explain multiple catch with suitable example in Java.
+### Q4b: Explain multiple catch with suitable example in Java.
 
 In Java, you can use multiple `catch` blocks to handle different types of exceptions that may occur within a `try` block. This allows you to handle each type of exception differently, based on the specific error conditions that may arise during the execution of the code.
 
@@ -1072,7 +1073,7 @@ When you run this program, if an `ArrayIndexOutOfBoundsException` occurs, the fi
 
 Using multiple `catch` blocks allows you to handle different exceptions gracefully and provide appropriate error messages or recovery mechanisms based on the specific type of exception encountered.
 
-## Q4c: What is Java Exception? Write a program that show the use of Arithmetic Exception in Java.
+### Q4c: What is Java Exception? Write a program that show the use of Arithmetic Exception in Java.
 
 In Java, an exception is an event that occurs during the execution of a program that disrupts the normal flow of instructions. When an exceptional condition arises, an object representing that condition is created and thrown in the method that caused the error. This object is an instance of a subclass of the `Throwable` class, which can be either an `Exception` or an `Error`.
 
@@ -1111,7 +1112,7 @@ ArithmeticException caught: / by zero
 
 This demonstrates how to use try-catch blocks to handle `ArithmeticException` and gracefully handle the error condition, preventing the program from crashing. It's important to handle exceptions appropriately in your code to ensure robustness and provide meaningful error messages to users.
 
-## Q5a: Explain ArrayIndexOutOfBound Exception in Java with example.
+### Q5a: Explain ArrayIndexOutOfBound Exception in Java with example.
 
 In Java, `ArrayIndexOutOfBoundsException` is a runtime exception that occurs when you try to access an element of an array at an index that is outside the valid range of indices for that array. This means you are trying to access an array element with an index that is either negative or greater than or equal to the length of the array.
 
@@ -1143,7 +1144,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 3 out
 
 To prevent `ArrayIndexOutOfBoundsException`, you should always ensure that the index used to access an array element is within the valid range of indices (i.e., between `0` and `array.length - 1`). You can use conditional statements or loop constructs to check the validity of array indices before accessing elements to handle such exceptions gracefully in your code.
 
-## Q5b: Explain basics of Java stream classes.
+### Q5b: Explain basics of Java stream classes.
 
 In Java, stream classes are part of the Java I/O (Input/Output) API, which provides a way to efficiently read from and write to data sources and destinations, such as files, network connections, and memory buffers. Stream classes are used to handle input and output operations in Java programs, allowing data to be transferred between an application and external sources or sinks.
 
@@ -1186,7 +1187,7 @@ Basics of using Java stream classes:
 
 Java stream classes provide a flexible and efficient way to perform input and output operations in Java programs, making it easy to interact with external data sources and sinks. Whether you're reading from files, network connections, or writing data to them, Java stream classes offer a consistent and convenient API for handling I/O operations.
 
-## Q5c: Write a java program to create a text file and perform read operation on the text file.
+### Q5c: Write a java program to create a text file and perform read operation on the text file.
 
 To create a text file and perform a read operation using `FileInputStream` in Java, you need to use `FileOutputStream` for writing to the file since `FileInputStream` is designed for reading bytes from a file. Below is a Java program that demonstrates how to create a text file using `FileOutputStream` and then reads it back using `FileInputStream`.
 
@@ -1232,7 +1233,7 @@ In this program:
 
 This program demonstrates the basic use of `FileInputStream` and `FileOutputStream` for reading and writing text files, though it's worth noting that these classes are primarily intended for binary data. For reading and writing character data, consider using `FileReader` and `FileWriter` or `BufferedReader` and `BufferedWriter` for efficiency and simplicity.
 
-## Q5a: Explain Divide by Zero Exception in Java with example.
+### Q5a: Explain Divide by Zero Exception in Java with example.
 
 In Java, a `DivideByZeroException` is not explicitly provided as a standard exception class. Instead, the exception that occurs when you attempt to divide by zero is called `ArithmeticException`. This exception is thrown when an arithmetic operation fails due to certain conditions, such as division by zero.
 
@@ -1269,7 +1270,7 @@ ArithmeticException caught: / by zero
 
 This demonstrates how attempting to divide by zero results in an `ArithmeticException` being thrown at runtime in Java. To prevent such exceptions, it's important to ensure that you handle cases where division by zero may occur or validate input data to avoid such scenarios.
 
-## Q5b: Explain java I/O process.
+### Q5b: Explain java I/O process.
 
 In Java, Input/Output (I/O) operations involve the exchange of data between a Java program and external sources or destinations, such as files, network connections, or other programs. The Java I/O process encompasses several key concepts and classes provided by the Java API to facilitate reading from and writing to various data sources and sinks.
 
@@ -1303,7 +1304,7 @@ The Java I/O process typically involves the following steps:
 
 Overall, the Java I/O process involves selecting the appropriate stream classes, reading from or writing to streams, closing streams after use, handling exceptions, and optionally using buffering for improved efficiency. Understanding these concepts and using the provided Java I/O classes effectively is crucial for performing input/output operations in Java programs.
 
-## Q5c: Write a java program to display the content of a text file and perform append operation on the text file.
+### Q5c: Write a java program to display the content of a text file and perform append operation on the text file.
 
 Below is a Java program that displays the content of a text file and performs an append operation on the text file using `FileInputStream` and `FileOutputStream`:
 
@@ -1360,9 +1361,9 @@ In this program:
 
 When you run this program, it will display the initial content of the text file (if it exists) and then append a new line of content to the file. Make sure to replace `"sample.txt"` with the actual file name you want to read from and append to.
 
-# 4341602 - Java: Summer 2023 Paper Solution
+## 4341602 - Java: Summer 2023 Paper Solution
 
-## Q1a: Differentiate between Procedure-Oriented Programming (POP) and Object-Oriented Programming (OOP).
+### Q1a: Differentiate between Procedure-Oriented Programming (POP) and Object-Oriented Programming (OOP).
 
 Procedure-Oriented Programming (POP) and Object-Oriented Programming (OOP) are two distinct paradigms in software development. Here's a differentiation between the two:
 
@@ -1396,7 +1397,7 @@ Procedure-Oriented Programming (POP) and Object-Oriented Programming (OOP) are t
 
 In summary, while both paradigms aim to organize code and facilitate software development, they differ significantly in their approach to data organization, code structure, and principles of modularity and reusability.
 
-## Q1b: Explain Super keyword in inheritance with suitable example.
+### Q1b: Explain Super keyword in inheritance with suitable example.
 
 In Java, the `super` keyword is used to refer to the superclass (parent class) of a subclass (child class). It can be used to access superclass methods, constructor, and instance variables. This is particularly useful when the subclass overrides a method or hides an instance variable of the superclass and you want to access the superclass version.
 
@@ -1450,7 +1451,7 @@ Here's what's happening:
 
 This demonstrates how `super` can be used to access superclass members from a subclass, allowing for controlled access to overridden methods and hidden variables.
 
-## Q1c: Define: Method Overriding. List out Rules for method overriding. Write a java program that implements method overriding.
+### Q1c: Define: Method Overriding. List out Rules for method overriding. Write a java program that implements method overriding.
 
 Method overriding is a feature in object-oriented programming that allows a subclass to provide a specific implementation of a method that is already defined in its superclass. This means that a subclass can redefine the implementation of a method that it inherits from its superclass according to its own requirements.
 
@@ -1534,7 +1535,7 @@ Explanation:
 - In the `Main` class, we create instances of `Dog` and `Cat` but store them in `Animal` references.
 - When we call the `makeSound()` method on these instances, Java dynamically dispatches the call to the appropriate overridden method based on the actual type of the object at runtime, demonstrating polymorphism through method overriding.
 
-## Q1cOR: Describe: Interface. Write a java program using interface to demonstrate multiple inheritance.
+### Q1cOR: Describe: Interface. Write a java program using interface to demonstrate multiple inheritance.
 
 In Java, an interface is a reference type that defines a set of abstract methods along with constants (static final variables). Interfaces cannot have instance fields (non-static variables) or concrete methods (methods with a body) until Java 8, where default and static methods were introduced in interfaces.
 
@@ -1705,7 +1706,7 @@ Explanation:
 - We define a class `DogHorseHybrid` that implements both interfaces, thereby inheriting behavior from both `Animal` and `Mammal`.
 - In the `Main` class, we create instances of `Dog`, `Horse`, and `DogHorseHybrid`, and call their respective methods to demonstrate multiple inheritance through interfaces.
 
-## Q2a: Explain the Java Program Structure with example.
+### Q2a: Explain the Java Program Structure with example.
 
 In Java, a program is typically structured into classes, which are the fundamental building blocks of Java applications. Each class encapsulates data (attributes) and behaviors (methods) related to a specific entity or concept. The overall structure of a Java program involves one or more classes, with one class containing a special method called `main()` where the program execution begins.
 
@@ -1746,7 +1747,7 @@ Let's break down the structure of this Java program:
 
 Overall, this Java program structure demonstrates the basic elements required for a Java program: a class declaration, a main method, and program logic. This structure forms the foundation for writing Java applications of varying complexity.
 
-## Q2b: Explain static keyword with suitable example.
+### Q2b: Explain static keyword with suitable example.
 
 In Java, the `static` keyword is used to declare members (variables and methods) that belong to the class itself rather than to instances of the class. This means that `static` members are shared among all instances of the class and can be accessed directly through the class name without the need to create an object of the class.
 
@@ -1793,7 +1794,7 @@ Explanation:
 
 In summary, the `static` keyword allows for the creation of class-level variables and methods that are shared among all instances of the class. It provides a way to manage and manipulate shared data and behavior within the context of a class.
 
-## Q2c: Define: Constructor. List out types of it. Explain Parameterized and copy constructor with suitable example.
+### Q2c: Define: Constructor. List out types of it. Explain Parameterized and copy constructor with suitable example.
 
 A constructor in Java is a special type of method that is automatically called when an object of a class is created. It is used to initialize the newly created object. Constructors have the same name as the class and do not have a return type, not even `void`. Constructors can be used to set initial values for instance variables, allocate resources, or perform any other initialization tasks needed by the object.
 
@@ -1813,7 +1814,7 @@ Types of constructors in Java:
 
 Let's explain parameterized and copy constructors with suitable examples:
 
-### Parameterized Constructor Example:
+##### Parameterized Constructor Example:
 
 ```java
 class Student {
@@ -1850,7 +1851,7 @@ In this example:
 - The `Student` class has a parameterized constructor that initializes the `name` and `age` instance variables with the values passed as arguments.
 - We create two `Student` objects (`student1` and `student2`) using the parameterized constructor and display their details.
 
-### Copy Constructor Example:
+##### Copy Constructor Example:
 
 ```java
 class Employee {
@@ -1892,11 +1893,11 @@ In this example:
 - We create an `Employee` object `emp1`, set its `name` and `age`, and then create another `Employee` object `emp2` using the copy constructor with `emp1` as an argument.
 - Both `emp1` and `emp2` have the same state, demonstrating the use of the copy constructor to create a new object with the same state as an existing object.
 
-## Q2a: Explain the Primitive Data Types and User Defined DataTypes in java.
+### Q2a: Explain the Primitive Data Types and User Defined DataTypes in java.
 
 In Java, data types specify the type of data that a variable can hold. There are two main categories of data types: primitive data types and user-defined data types.
 
-### 1. Primitive Data Types:
+##### 1. Primitive Data Types:
 
 Primitive data types are the basic building blocks of data manipulation in Java. They are predefined by the language and represent simple values. Java provides eight primitive data types:
 
@@ -1917,7 +1918,7 @@ char letter = 'A';
 boolean isJavaFun = true;
 ```
 
-### 2. User-Defined Data Types:
+##### 2. User-Defined Data Types:
 
 User-defined data types are created by the programmer to meet specific requirements. They are derived from primitive data types and/or other user-defined data types. In Java, user-defined data types include classes, interfaces, arrays, and enumerated types.
 
@@ -1952,7 +1953,7 @@ User-defined data types are created by the programmer to meet specific requireme
 
 User-defined data types allow programmers to organize and manipulate complex data structures and represent real-world entities in their programs. They contribute to the modularity, maintainability, and extensibility of Java code.
 
-## Q2b: Explain this keyword with suitable example.
+### Q2b: Explain this keyword with suitable example.
 
 In Java, the `this` keyword is a reference to the current object within a method or constructor. It can be used to access instance variables and methods of the current object, differentiate between instance variables and local variables with the same name, and to pass the current object as a parameter to other methods.
 
@@ -2011,7 +2012,7 @@ Explanation:
 - In the `isOlder()` method, `this.age` is used to access the age of the current object (`this`) and compare it with the age of another `Student` object passed as a parameter.
 - In the `Main` class, we create two `Student` objects (`student1` and `student2`) and call methods using the `this` keyword to demonstrate its usage.
 
-## Q2c: Define Inheritance. List out types of it. Explain multilevel and hierarchical inheritance with suitable example.
+### Q2c: Define Inheritance. List out types of it. Explain multilevel and hierarchical inheritance with suitable example.
 
 Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a new class (subclass or derived class) to inherit attributes and behaviors from an existing class (superclass or base class). This enables code reuse and promotes the creation of a hierarchy of classes, where classes at higher levels in the hierarchy share common characteristics, and subclasses can specialize or extend those characteristics.
 
@@ -2029,7 +2030,7 @@ Types of Inheritance:
 4. **Hierarchical Inheritance**:
    - Multiple subclasses inherit from a single superclass, forming a tree-like structure.
 
-### Multilevel Inheritance Example:
+##### Multilevel Inheritance Example:
 
 ```java
 // Superclass
@@ -2069,7 +2070,7 @@ Explanation:
 - `Labrador` inherits both `eat()` and `bark()` methods from `Dog` and adds its own method `color()`.
 - The `main()` method demonstrates calling methods from different levels of the inheritance hierarchy using an object of the `Labrador` class.
 
-### Hierarchical Inheritance Example:
+##### Hierarchical Inheritance Example:
 
 ```java
 // Superclass
@@ -2111,11 +2112,11 @@ Explanation:
 - `Dog` adds its own method `bark()`, while `Cat` adds its own method `meow()`.
 - The `main()` method demonstrates creating objects of both `Dog` and `Cat` classes and calling their respective methods.
 
-## Q3a: Explain Type Conversion and Casting in java.
+### Q3a: Explain Type Conversion and Casting in java.
 
 In Java, type conversion refers to the process of converting one data type into another. This can occur implicitly, where the conversion is done automatically by the compiler, or explicitly, where the programmer explicitly specifies the conversion using casting.
 
-### 1. Implicit Type Conversion (Widening Conversion):
+##### 1. Implicit Type Conversion (Widening Conversion):
 - Implicit type conversion occurs when a data type with a smaller range or precision is converted into a data type with a larger range or precision.
 - This conversion is performed by the compiler automatically and does not require any explicit casting.
 - It's also known as widening conversion because the range of the data type is widened.
@@ -2127,7 +2128,7 @@ int numInt = 10;
 double numDouble = numInt; // Implicit conversion from int to double
 ```
 
-### 2. Explicit Type Conversion (Narrowing Conversion):
+##### 2. Explicit Type Conversion (Narrowing Conversion):
 - Explicit type conversion, also known as casting, occurs when a data type with a larger range or precision is converted into a data type with a smaller range or precision.
 - Casting requires explicit syntax where the programmer specifies the desired type in parentheses before the value to be converted.
 - This conversion may result in loss of data if the target type cannot represent the entire range of the source type.
@@ -2140,7 +2141,7 @@ double numDouble = 10.5;
 int numInt = (int) numDouble; // Explicit conversion (casting) from double to int
 ```
 
-### 3. Type Casting:
+##### 3. Type Casting:
 - Type casting is the process of converting a variable from one data type to another.
 - It's done by explicitly specifying the target data type in parentheses before the variable.
 - There are two types of casting: primitive type casting and object casting.
@@ -2167,7 +2168,7 @@ public class Main {
 
 In summary, type conversion in Java involves converting one data type to another either implicitly or explicitly through casting. Implicit conversion occurs automatically by the compiler, while explicit conversion requires the programmer to specify the desired type using casting syntax.
 
-## Q3b: Explain different visibility controls used in Java.
+### Q3b: Explain different visibility controls used in Java.
 
 In Java, visibility controls, also known as access modifiers, are keywords that determine the accessibility or visibility of classes, methods, and variables within Java programs. They specify the level of access that other classes or components have to the members of a class. Java provides four visibility controls:
 
@@ -2211,13 +2212,13 @@ In this example:
 - `defaultVar` is accessible only within the same package.
 - `privateVar` is accessible only within the same class.
 
-## Q3c: Define: Thread. List different methods used to create Thread. Explain Thread life cycle in detail.
+### Q3c: Define: Thread. List different methods used to create Thread. Explain Thread life cycle in detail.
 
-### Definition of Thread:
+##### Definition of Thread:
 
 In Java, a thread refers to a single sequential flow of control within a program. It is the smallest unit of execution and represents an independent path of execution in a program. Multiple threads can run concurrently within a single Java program, allowing for parallel execution of tasks.
 
-### Methods to Create Thread:
+##### Methods to Create Thread:
 
 In Java, there are several ways to create a thread:
 
@@ -2237,7 +2238,7 @@ In Java, there are several ways to create a thread:
    - Create a `Thread` object and pass the lambda expression as a parameter to its constructor.
    - Call the `start()` method of the `Thread` object to start the execution of the thread.
 
-### Thread Life Cycle:
+##### Thread Life Cycle:
 
 The life cycle of a thread in Java consists of several states, and the thread can transition between these states during its execution. The states of a thread in Java are as follows:
 
@@ -2264,7 +2265,7 @@ The life cycle of a thread in Java consists of several states, and the thread ca
 6. **Terminated**:
    - The thread is in the terminated state if it has completed its task or if it has been explicitly terminated by calling the `stop()` method.
 
-### Detailed Explanation of Thread Life Cycle:
+##### Detailed Explanation of Thread Life Cycle:
 
 1. **New**: 
    - The thread is created using the `new` keyword, but the `start()` method has not yet been called.
@@ -2290,49 +2291,49 @@ The life cycle of a thread in Java consists of several states, and the thread ca
 
 Understanding the life cycle of a thread is important for proper thread management and synchronization in Java programs. It allows developers to control the execution of threads and handle concurrency-related issues effectively.
 
-## Q3a: Explain the purpose of JVM in java.
+### Q3a: Explain the purpose of JVM in java.
 
 The Java Virtual Machine (JVM) is a critical component of the Java Runtime Environment (JRE), serving as the engine that executes Java bytecode. It is the cornerstone of Java's "write once, run anywhere" (WORA) philosophy, allowing Java applications to run on any device or operating system that has a compatible JVM. The purpose and functionalities of the JVM are multifaceted:
 
-### 1. Platform Independence:
+##### 1. Platform Independence:
 
 - **Code Portability**: JVM enables Java applications to be platform-independent. Java programs are compiled into bytecode, which can be executed on any JVM, regardless of the underlying hardware and operating system. This means developers can write the code once and run it anywhere, without needing to modify it for different platforms.
 
-### 2. Security:
+##### 2. Security:
 
 - **Safe Execution Environment**: The JVM provides a secure execution environment by sandboxing the execution of bytecode. It enforces access controls and provides various security checks, preventing unauthorized access to system resources and ensuring that Java applications cannot harm the host system.
 - **Bytecode Verification**: Before executing bytecode, the JVM verifies the code to ensure it adheres to Java's safety rules, further enhancing security.
 
-### 3. Performance:
+##### 3. Performance:
 
 - **Just-In-Time (JIT) Compilation**: While the JVM interprets bytecode, it also employs Just-In-Time (JIT) compilation to improve the performance of Java applications. The JIT compiler translates bytecode into native machine code just before execution, which allows for faster execution compared to interpretation alone.
 - **Garbage Collection**: JVM manages memory through garbage collection, automatically freeing memory allocated to objects that are no longer needed. This not only helps in managing resources efficiently but also reduces the likelihood of memory leaks and other memory-related issues.
 
-### 4. Multithreading and Synchronization:
+##### 4. Multithreading and Synchronization:
 
 - **Thread Management**: The JVM supports multithreaded execution, allowing multiple threads to run concurrently within a single process. It manages synchronization between threads, ensuring that resources are properly shared and accessed in a thread-safe manner.
 
-### 5. Load and Execution of Code:
+##### 5. Load and Execution of Code:
 
 - **Dynamic Loading**: JVM dynamically loads, links, and initializes classes and interfaces. This means classes are loaded as needed at runtime, making the execution process more modular and efficient.
 
-### 6. Platform-Specific Features:
+##### 6. Platform-Specific Features:
 
 - **Native Interface and Libraries**: While JVM abstracts the details of the underlying platform, it also provides mechanisms (such as the Java Native Interface - JNI) for Java applications to interact with native libraries and call platform-specific functions when necessary.
 
-### 7. Tooling and Debugging:
+##### 7. Tooling and Debugging:
 
 - **Support for Development Tools**: The JVM ecosystem includes a vast array of development and debugging tools that leverage JVM capabilities for profiling, debugging, and monitoring Java applications.
 
 In summary, the JVM is a pivotal technology that not only ensures the portability, security, and performance of Java applications but also provides a robust platform for developing and executing high-performance, scalable, and secure applications across diverse computing environments.
 
-## Q3b: Define: Package. Write the steps to create a Package with suitable example.
+### Q3b: Define: Package. Write the steps to create a Package with suitable example.
 
-### Definition of Java Package:
+##### Definition of Java Package:
 
 In Java, a package is a way of organizing classes and interfaces into namespaces to prevent naming conflicts and provide a hierarchical structure to the Java codebase. It allows for better organization, management, and modularization of Java code. Packages also facilitate access control and provide a mechanism for code reuse.
 
-### Steps to Create a Java Package:
+##### Steps to Create a Java Package:
 
 Creating a Java package involves the following steps:
 
@@ -2358,7 +2359,7 @@ Creating a Java package involves the following steps:
    - Once the package is created and compiled, you can use it in other Java classes by importing it using the `import` statement.
    - Import the package or specific classes/interfaces from the package into your Java code to access its functionality.
 
-### Example of Creating a Java Package:
+##### Example of Creating a Java Package:
 
 Suppose we want to create a package named `com.example.util` containing utility classes for string manipulation. Here are the steps to create and use this package:
 
@@ -2431,7 +2432,7 @@ public class Main {
 }
 ```
 
-### Explanation:
+##### Explanation:
 
 - In the `StringUtils.java` file, we define a `StringUtils` class inside the `com.example.util` package.
 - This class contains two static methods: `reverseString()` to reverse a given string and `isPalindrome()` to check if a string is a palindrome.
@@ -2440,11 +2441,11 @@ public class Main {
 
 After compiling both files and running the `Main` class, the output will display the original string, its reversed form, and whether it is a palindrome or not based on the utility methods provided by the `StringUtils` class.
 
-## Q3c: Explain Synchronization in Thread with suitable example.
+### Q3c: Explain Synchronization in Thread with suitable example.
 
 In Java, synchronization refers to the coordination of multiple threads to ensure proper and orderly access to shared resources, thereby preventing data corruption and race conditions. When multiple threads access shared data concurrently, synchronization ensures that only one thread can access the shared resource at a time, maintaining data integrity and consistency. Java provides several mechanisms for synchronization, including synchronized blocks and methods, locks, and atomic variables. Let's explore synchronization in Java in detail with a suitable example.
 
-### Synchronization with `synchronized` Keyword:
+##### Synchronization with `synchronized` Keyword:
 
 1. **Synchronized Blocks**:
    - In Java, synchronized blocks allow you to specify a block of code that can be executed by only one thread at a time.
@@ -2455,7 +2456,7 @@ In Java, synchronization refers to the coordination of multiple threads to ensur
    - You can also declare entire methods as synchronized, ensuring that only one thread can execute the method at a time for a particular instance of the class.
    - Syntax: `public synchronized void methodName() { ... }`
 
-### Example: Bank Account Simulation with Synchronization:
+##### Example: Bank Account Simulation with Synchronization:
 
 Suppose we have a bank account class `BankAccount` that allows multiple threads to deposit and withdraw money. Without synchronization, concurrent access to the account balance could lead to inconsistencies. Let's see how synchronization can be applied to ensure thread safety:
 
@@ -2495,7 +2496,7 @@ In this example:
 - The `getBalance()` method is also synchronized to prevent race conditions while accessing the balance.
 - By using synchronized methods, we ensure that concurrent threads cannot access the `BankAccount` methods simultaneously, maintaining data consistency and integrity.
 
-### Usage of Bank Account Class in Multiple Threads:
+##### Usage of Bank Account Class in Multiple Threads:
 
 ```java
 public class Main {
@@ -2531,11 +2532,11 @@ In this example:
 
 By synchronizing critical sections of code, we ensure thread safety and prevent data corruption in multithreaded environments, maintaining the integrity and consistency of shared resources.
 
-## Q4a: Differentiate between String class and StringBuffer class.
+### Q4a: Differentiate between String class and StringBuffer class.
 
 In Java, both the `String` class and `StringBuffer` class are used for handling strings, but they have different characteristics and behaviors. Here's a comparison between the `String` class and the `StringBuffer` class:
 
-### String Class:
+##### String Class:
 
 1. **Immutable**:
    - Objects of the `String` class are immutable, meaning once a `String` object is created, its value cannot be changed.
@@ -2549,7 +2550,7 @@ In Java, both the `String` class and `StringBuffer` class are used for handling 
 3. **Performance Implications**:
    - Immutable nature leads to frequent object creation, which can impact memory usage and performance, especially in scenarios involving string concatenation or manipulation.
 
-### StringBuffer Class:
+##### StringBuffer Class:
 
 1. **Mutable**:
    - Objects of the `StringBuffer` class are mutable, meaning their value can be modified after creation.
@@ -2562,7 +2563,7 @@ In Java, both the `String` class and `StringBuffer` class are used for handling 
    - `StringBuffer` is optimized for string manipulation operations such as concatenation, appending, and inserting.
    - It avoids frequent object creation by modifying the contents of the existing buffer, resulting in better performance compared to `String` for such operations.
 
-### Example:
+##### Example:
 
 ```java
 String str = "Hello";
@@ -2576,7 +2577,7 @@ buffer.append(" World"); // Modifies existing StringBuffer object
 
 In summary, the main differences between the `String` class and the `StringBuffer` class lie in their mutability, thread safety, and performance characteristics. Use `String` when dealing with immutable strings or when thread safety is a concern, and use `StringBuffer` when performing extensive string manipulation operations or when mutability is required.
 
-## Q4b: Write a Java Program to find sum and average of 10 numbers of an array.
+### Q4b: Write a Java Program to find sum and average of 10 numbers of an array.
 
 Here's a Java program to find the sum and average of 10 numbers in an array:
 
@@ -2604,19 +2605,19 @@ public class SumAndAverage {
 
 This program defines an array of 10 numbers and then iterates through the array to calculate the sum of all numbers. It then calculates the average by dividing the sum by the total number of elements in the array. Finally, it prints the sum and average of the numbers.
 
-## Q4c: Explain abstract class with suitable example. Explain final class with suitable example.
+### Q4c: Explain abstract class with suitable example. Explain final class with suitable example.
 
 An abstract class in Java is a class that cannot be instantiated, meaning you cannot create objects of an abstract class. However, it can be subclassed. Abstract classes are used to provide a base for other classes to extend and implement abstract methods, alongside providing full implementations of other methods. Abstract classes allow you to define a template for a group of subclasses.
 
 An abstract class may contain abstract methods, which are methods declared without an implementation. The subclasses of an abstract class must provide implementations for the abstract methods unless the subclass is also abstract.
 
-### Key Points:
+##### Key Points:
 - If a class includes at least one abstract method, the class itself must be declared abstract.
 - Abstract classes can include both abstract methods (without a body) and regular methods (with a body).
 - You cannot create instances of an abstract class directly.
 - Abstract classes are useful for defining common templates for a family of subclasses.
 
-### Example:
+##### Example:
 
 Let's consider an example with a simple hierarchy for shapes where we define an abstract class `Shape` and concrete classes `Circle` and `Rectangle` that extend `Shape`.
 
@@ -2681,7 +2682,7 @@ public class Main {
 }
 ```
 
-### Explanation:
+##### Explanation:
 - The `Shape` class is abstract and contains one abstract method `area()` and a concrete method `getColor()`.
 - The `Circle` and `Rectangle` classes extend `Shape` and provide concrete implementations for the `area()` method.
 - The `Shape` class cannot be instantiated directly due to its abstract nature, but we can reference `Circle` and `Rectangle` objects using a `Shape` reference.
@@ -2689,12 +2690,12 @@ public class Main {
 
 In Java, a final class is a class that cannot be subclassed or extended. When a class is declared as final, it means that no other class can inherit from it. This is useful when you want to prevent the class from being modified or extended further, ensuring that its behavior remains unchanged.
 
-### Key Points:
+##### Key Points:
 - A final class cannot have any subclasses.
 - All methods in a final class are implicitly final, meaning they cannot be overridden by subclasses.
 - Final classes are typically used for utility classes, immutable classes, or classes with a fixed implementation that should not be extended.
 
-### Example:
+##### Example:
 
 ```java
 final class FinalClass {
@@ -2734,11 +2735,11 @@ class SubClass extends FinalClass {
 
 By making a class final, you ensure that its behavior remains consistent and cannot be altered by subclasses, enhancing code stability and predictability. Final classes are particularly useful for creating utility classes, such as helper methods or constants, where you want to prevent unintended subclassing or modification of the class's behavior.
 
-## Q4a: Explain Garbage Collection in Java.
+### Q4a: Explain Garbage Collection in Java.
 
 Garbage Collection (GC) in Java is a process by which the JVM automatically manages memory by reclaiming memory occupied by objects that are no longer referenced or needed by the program. The main goal of garbage collection is to free up memory resources by identifying and reclaiming objects that are no longer in use, thereby preventing memory leaks and allowing for efficient memory management.
 
-### Key Concepts:
+##### Key Concepts:
 
 1. **Automatic Memory Management**:
    - Unlike languages such as C or C++, where developers manually allocate and deallocate memory using `malloc()` and `free()` functions, Java employs automatic memory management through garbage collection.
@@ -2754,7 +2755,7 @@ Garbage Collection (GC) in Java is a process by which the JVM automatically mana
    - The garbage collection process typically focuses on reclaiming memory from objects in the Young Generation, as they are short-lived and often become garbage quickly.
    - Older objects in the Old Generation undergo less frequent garbage collection cycles.
 
-### Garbage Collection Process:
+##### Garbage Collection Process:
 
 1. **Mark Phase**:
    - The garbage collector traverses the object graph starting from the root objects (such as global variables, local variables, and method call stacks).
@@ -2768,7 +2769,7 @@ Garbage Collection (GC) in Java is a process by which the JVM automatically mana
    - Some garbage collectors perform memory compaction after reclaiming memory to reduce fragmentation and optimize memory usage.
    - Memory compaction involves moving live objects closer together to reduce fragmentation and improve memory access performance.
 
-### Advantages of Garbage Collection:
+##### Advantages of Garbage Collection:
 
 - **Automatic Memory Management**: Developers do not need to manually manage memory, reducing the risk of memory leaks and segmentation faults.
 - **Improved Developer Productivity**: Developers can focus on application logic rather than memory management, leading to faster development cycles and fewer bugs related to memory management.
@@ -2776,7 +2777,7 @@ Garbage Collection (GC) in Java is a process by which the JVM automatically mana
 
 In summary, garbage collection in Java is a crucial mechanism for automatic memory management, ensuring efficient use of memory resources and preventing memory-related issues such as memory leaks and segmentation faults. By automatically reclaiming memory occupied by unreachable objects, garbage collection allows Java applications to run reliably and efficiently.
 
-## Q4b: Write a Java program to handle user defined exception for ‘DividebyZero’ error.
+### Q4b: Write a Java program to handle user defined exception for ‘DividebyZero’ error.
 
 To handle a user-defined exception for a "DivideByZero" error in Java, you can create a custom exception class that extends the `Exception` class. Then, you can throw this custom exception when encountering a divide-by-zero situation. Below is an example Java program demonstrating this:
 
@@ -2822,7 +2823,7 @@ In this example:
 
 This program demonstrates how to handle user-defined exceptions for divide-by-zero errors in Java. Custom exception classes provide flexibility in handling different types of errors and allow for more meaningful error messages and error handling strategies.
 
-## Q4c: Write a java program to demonstrate multiple try block and multiple catch block exception.
+### Q4c: Write a java program to demonstrate multiple try block and multiple catch block exception.
 
 Certainly! Below is a Java program demonstrating the use of multiple `try` blocks and multiple `catch` blocks to handle different types of exceptions:
 
@@ -2878,7 +2879,7 @@ In this program:
 
 This program demonstrates how multiple `try` blocks and multiple `catch` blocks can be used to handle different types of exceptions separately, allowing for more precise error handling in Java programs.
 
-## Q5a: Write a program in Java to create a file and perform write operation on this file.
+### Q5a: Write a program in Java to create a file and perform write operation on this file.
 
 Below is a Java program that demonstrates how to create a file and perform write operations on it using the `File` and `FileOutputStream` classes:
 
@@ -2925,11 +2926,11 @@ In this program:
 
 After running this program, a file named `example.txt` will be created in the same directory as the Java program, and the specified content will be written to it.
 
-## Q5b: Explain throw and finally in Exception Handling with example.
+### Q5b: Explain throw and finally in Exception Handling with example.
 
 In Java, exception handling is a powerful mechanism that allows you to manage runtime errors, ensuring the program's flow can be maintained even when unexpected events occur. Two key components of this mechanism are the `throw` keyword and the `finally` block.
 
-### The `throw` Keyword
+##### The `throw` Keyword
 
 The `throw` keyword in Java is used to explicitly throw an exception from a method or any block of code. You can throw either checked or unchecked exceptions. The thrown exception must be either caught by a `catch` block surrounding the `throw` statement or declared to be thrown by the method using the `throws` keyword.
 
@@ -2957,7 +2958,7 @@ public class ThrowExample {
 
 In this example, the `checkAge` method throws an `ArithmeticException` if the `age` parameter is less than 18. The exception is caught in the `main` method's `catch` block.
 
-### The `finally` Block
+##### The `finally` Block
 
 The `finally` block is used to execute a block of code after a try-catch block has completed, regardless of whether an exception was thrown or caught. It is the ideal place to put cleanup code, such as closing file streams or releasing resources, ensuring that these operations are carried out regardless of what happens within the `try` block.
 
@@ -2985,17 +2986,17 @@ In this example, the `try` block executes successfully, so the `catch` block is 
 - The `throw` keyword allows for manually throwing exceptions, providing control over error reporting.
 - The `finally` block ensures certain code is executed after a try-catch block, regardless of the outcome, making it ideal for cleanup operations.
 
-## Q5c: Describe: Polymorphism. Explain run time polymorphism with suitable example in java.
+### Q5c: Describe: Polymorphism. Explain run time polymorphism with suitable example in java.
 
-### Polymorphism:
+##### Polymorphism:
 
 Polymorphism is a fundamental concept in object-oriented programming that allows objects of different classes to be treated as objects of a common superclass. It enables a single interface to represent multiple underlying forms. There are two types of polymorphism in Java: compile-time polymorphism (method overloading) and runtime polymorphism (method overriding).
 
-### Runtime Polymorphism:
+##### Runtime Polymorphism:
 
 Runtime polymorphism, also known as dynamic polymorphism, occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. It allows a method to be overridden in a subclass with a different implementation, and the decision of which method to execute is made at runtime based on the actual type of the object.
 
-### Example of Runtime Polymorphism in Java:
+##### Example of Runtime Polymorphism in Java:
 
 ```java
 // Superclass
@@ -3045,13 +3046,13 @@ In this example:
   Cat meows
   ```
 
-### Benefits of Runtime Polymorphism:
+##### Benefits of Runtime Polymorphism:
 - It allows for flexibility and extensibility in code, enabling subclasses to provide their own implementations of methods.
 - It promotes code reusability by allowing common interfaces to be shared across multiple classes.
 
 Runtime polymorphism is a powerful mechanism in Java that facilitates code organization, maintenance, and flexibility by enabling dynamic method invocation based on the actual type of the object at runtime.
 
-## Q5a: Write a program in Java that read the content of a file byte by byte and copy it into another file.
+### Q5a: Write a program in Java that read the content of a file byte by byte and copy it into another file.
 
 Below is a Java program that reads the content of a file byte by byte and copies it into another file:
 
@@ -3092,7 +3093,7 @@ In this program:
 
 After running this program, the content of the source file (`source.txt`) will be copied byte by byte into the destination file (`destination.txt`).
 
-## Q5b: Explain the different I/O Classes available with Java.
+### Q5b: Explain the different I/O Classes available with Java.
 
 In Java, the I/O (Input/Output) classes are used to perform input and output operations, such as reading from or writing to files, streams, consoles, and network connections. These classes are part of the `java.io` package and provide various functionalities for handling different types of I/O operations. Here are some of the commonly used I/O classes available in Java:
 
@@ -3131,7 +3132,7 @@ In Java, the I/O (Input/Output) classes are used to perform input and output ope
 
 These are some of the commonly used I/O classes available in Java. They provide a wide range of functionalities for performing input and output operations in Java programs, facilitating interactions with files, streams, consoles, and other I/O sources.
 
-## Q5c: Write a java program that executes two threads. One thread displays “Java Programming” every 3 seconds, and the other displays “Semester - 4th IT” every 6 seconds.(Create the threads by extending the Thread class)
+### Q5c: Write a java program that executes two threads. One thread displays “Java Programming” every 3 seconds, and the other displays “Semester - 4th IT” every 6 seconds.(Create the threads by extending the Thread class)
 
 Below is a Java program that creates two threads by extending the `Thread` class. One thread displays "Java Programming" every 3 seconds, and the other thread displays "Semester - 4th IT" every 6 seconds:
 

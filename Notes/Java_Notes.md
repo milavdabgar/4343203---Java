@@ -1,4 +1,13 @@
-[TOC]
+---
+title: "Java Notes"
+author: Milav Dabgar
+geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
+header-includes:
+  - \usepackage{listings}
+  - \lstset{breaklines=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}}
+---
+
+# Java Programming Notes
 
 ## Unit 1: Introduction to Java Programming Language
 
@@ -1252,21 +1261,6 @@ class Second {
 }
 ```
 
-When both files have been compiled:
-
-C:\Users\*Your Name*>javac Main.java
-C:\Users\*Your Name*>javac Second.java
-
-Run the Second.java file:
-
-C:\Users\*Your Name*>java Second
-
-And the output will be:
-
-```
-5
-```
-
 ##### `this` Keyword
 
 Inside a method or constructor, `this` refers to the current object. It is used to differentiate between instance variables and local variables with the same name.
@@ -2007,11 +2001,11 @@ Other common escape sequences that are valid in Java are:
 
 | Code | Result          |
 | :--- | :-------------- |
-| \n   | New Line        |
+| \\n   | New Line        |
 | \r   | Carriage Return |
 | \t   | Tab             |
 | \b   | Backspace       |
-| \f   | Form Feed       |
+| \\f   | Form Feed       |
 
 #### Common `String` Methods
 
@@ -2875,13 +2869,7 @@ To create a package, you use the `package` keyword at the top of your Java sourc
 
 **Package Declaration:** At the top of your `.java` files, use the `package` keyword followed by the package name.
 
-To create your own package, you need to understand that Java uses a file system directory to store them. Just like folders on your computer:
-
-```
-└── root  
-	└── mypack    
-		└── MyPackageClass.java 
-```
+To create your own package, you need to understand that Java uses a file system directory to store them. Just like folders on your computer: root/mypack/MyPackageClass.java
 
 To create a package, use the `package` keyword:
 
@@ -2895,31 +2883,13 @@ class MyPackageClass {
 }
 ```
 
-Save the file as **MyPackageClass.java**, and compile it:
-
-C:\Users\*Your Name*>javac MyPackageClass.java
-
-Then compile the package:
-
-C:\Users\*Your Name*>javac -d . MyPackageClass.java
-
-This forces the compiler to create the "mypack" package.
+Save the file as **MyPackageClass.java**, and compile it, Then compile the package. 
 
 The `-d` keyword specifies the destination for where to save the class file. You can use any directory name, like c:/user (windows), or, if you want to keep the package within the same directory, you can use the dot sign "`.`", like in the example above.
 
 **Note:** The package name should be written in lower case to avoid conflict with class names.
 
 When we compiled the package in the example above, a new folder was created, called "mypack".
-
-To run the **MyPackageClass.java** file, write the following:
-
-C:\Users\*Your Name*>java mypack.MyPackageClass
-
-The output will be:
-
-```
-This is my package!
-```
 
 #### Access Rules: Access Control Within Packages
 
