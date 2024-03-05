@@ -22,6 +22,8 @@ header-includes:
   - \lstset{breaklines=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}}
 ---
 
+[TOC]
+
 \newpage
 
 # Unit 1: Introduction to Java Programming Language

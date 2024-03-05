@@ -2,26 +2,33 @@
 
 This Repository contains Study Materials of Java Programming Subject being offered in Diploma in ICT/IT under Gujarat Technological University (GTU).
 
-**Most Important Materials**
+## Most Important Materials
 
-- [Java Notes](Notes/Java_Notes.md)
-- [Java 8051 GTU Program Solutions](Notes/Java_GTU_Program_Solutions.md)
-- [Mazidi Book Assembly Codes](Practicals/Mazidi_Book_Assembly_Codes.md)
-- [Mazidi Book C Codes](Practicals/Mazidi_Book_C_Codes.md)
-- [8085 Assembly Codes](Practicals/8085_Assembly_Codes.md)
-- [1333202 - W2023 Paper Solution](Paper_Solutions/1333202-W2023.md)
+**Markdown Files (Source / GitHub App):**
 
-This Repository also contains
+- [Java Book by MJD](Notes/Java_Book_MJD.md)
+- [Java Revision Notes](Notes/Java_Revision_Notes.md)
+- [Java GTU Program Solutions](Paper_Solutions/Java_GTU_Paper_Solutions.md)
+
+**Latex PDF (Best for Prints):**
+
+- [Java Book by MJD](Notes/Java_Book_MJD_Latex.pdf)
+- [Java Revision Notes](Notes/Java_Revision_Notes_Latex.pdf)
+- [Java GTU Program Solutions](Paper_Solutions/Java_GTU_Paper_Solutions_Latex.pdf)
+- [Java The Complete Reference](Books/Java_The_Complete_Reference.pdf)
+- [IIT Madras Java Slides](Slides/2201_Java_Slides.pdf)
+
+**This Repository also contains:**
 
 - Syllabus
 - Books
 - GTU Papers & Solutions
 - Lab Manuals
-- Practicals (Proteus Simulations, Codes etc.)
+- Practicals (Extra Codes for practice etc.)
 - Slides
 
-Feel Free to Edit and Redistribute to Students. 
+Feel Free to Edit and Redistribute to Students.
 
 **For Suggested Edits:**
 
-- Write to milav.dabgar@gujgov.edu.in for Suggested Edits mentioning this Repo, Or Fork and send pull requests.
+- Write to <milav.dabgar@gujgov.edu.in> for Suggested Edits mentioning this Repo, Or Fork and send pull requests.
