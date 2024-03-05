@@ -23,231 +23,225 @@ header-includes:
 ---
 
 [TOC]
+
 - [1. Unit 1: Introduction to Java Programming Language](#1-unit-1-introduction-to-java-programming-language)
   - [1.1. Java Overview](#11-java-overview)
-  - [1.2. Brief History \& Evolution of Java](#12-brief-history--evolution-of-java)
-  - [1.3. Java Features](#13-java-features)
-  - [1.4. Java Applications](#14-java-applications)
-  - [1.5. Java Environment Setup \& Basic Java Syntax](#15-java-environment-setup--basic-java-syntax)
-  - [1.6. Java Components](#16-java-components)
-  - [1.7. Setting up Java Development Environment](#17-setting-up-java-development-environment)
-  - [1.8. Structure of a Java Program](#18-structure-of-a-java-program)
-    - [1.8.1. Class Declaration](#181-class-declaration)
-    - [1.8.2. Main Method](#182-main-method)
-    - [1.8.3. Output in Java](#183-output-in-java)
-    - [1.8.4. The `println()` Method](#184-the-println-method)
-    - [1.8.5. The `print()` Method](#185-the-print-method)
-    - [1.8.6. Comments](#186-comments)
-    - [1.8.7. Single-line Comments](#187-single-line-comments)
-    - [1.8.8. Multi-line Comments](#188-multi-line-comments)
-  - [1.9. Compilation and Execution of Java Program](#19-compilation-and-execution-of-java-program)
-  - [1.10. Importance of Bytecode \& Garbage Collection](#110-importance-of-bytecode--garbage-collection)
-  - [1.11. Data Types](#111-data-types)
-  - [1.12. Primitive Data Types](#112-primitive-data-types)
-  - [1.13. Non-Primitive Data Types](#113-non-primitive-data-types)
-  - [1.14. Type Conversion and Casting](#114-type-conversion-and-casting)
-    - [1.14.1. Implicit Conversion (Widening)](#1141-implicit-conversion-widening)
-    - [1.14.2. Explicit Conversion (Narrowing)](#1142-explicit-conversion-narrowing)
-  - [1.15. Identifiers](#115-identifiers)
-  - [1.16. Naming Rules \& Conventions](#116-naming-rules--conventions)
-    - [1.16.1. Naming Rules](#1161-naming-rules)
-    - [1.16.2. Naming Conventions](#1162-naming-conventions)
-  - [1.17. Variables](#117-variables)
-  - [1.18. Constants (`final` Keyword)](#118-constants-final-keyword)
-  - [1.19. Scope of Variables](#119-scope-of-variables)
-  - [1.20. Arrays](#120-arrays)
-  - [1.21. One-dimensional Arrays](#121-one-dimensional-arrays)
-  - [1.22. Multidimensional Arrays](#122-multidimensional-arrays)
-  - [1.23. Operators](#123-operators)
-  - [1.24. Arithmetic Operators](#124-arithmetic-operators)
-  - [1.25. Assignment Operators](#125-assignment-operators)
-  - [1.26. Relational (Comparison) Operators](#126-relational-comparison-operators)
-  - [1.27. Logical Operators](#127-logical-operators)
-  - [1.28. Bitwise Operators](#128-bitwise-operators)
-  - [1.29. Conditional (Ternary) Operator](#129-conditional-ternary-operator)
-  - [1.30. Operator Precedence](#130-operator-precedence)
-  - [1.31. Control Flow Statements](#131-control-flow-statements)
-  - [1.32. Selection Statements](#132-selection-statements)
-    - [1.32.1. The if Statement](#1321-the-if-statement)
-    - [1.32.2. The if-else Statement](#1322-the-if-else-statement)
-    - [1.32.3. The if-else-if Ladder](#1323-the-if-else-if-ladder)
-    - [1.32.4. Switch-Case Statements](#1324-switch-case-statements)
-    - [1.32.5. `break` Keyword](#1325-break-keyword)
-    - [1.32.6. `default` Keyword](#1326-default-keyword)
-  - [1.33. Looping Statements](#133-looping-statements)
-    - [1.33.1. While Loop](#1331-while-loop)
-    - [1.33.2. Do/While Loop](#1332-dowhile-loop)
-    - [1.33.3. For Loop](#1333-for-loop)
-    - [1.33.4. The For-Each Loop](#1334-the-for-each-loop)
-    - [1.33.5. Nested Loops](#1335-nested-loops)
-  - [1.34. Jump Statements](#134-jump-statements)
-    - [1.34.1. `break` Statement](#1341-break-statement)
-    - [1.34.2. `continue` Statement](#1342-continue-statement)
-    - [1.34.3. `return` Statement](#1343-return-statement)
+    - [1.1.1. Brief History \& Evolution of Java](#111-brief-history--evolution-of-java)
+    - [1.1.2. Java Features](#112-java-features)
+    - [1.1.3. Java Applications](#113-java-applications)
+  - [1.2. Java Environment Setup \& Basic Java Syntax](#12-java-environment-setup--basic-java-syntax)
+    - [1.2.1. Java Components](#121-java-components)
+    - [1.2.2. Setting up Java Development Environment](#122-setting-up-java-development-environment)
+    - [1.2.3. Structure of a Java Program](#123-structure-of-a-java-program)
+      - [1.2.3.1. Class Declaration](#1231-class-declaration)
+      - [1.2.3.2. Main Method](#1232-main-method)
+      - [1.2.3.3. Output in Java](#1233-output-in-java)
+        - [1.2.3.3.1. The `println()` Method](#12331-the-println-method)
+        - [1.2.3.3.2. The `print()` Method](#12332-the-print-method)
+      - [1.2.3.4. Comments](#1234-comments)
+        - [1.2.3.4.1. Single-line Comments](#12341-single-line-comments)
+        - [1.2.3.4.2. Multi-line Comments](#12342-multi-line-comments)
+    - [1.2.4. Compilation and Execution of Java Program](#124-compilation-and-execution-of-java-program)
+    - [1.2.5. Importance of Bytecode \& Garbage Collection](#125-importance-of-bytecode--garbage-collection)
+  - [1.3. Data Types](#13-data-types)
+    - [1.3.1. Primitive Data Types](#131-primitive-data-types)
+    - [1.3.2. Non-Primitive Data Types](#132-non-primitive-data-types)
+    - [1.3.3. Type Conversion and Casting](#133-type-conversion-and-casting)
+      - [1.3.3.1. Implicit Conversion (Widening)](#1331-implicit-conversion-widening)
+      - [1.3.3.2. Explicit Conversion (Narrowing)](#1332-explicit-conversion-narrowing)
+  - [1.4. Identifiers](#14-identifiers)
+    - [1.4.1. Naming Rules \& Conventions](#141-naming-rules--conventions)
+      - [1.4.1.1. Naming Rules](#1411-naming-rules)
+      - [1.4.1.2. Naming Conventions](#1412-naming-conventions)
+    - [1.4.2. Variables](#142-variables)
+    - [1.4.3. Constants (`final` Keyword)](#143-constants-final-keyword)
+    - [1.4.4. Scope of Variables](#144-scope-of-variables)
+  - [1.5. Arrays](#15-arrays)
+    - [1.5.1. One-dimensional Arrays](#151-one-dimensional-arrays)
+    - [1.5.2. Multidimensional Arrays](#152-multidimensional-arrays)
+  - [1.6. Operators](#16-operators)
+    - [1.6.1. Arithmetic Operators](#161-arithmetic-operators)
+    - [1.6.2. Assignment Operators](#162-assignment-operators)
+    - [1.6.3. Relational (Comparison) Operators](#163-relational-comparison-operators)
+    - [1.6.4. Logical Operators](#164-logical-operators)
+    - [1.6.5. Bitwise Operators](#165-bitwise-operators)
+    - [1.6.6. Conditional (Ternary) Operator](#166-conditional-ternary-operator)
+    - [1.6.7. Operator Precedence](#167-operator-precedence)
+  - [1.7. Control Flow Statements](#17-control-flow-statements)
+    - [1.7.1. Selection Statements](#171-selection-statements)
+      - [1.7.1.1. The if Statement](#1711-the-if-statement)
+      - [1.7.1.2. The if-else Statement](#1712-the-if-else-statement)
+      - [1.7.1.3. The if-else-if Ladder](#1713-the-if-else-if-ladder)
+      - [1.7.1.4. Switch-Case Statements](#1714-switch-case-statements)
+        - [1.7.1.4.1. `break` Keyword](#17141-break-keyword)
+        - [1.7.1.4.2. `default` Keyword](#17142-default-keyword)
+    - [1.7.2. Looping Statements](#172-looping-statements)
+      - [1.7.2.1. While Loop](#1721-while-loop)
+      - [1.7.2.2. Do/While Loop](#1722-dowhile-loop)
+      - [1.7.2.3. For Loop](#1723-for-loop)
+      - [1.7.2.4. The For-Each Loop](#1724-the-for-each-loop)
+      - [1.7.2.5. Nested Loops](#1725-nested-loops)
+    - [1.7.3. Jump Statements](#173-jump-statements)
+      - [1.7.3.1. `break` Statement](#1731-break-statement)
+      - [1.7.3.2. `continue` Statement](#1732-continue-statement)
+      - [1.7.3.3. `return` Statement](#1733-return-statement)
 - [2. Unit 2: Object-Oriented Programming](#2-unit-2-object-oriented-programming)
   - [2.1. Procedure-Oriented vs. Object-Oriented Programming](#21-procedure-oriented-vs-object-oriented-programming)
-  - [2.2. Characteristics](#22-characteristics)
-  - [2.3. Differences](#23-differences)
-  - [2.4. OOP Concepts](#24-oop-concepts)
-  - [2.5. Classes and Objects](#25-classes-and-objects)
-  - [2.6. Encapsulation](#26-encapsulation)
-  - [2.7. Abstraction](#27-abstraction)
-  - [2.8. Inheritance](#28-inheritance)
-  - [2.9. Polymorphism](#29-polymorphism)
-  - [2.10. Classes and Objects](#210-classes-and-objects)
-  - [2.11. Creating Classes](#211-creating-classes)
-  - [2.12. Creating Objects](#212-creating-objects)
-    - [2.12.1. Multiple Objects](#2121-multiple-objects)
-    - [2.12.2. Using Multiple Classes](#2122-using-multiple-classes)
-    - [2.12.3. `this` Keyword](#2123-this-keyword)
-  - [2.13. Class Attributes](#213-class-attributes)
-    - [2.13.1. Accessing Attributes](#2131-accessing-attributes)
-    - [2.13.2. Modify Attributes](#2132-modify-attributes)
-    - [2.13.3. Attributes of Multiple Objects](#2133-attributes-of-multiple-objects)
-    - [2.13.4. Multiple Attributes of same Object](#2134-multiple-attributes-of-same-object)
-  - [2.14. Class Methods](#214-class-methods)
-  - [2.15. Create a Method](#215-create-a-method)
-  - [2.16. Call a Method](#216-call-a-method)
-  - [2.17. Method Parameters and Arguments](#217-method-parameters-and-arguments)
-    - [2.17.1. Multiple Parameters](#2171-multiple-parameters)
-  - [2.18. Return Values](#218-return-values)
-  - [2.19. Access Methods With an Object](#219-access-methods-with-an-object)
-  - [2.20. Method Signatures](#220-method-signatures)
-  - [2.21. Passing Arguments](#221-passing-arguments)
-  - [2.22. Returning Values](#222-returning-values)
-  - [2.23. Constructors](#223-constructors)
-  - [2.24. Types of Constructors](#224-types-of-constructors)
-    - [2.24.1. Default Constructors](#2241-default-constructors)
-    - [2.24.2. Parameterized Constructors](#2242-parameterized-constructors)
-    - [2.24.3. Copy Constructors](#2243-copy-constructors)
-  - [2.25. Constructor Overloading](#225-constructor-overloading)
-  - [2.26. Modifiers](#226-modifiers)
-  - [2.27. Access Modifiers](#227-access-modifiers)
-  - [2.28. Non-Access Modifiers](#228-non-access-modifiers)
-    - [2.28.1. `final`](#2281-final)
-    - [2.28.2. `static`](#2282-static)
-    - [2.28.3. `abstract`](#2283-abstract)
-  - [2.29. `String` Class](#229-string-class)
-  - [2.30. Strings - Special Characters](#230-strings---special-characters)
-  - [2.31. Common `String` Methods](#231-common-string-methods)
-  - [2.32. `Scanner` Class (User Input)](#232-scanner-class-user-input)
-  - [2.33. Input Types](#233-input-types)
-  - [2.34. Using `Scanner` Class](#234-using-scanner-class)
-  - [2.35. Command-line Arguments](#235-command-line-arguments)
+    - [2.1.1. Characteristics](#211-characteristics)
+    - [2.1.2. Differences](#212-differences)
+  - [2.2. OOP Concepts](#22-oop-concepts)
+    - [2.2.1. Classes and Objects](#221-classes-and-objects)
+    - [2.2.2. Encapsulation](#222-encapsulation)
+    - [2.2.3. Abstraction](#223-abstraction)
+    - [2.2.4. Inheritance](#224-inheritance)
+    - [2.2.5. Polymorphism](#225-polymorphism)
+  - [2.3. Classes and Objects](#23-classes-and-objects)
+    - [2.3.1. Creating Classes](#231-creating-classes)
+    - [2.3.2. Creating Objects](#232-creating-objects)
+      - [2.3.2.1. Multiple Objects](#2321-multiple-objects)
+      - [2.3.2.2. Using Multiple Classes](#2322-using-multiple-classes)
+      - [2.3.2.3. `this` Keyword](#2323-this-keyword)
+  - [2.4. Class Attributes](#24-class-attributes)
+    - [2.4.1. Accessing Attributes](#241-accessing-attributes)
+    - [2.4.2. Modify Attributes](#242-modify-attributes)
+    - [2.4.3. Attributes of Multiple Objects](#243-attributes-of-multiple-objects)
+    - [2.4.4. Multiple Attributes of same Object](#244-multiple-attributes-of-same-object)
+  - [2.5. Class Methods](#25-class-methods)
+    - [2.5.1. Create a Method](#251-create-a-method)
+    - [2.5.2. Call a Method](#252-call-a-method)
+    - [2.5.3. Method Parameters and Arguments](#253-method-parameters-and-arguments)
+      - [2.5.3.1. Multiple Parameters](#2531-multiple-parameters)
+    - [2.5.4. Return Values](#254-return-values)
+    - [2.5.5. Access Methods With an Object](#255-access-methods-with-an-object)
+    - [2.5.6. Method Signatures](#256-method-signatures)
+    - [2.5.7. Passing Arguments](#257-passing-arguments)
+    - [2.5.8. Returning Values](#258-returning-values)
+  - [2.6. Constructors](#26-constructors)
+    - [2.6.1. Types of Constructors](#261-types-of-constructors)
+      - [2.6.1.1. Default Constructors](#2611-default-constructors)
+      - [2.6.1.2. Parameterized Constructors](#2612-parameterized-constructors)
+      - [2.6.1.3. Copy Constructors](#2613-copy-constructors)
+    - [2.6.2. Constructor Overloading](#262-constructor-overloading)
+  - [2.7. Modifiers](#27-modifiers)
+    - [2.7.1. Access Modifiers](#271-access-modifiers)
+    - [2.7.2. Non-Access Modifiers](#272-non-access-modifiers)
+      - [2.7.2.1. `final`](#2721-final)
+      - [2.7.2.2. `static`](#2722-static)
+      - [2.7.2.3. `abstract`](#2723-abstract)
+  - [2.8. `String` Class](#28-string-class)
+    - [2.8.1. Strings - Special Characters](#281-strings---special-characters)
+    - [2.8.2. Common `String` Methods](#282-common-string-methods)
+  - [2.9. `Scanner` Class (User Input)](#29-scanner-class-user-input)
+    - [2.9.1. Input Types](#291-input-types)
+    - [2.9.2. Using `Scanner` Class](#292-using-scanner-class)
+  - [2.10. Command-line Arguments](#210-command-line-arguments)
 - [3. Unit 3: Inheritance, Packages, and Interfaces](#3-unit-3-inheritance-packages-and-interfaces)
   - [3.1. Inheritance](#31-inheritance)
-  - [3.2. Basics of Inheritance](#32-basics-of-inheritance)
-  - [3.3. Types of Inheritance](#33-types-of-inheritance)
-  - [3.4. `extends` Keyword](#34-extends-keyword)
-  - [3.5. `super` Keyword](#35-super-keyword)
-  - [3.6. Polymorphism](#36-polymorphism)
-  - [3.7. Method Overloading](#37-method-overloading)
-  - [3.8. Method Overriding](#38-method-overriding)
-    - [3.8.1. Overriding Object Class Methods](#381-overriding-object-class-methods)
-  - [3.9. Method Dynamic Dispatch](#39-method-dynamic-dispatch)
-  - [3.10. Interfaces](#310-interfaces)
-  - [3.11. Defining Interfaces](#311-defining-interfaces)
-  - [3.12. Implementing Interfaces](#312-implementing-interfaces)
-  - [3.13. Multiple Inheritance Using Interfaces](#313-multiple-inheritance-using-interfaces)
-  - [3.14. Notes on Interfaces:](#314-notes-on-interfaces)
-  - [3.15. Why And When To Use Interfaces?](#315-why-and-when-to-use-interfaces)
-  - [3.16. Benefits of Interfaces](#316-benefits-of-interfaces)
-  - [3.17. Abstraction](#317-abstraction)
-  - [3.18. Abstract Class](#318-abstract-class)
-  - [3.19. Abstract Method](#319-abstract-method)
-  - [3.20. Differences from Interfaces](#320-differences-from-interfaces)
-  - [3.21. Final Class](#321-final-class)
-  - [3.22. Final Class Syntax](#322-final-class-syntax)
-  - [3.23. Final Method](#323-final-method)
-  - [3.24. Summary](#324-summary)
-  - [3.25. Inner Classes](#325-inner-classes)
-  - [3.26. Private Inner Class](#326-private-inner-class)
-  - [3.27. Static Inner Class](#327-static-inner-class)
-  - [3.28. Access Outer Class From Inner Class](#328-access-outer-class-from-inner-class)
-  - [3.29. Packages \& API](#329-packages--api)
-  - [3.30. Built-in Packages](#330-built-in-packages)
-  - [3.31. Import a Class](#331-import-a-class)
-  - [3.32. Import a Package](#332-import-a-package)
-  - [3.33. User-defined Packages](#333-user-defined-packages)
-  - [3.34. Access Rules: Access Control Within Packages](#334-access-rules-access-control-within-packages)
-  - [3.35. Example: Access Control](#335-example-access-control)
+    - [3.1.1. Basics of Inheritance](#311-basics-of-inheritance)
+    - [3.1.2. Types of Inheritance](#312-types-of-inheritance)
+    - [3.1.3. `extends` Keyword](#313-extends-keyword)
+    - [3.1.4. `super` Keyword](#314-super-keyword)
+    - [3.1.5. Polymorphism](#315-polymorphism)
+      - [3.1.5.1. Method Overloading](#3151-method-overloading)
+      - [3.1.5.2. Method Overriding](#3152-method-overriding)
+        - [3.1.5.2.1. Overriding Object Class Methods](#31521-overriding-object-class-methods)
+    - [3.1.6. Method Dynamic Dispatch](#316-method-dynamic-dispatch)
+  - [3.2. Interfaces](#32-interfaces)
+    - [3.2.1. Defining Interfaces](#321-defining-interfaces)
+    - [3.2.2. Implementing Interfaces](#322-implementing-interfaces)
+    - [3.2.3. Multiple Inheritance Using Interfaces](#323-multiple-inheritance-using-interfaces)
+  - [3.3. Abstraction](#33-abstraction)
+    - [3.3.1. Abstract Class](#331-abstract-class)
+    - [3.3.2. Abstract Method](#332-abstract-method)
+    - [3.3.3. Differences from Interfaces](#333-differences-from-interfaces)
+  - [3.4. Final Class](#34-final-class)
+    - [3.4.1. Final Class Syntax](#341-final-class-syntax)
+    - [3.4.2. Final Method](#342-final-method)
+  - [3.5. Inner Classes](#35-inner-classes)
+    - [3.5.1. Private Inner Class](#351-private-inner-class)
+    - [3.5.2. Static Inner Class](#352-static-inner-class)
+    - [3.5.3. Access Outer Class From Inner Class](#353-access-outer-class-from-inner-class)
+  - [3.6. Packages \& API](#36-packages--api)
+    - [3.6.1. Built-in Packages](#361-built-in-packages)
+    - [3.6.2. Import a Class](#362-import-a-class)
+    - [3.6.3. Import a Package](#363-import-a-package)
+    - [3.6.4. User-defined Packages](#364-user-defined-packages)
+    - [3.6.5. Access Rules: Access Control Within Packages](#365-access-rules-access-control-within-packages)
+    - [3.6.6. Example: Access Control](#366-example-access-control)
 - [4. Unit 4: Exception Handling and Multithreading](#4-unit-4-exception-handling-and-multithreading)
   - [4.1. Exception Handling in Java](#41-exception-handling-in-java)
-  - [4.2. Errors vs. Exceptions](#42-errors-vs-exceptions)
-  - [4.3. Java try and catch](#43-java-try-and-catch)
-  - [4.4. `try-catch-finally` Blocks](#44-try-catch-finally-blocks)
-  - [4.5. Throwing Exceptions](#45-throwing-exceptions)
-  - [4.6. Common Built-in Exceptions](#46-common-built-in-exceptions)
-  - [4.7. Creating Custom Exceptions](#47-creating-custom-exceptions)
-  - [4.8. Benefits of Exception Handling](#48-benefits-of-exception-handling)
-  - [4.9. Multi-threading in Java](#49-multi-threading-in-java)
-  - [4.10. Concepts of Threads and Processes](#410-concepts-of-threads-and-processes)
-  - [4.11. Multi-threading Benefits](#411-multi-threading-benefits)
-  - [4.12. Creating a Thread](#412-creating-a-thread)
-    - [4.12.1. Extend Syntax](#4121-extend-syntax)
-    - [4.12.2. Implement Syntax](#4122-implement-syntax)
-  - [4.13. Running Threads](#413-running-threads)
-    - [4.13.1. Extend Example](#4131-extend-example)
-    - [4.13.2. Implement Example](#4132-implement-example)
-    - [4.13.3. Differences between "extending" and "implementing" Threads](#4133-differences-between-extending-and-implementing-threads)
-  - [4.14. Concurrency Problems](#414-concurrency-problems)
-  - [4.15. Thread Lifecycle](#415-thread-lifecycle)
-  - [4.16. Thread Priority](#416-thread-priority)
-  - [4.17. Thread Exception Handling](#417-thread-exception-handling)
-  - [4.18. Synchronization](#418-synchronization)
-  - [4.19. Summary](#419-summary)
+    - [4.1.1. Errors vs. Exceptions](#411-errors-vs-exceptions)
+    - [4.1.2. Java try and catch](#412-java-try-and-catch)
+    - [4.1.3. `try-catch-finally` Blocks](#413-try-catch-finally-blocks)
+  - [4.2. Throwing Exceptions](#42-throwing-exceptions)
+    - [4.2.1. Common Built-in Exceptions](#421-common-built-in-exceptions)
+    - [4.2.2. Creating Custom Exceptions](#422-creating-custom-exceptions)
+    - [4.2.3. Benefits of Exception Handling](#423-benefits-of-exception-handling)
+  - [4.3. Multi-threading in Java](#43-multi-threading-in-java)
+    - [4.3.1. Concepts of Threads and Processes](#431-concepts-of-threads-and-processes)
+    - [4.3.2. Multi-threading Benefits](#432-multi-threading-benefits)
+    - [4.3.3. Creating a Thread](#433-creating-a-thread)
+      - [4.3.3.1. Extend Syntax](#4331-extend-syntax)
+      - [4.3.3.2. Implement Syntax](#4332-implement-syntax)
+    - [4.3.4. Running Threads](#434-running-threads)
+      - [4.3.4.1. Extend Example](#4341-extend-example)
+      - [4.3.4.2. Implement Example](#4342-implement-example)
+      - [4.3.4.3. Differences between "extending" and "implementing" Threads](#4343-differences-between-extending-and-implementing-threads)
+    - [4.3.5. Concurrency Problems](#435-concurrency-problems)
+    - [4.3.6. Thread Lifecycle](#436-thread-lifecycle)
+    - [4.3.7. Thread Priority](#437-thread-priority)
+    - [4.3.8. Thread Exception Handling](#438-thread-exception-handling)
+    - [4.3.9. Synchronization](#439-synchronization)
 - [5. Unit 5: File Handling and Collections Framework](#5-unit-5-file-handling-and-collections-framework)
-  - [5.1. File Handling in Java](#51-file-handling-in-java)
-  - [5.2. File Handling using `File` Class](#52-file-handling-using-file-class)
-    - [5.2.1. Create a File](#521-create-a-file)
-    - [5.2.2. Write To a File](#522-write-to-a-file)
-    - [5.2.3. Read a File](#523-read-a-file)
-    - [5.2.4. Get File Information](#524-get-file-information)
-    - [5.2.5. Delete a File](#525-delete-a-file)
-    - [5.2.6. Delete a Folder](#526-delete-a-folder)
-  - [5.3. File Handling using `Streams` Class](#53-file-handling-using-streams-class)
-    - [5.3.1. Streams and Stream Classes](#531-streams-and-stream-classes)
-    - [5.3.2. `FileInputStream` and `FileOutputStream`](#532-fileinputstream-and-fileoutputstream)
-    - [5.3.3. `FileOutputStream` to Write to File](#533-fileoutputstream-to-write-to-file)
-    - [5.3.4. `FileInputStream` to Read from a File](#534-fileinputstream-to-read-from-a-file)
-    - [5.3.5. Closing Streams](#535-closing-streams)
-  - [5.4. Summary](#54-summary)
-  - [5.5. Collections Framework in Java](#55-collections-framework-in-java)
-  - [5.6. Overview and Hierarchy](#56-overview-and-hierarchy)
-  - [5.7. `ArrayList`](#57-arraylist)
-    - [5.7.1. Creating an `ArrayList`](#571-creating-an-arraylist)
-    - [5.7.2. Add Items](#572-add-items)
-    - [5.7.3. Access an Item](#573-access-an-item)
-    - [5.7.4. Change an Item](#574-change-an-item)
-    - [5.7.5. Remove an Item](#575-remove-an-item)
-    - [5.7.6. `ArrayList` Size](#576-arraylist-size)
-    - [5.7.7. Loop Through an `ArrayList`](#577-loop-through-an-arraylist)
-    - [5.7.8. Other Types](#578-other-types)
-    - [5.7.9. Sort an ArrayList](#579-sort-an-arraylist)
-  - [5.8. `LinkedList`](#58-linkedlist)
-    - [5.8.1. ArrayList vs. LinkedList](#581-arraylist-vs-linkedlist)
-    - [5.8.2. How the ArrayList works](#582-how-the-arraylist-works)
-    - [5.8.3. How the LinkedList works](#583-how-the-linkedlist-works)
-    - [5.8.4. When To Use](#584-when-to-use)
-    - [5.8.5. LinkedList Methods](#585-linkedlist-methods)
-  - [5.9. `HashMap`](#59-hashmap)
-    - [5.9.1. Add Items](#591-add-items)
-    - [5.9.2. Access an Item](#592-access-an-item)
-    - [5.9.3. Remove an Item](#593-remove-an-item)
-    - [5.9.4. HashMap Size](#594-hashmap-size)
-    - [5.9.5. Loop Through a HashMap](#595-loop-through-a-hashmap)
-    - [5.9.6. Other Types](#596-other-types)
-  - [5.10. `HashSet`](#510-hashset)
-    - [5.10.1. Add Items](#5101-add-items)
-    - [5.10.2. Check If an Item Exists](#5102-check-if-an-item-exists)
-    - [5.10.3. Remove an Item](#5103-remove-an-item)
-    - [5.10.4. HashSet Size](#5104-hashset-size)
-    - [5.10.5. Loop Through a HashSet](#5105-loop-through-a-hashset)
-    - [5.10.6. Other Types](#5106-other-types)
-  - [5.11. Iterator](#511-iterator)
-    - [5.11.1. Getting an Iterator](#5111-getting-an-iterator)
-    - [5.11.2. Looping Through a Collection](#5112-looping-through-a-collection)
-    - [5.11.3. Removing Items from a Collection](#5113-removing-items-from-a-collection)
+  - [5.1. File Handling using `File` Class](#51-file-handling-using-file-class)
+    - [5.1.1. Create a File](#511-create-a-file)
+    - [5.1.2. Write To a File](#512-write-to-a-file)
+    - [5.1.3. Read a File](#513-read-a-file)
+    - [5.1.4. Get File Information](#514-get-file-information)
+    - [5.1.5. Delete a File](#515-delete-a-file)
+    - [5.1.6. Delete a Folder](#516-delete-a-folder)
+  - [5.2. File Handling using `Streams` Class](#52-file-handling-using-streams-class)
+    - [5.2.1. Streams and Stream Classes](#521-streams-and-stream-classes)
+    - [5.2.2. `FileInputStream` and `FileOutputStream`](#522-fileinputstream-and-fileoutputstream)
+    - [5.2.3. `FileOutputStream` to Write to File](#523-fileoutputstream-to-write-to-file)
+    - [5.2.4. `FileInputStream` to Read from a File](#524-fileinputstream-to-read-from-a-file)
+    - [5.2.5. Closing Streams](#525-closing-streams)
+  - [5.3. Collections Framework in Java](#53-collections-framework-in-java)
+    - [5.3.1. Overview and Hierarchy](#531-overview-and-hierarchy)
+    - [5.3.2. `ArrayList`](#532-arraylist)
+      - [5.3.2.1. Creating an `ArrayList`](#5321-creating-an-arraylist)
+      - [5.3.2.2. Add Items](#5322-add-items)
+      - [5.3.2.3. Access an Item](#5323-access-an-item)
+      - [5.3.2.4. Change an Item](#5324-change-an-item)
+      - [5.3.2.5. Remove an Item](#5325-remove-an-item)
+      - [5.3.2.6. `ArrayList` Size](#5326-arraylist-size)
+      - [5.3.2.7. Loop Through an `ArrayList`](#5327-loop-through-an-arraylist)
+      - [5.3.2.8. Other Types](#5328-other-types)
+      - [5.3.2.9. Sort an ArrayList](#5329-sort-an-arraylist)
+    - [5.3.3. `LinkedList`](#533-linkedlist)
+      - [5.3.3.1. ArrayList vs. LinkedList](#5331-arraylist-vs-linkedlist)
+      - [5.3.3.2. How the ArrayList works](#5332-how-the-arraylist-works)
+      - [5.3.3.3. How the LinkedList works](#5333-how-the-linkedlist-works)
+      - [5.3.3.4. When To Use](#5334-when-to-use)
+      - [5.3.3.5. LinkedList Methods](#5335-linkedlist-methods)
+    - [5.3.4. `HashMap`](#534-hashmap)
+      - [5.3.4.1. Add Items](#5341-add-items)
+      - [5.3.4.2. Access an Item](#5342-access-an-item)
+      - [5.3.4.3. Remove an Item](#5343-remove-an-item)
+      - [5.3.4.4. HashMap Size](#5344-hashmap-size)
+      - [5.3.4.5. Loop Through a HashMap](#5345-loop-through-a-hashmap)
+      - [5.3.4.6. Other Types](#5346-other-types)
+    - [5.3.5. `HashSet`](#535-hashset)
+      - [5.3.5.1. Add Items](#5351-add-items)
+      - [5.3.5.2. Check If an Item Exists](#5352-check-if-an-item-exists)
+      - [5.3.5.3. Remove an Item](#5353-remove-an-item)
+      - [5.3.5.4. HashSet Size](#5354-hashset-size)
+      - [5.3.5.5. Loop Through a HashSet](#5355-loop-through-a-hashset)
+      - [5.3.5.6. Other Types](#5356-other-types)
+    - [5.3.6. Iterator](#536-iterator)
+      - [5.3.6.1. Getting an Iterator](#5361-getting-an-iterator)
+      - [5.3.6.2. Looping Through a Collection](#5362-looping-through-a-collection)
+      - [5.3.6.3. Removing Items from a Collection](#5363-removing-items-from-a-collection)
 
 
 # 1. Unit 1: Introduction to Java Programming Language
@@ -256,7 +250,7 @@ header-includes:
 
 Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It was originally developed by James Gosling at Sun Microsystems (which is now a subsidiary of Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform.
 
-## 1.2. Brief History & Evolution of Java
+### 1.1.1. Brief History & Evolution of Java
 
 - **Inception (1991):** Sun Microsystems initiated the Java project under James Gosling, aiming for embedded devices. Java was originally called "Oak".
 - **Public Debut (1995):** Java was unveiled, focusing on web applets and its "Write Once, Run Anywhere" (WORA) philosophy.
@@ -264,7 +258,7 @@ Java is a high-level, class-based, object-oriented programming language that is 
 - **Oracle Acquisition (2010):** Oracle took ownership, driving Java's evolution.
 - **Modern Era:** Java remains a powerhouse, adapting to cloud computing, big data, and modern development paradigms.
 
-## 1.3. Java Features
+### 1.1.2. Java Features
 
 - **Platform Independent**: Java code is compiled into bytecode, which can run on any device equipped with a JVM, enabling the famous principle of "write once, run anywhere" (WORA).
 
@@ -278,7 +272,7 @@ Java is a high-level, class-based, object-oriented programming language that is 
 
 - **High Performance**: While the early versions were criticized for performance, Java has significantly improved with the introduction of Just-In-Time (JIT) compilation and various optimization techniques.
 
-## 1.4. Java Applications
+### 1.1.3. Java Applications
 
 - **Desktop Applications**: Java is used to develop cross-platform desktop applications. Swing and JavaFX are notable APIs for creating rich graphical user interfaces.
 - **Web Applications**: Java is widely used in web development, with technologies such as Servlets, JSPs (JavaServer Pages), and frameworks like Spring and Hibernate facilitating the development of robust web applications.
@@ -290,9 +284,9 @@ Java is a high-level, class-based, object-oriented programming language that is 
 
 Java's versatility, robustness, and widespread adoption have cemented its place as a cornerstone of modern software development, covering a wide array of computing platforms from embedded devices to enterprise servers and supercomputers.
 
-## 1.5. Java Environment Setup & Basic Java Syntax
+## 1.2. Java Environment Setup & Basic Java Syntax
 
-## 1.6. Java Components
+### 1.2.1. Java Components
 
 - **JVM (Java Virtual Machine)**: JVM is an abstract computing machine that enables Java bytecode to be executed on different platforms. It interprets the bytecode into machine-specific instructions.
 
@@ -300,7 +294,7 @@ Java's versatility, robustness, and widespread adoption have cemented its place 
 
 - **JDK (Java Development Kit)**: The essential package for developing Java applications. JDK is a full-featured software development kit that includes JRE, compilers, debuggers, and other tools necessary for developing Java applications.
 
-## 1.7. Setting up Java Development Environment
+### 1.2.2. Setting up Java Development Environment
 
 To set up a Java development environment:
 
@@ -312,7 +306,7 @@ To set up a Java development environment:
 
 4. **Verify Installation**: Open a command prompt or terminal and type `java -version` and `javac -version` to verify that Java and the Java compiler are installed correctly.
 
-## 1.8. Structure of a Java Program
+### 1.2.3. Structure of a Java Program
 
 A basic Java program consists of:
 
@@ -324,11 +318,11 @@ public class MyFirstProgram {
 }
 ```
 
-### 1.8.1. Class Declaration
+#### 1.2.3.1. Class Declaration
 
 Every Java program begins with a class declaration. The class name should match the filename. 
 
-### 1.8.2. Main Method
+#### 1.2.3.2. Main Method
 
 The main method is the entry point of a Java program. It has the following syntax:
 
@@ -343,11 +337,11 @@ public static void main(String[] args) {
 }
 ```
 
-### 1.8.3. Output in Java
+#### 1.2.3.3. Output in Java
 
 Output in Java is typically achieved using the `System.out.println()` method. `System` is a built-in Java class that contains useful members, such as `out`, which is short for "output". 
 
-### 1.8.4. The `println()` Method
+##### 1.2.3.3.1. The `println()` Method
 
 The `println()` method, short for "print line", is used to print a value to the screen (or a file). You should also note that each code statement must end with a semicolon (`;`).
 
@@ -355,7 +349,7 @@ The `println()` method, short for "print line", is used to print a value to the 
 System.out.println("Hello, World!");
 ```
 
-### 1.8.5. The `print()` Method
+##### 1.2.3.3.2. The `print()` Method
 
 There is also a `print()` method, which is similar to `println()`. The only difference is that it does not insert a new line at the end of the output:
 
@@ -374,13 +368,13 @@ System.out.println(3 + 3);
 System.out.println(2 * 5);
 ```
 
-### 1.8.6. Comments
+#### 1.2.3.4. Comments
 
 Java supports single-line (`//`) and multi-line (`/* */`) comments for documenting code.
 
 Comments can be used to explain Java code, and to make it more readable. It can also be used to prevent execution when testing alternative code.
 
-### 1.8.7. Single-line Comments
+##### 1.2.3.4.1. Single-line Comments
 
 Single-line comments start with two forward slashes (`//`). Any text between `//` and the end of the line is ignored by Java (will not be executed). This example uses a single-line comment before a line of code:
 
@@ -395,7 +389,7 @@ This example uses a single-line comment at the end of a line of code:
 System.out.println("Hello World"); // This is a comment
 ```
 
-### 1.8.8. Multi-line Comments
+##### 1.2.3.4.2. Multi-line Comments
 
 Multi-line comments start with `/*` and ends with `*/`. Any text between `/*` and `*/` will be ignored by Java. This example uses a multi-line comment (a comment block) to explain the code:
 
@@ -405,7 +399,7 @@ to the screen, and it is amazing */
 System.out.println("Hello World");
 ```
 
-## 1.9. Compilation and Execution of Java Program
+### 1.2.4. Compilation and Execution of Java Program
 
 To compile and execute a Java program:
 
@@ -423,13 +417,13 @@ To compile and execute a Java program:
    java YourProgram
    ```
 
-## 1.10. Importance of Bytecode & Garbage Collection
+### 1.2.5. Importance of Bytecode & Garbage Collection
 
 - **Bytecode**: Java source code is compiled into bytecode, which is a platform-independent intermediate representation. This bytecode can be executed on any device with a JVM, enabling Java's "write once, run anywhere" capability.
 
 - **Garbage Collection**: Java employs automatic memory management through garbage collection. It automatically deallocates memory occupied by objects that are no longer in use, preventing memory leaks and simplifying memory management for developers. Garbage collection helps ensure memory efficiency and program stability in Java applications.
 
-## 1.11. Data Types
+## 1.3. Data Types
 
 A variable in Java must be a specified data type:
 
@@ -446,7 +440,7 @@ Data types are divided into two groups:
 - Primitive data types - includes `byte`, `short`, `int`, `long`, `float`, `double`, `boolean` and `char`
 - Non-primitive data types - such as `String`, Arrays and Classes.
 
-## 1.12. Primitive Data Types
+### 1.3.1. Primitive Data Types
 
 A primitive data type specifies the size and type of variable values, and it has no additional methods. There are eight primitive data types in Java.
 
@@ -475,7 +469,7 @@ A primitive data type specifies the size and type of variable values, and it has
 - **Boolean:**
   - **`boolean`  (true or false): ** Very often in programming, you will need a data type that can only have one of two values, like: YES / NO, ON / OFF, TRUE / FALSE. For this, Java has a `boolean` data type, which can only take the values `true` or `false`
 
-## 1.13. Non-Primitive Data Types
+### 1.3.2. Non-Primitive Data Types
 
 Non-primitive data types are called **reference types** because they refer to objects. The main difference between **primitive** and **non-primitive** data types are:
 
@@ -486,9 +480,9 @@ Non-primitive data types are called **reference types** because they refer to ob
 
 Examples of non-primitive types are Strings, Arrays, Classes, Interface, etc.
 
-## 1.14. Type Conversion and Casting
+### 1.3.3. Type Conversion and Casting
 
-### 1.14.1. Implicit Conversion (Widening)
+#### 1.3.3.1. Implicit Conversion (Widening)
 
 Java automatically converts smaller data types to larger ones to prevent loss of data. For example, `int` can be implicitly converted to `long`.
 
@@ -506,7 +500,7 @@ public class Main {
 }
 ```
 
-### 1.14.2. Explicit Conversion (Narrowing)
+#### 1.3.3.2. Explicit Conversion (Narrowing)
 
 When converting larger data types to smaller ones, explicit casting is required to avoid loss of data. For example: `int myInt = (int) 3.14;`
 
@@ -524,13 +518,13 @@ public class Main {
 }
 ```
 
-## 1.15. Identifiers
+## 1.4. Identifiers
 
 Identifiers are names given to classes, methods, variables, etc., in Java. They must start with a letter, underscore (_), or dollar sign ($), followed by letters, digits, underscores, or dollar signs.
 
-## 1.16. Naming Rules & Conventions
+### 1.4.1. Naming Rules & Conventions
 
-### 1.16.1. Naming Rules
+#### 1.4.1.1. Naming Rules
 
 - Names can contain letters, digits, underscores, and dollar signs
 
@@ -540,13 +534,13 @@ Identifiers are names given to classes, methods, variables, etc., in Java. They 
 - Names are case-sensitive ("myVar" and "myvar" are different variables)
 - Reserved words (like Java keywords, such as `int` or `boolean`) cannot be used as names
 
-### 1.16.2. Naming Conventions
+#### 1.4.1.2. Naming Conventions
 
 - Class names should start with an uppercase letter and follow CamelCase (e.g., `MyClass`).
 - Variable and method names should start with a lowercase letter and follow camelCase (e.g., `myVariable`, `myMethod`).
 - Constants should be all uppercase with underscores separating words (e.g., `MAX_SIZE`).
 
-## 1.17. Variables
+### 1.4.2. Variables
 
 - **Variable Declaration**: Variables are containers for storing data values. Variables are declared with a data type followed by a name:
   
@@ -576,7 +570,7 @@ Identifiers are names given to classes, methods, variables, etc., in Java. They 
   System.out.println(x + y + z);
   ```
 
-## 1.18. Constants (`final` Keyword)
+### 1.4.3. Constants (`final` Keyword)
 
 If you don't want others (or yourself) to overwrite existing values, use the `final` keyword (this will declare the variable as "final" or "constant", which means unchangeable and read-only):
 
@@ -591,7 +585,7 @@ If you don't want others (or yourself) to overwrite existing values, use the `fi
 
 - By convention, constant names are written in uppercase letters with underscores separating words.
 
-## 1.19. Scope of Variables
+### 1.4.4. Scope of Variables
 
 - **Instance Variables**: Variables declared within a class but outside any method are instance variables. They exist as long as the object they belong to exists.
 
@@ -614,11 +608,11 @@ public class Main {
 
 - **Class Variables (Static Variables)**: Variables declared with the `static` keyword within a class are class variables. They are shared among all instances of the class.
 
-## 1.20. Arrays
+## 1.5. Arrays
 
 An array is a data structure that stores a fixed-size collection of elements of the same data type. Each element is accessed by its index (position) within the array.
 
-## 1.21. One-dimensional Arrays
+### 1.5.1. One-dimensional Arrays
 
 - **Declaration**: To declare a one-dimensional array, specify the type of elements followed by square brackets []:
   
@@ -646,7 +640,7 @@ An array is a data structure that stores a fixed-size collection of elements of 
 
   - Trying to access an element outside the array bounds will result in an `ArrayIndexOutOfBoundsException`.
 
-## 1.22. Multidimensional Arrays
+### 1.5.2. Multidimensional Arrays
 
 - **Declaration**: To declare a two-dimensional array, specify the type of elements followed by two sets of square brackets [][]:
   
@@ -685,7 +679,7 @@ An array is a data structure that stores a fixed-size collection of elements of 
 - Rows and columns in a multidimensional array can have different lengths.
 - Two-dimensional arrays can represent matrices, tables, grids, etc., and are useful for storing and processing structured data in Java.
 
-## 1.23. Operators
+## 1.6. Operators
 
 Operators are used to perform operations on variables and values. In the example below, we use the `+` **operator** to add together two values:
 
@@ -709,7 +703,7 @@ Java divides the operators into the following groups:
 - Logical operators
 - Bitwise operators
 
-## 1.24. Arithmetic Operators
+### 1.6.1. Arithmetic Operators
 
 Arithmetic operators are used to perform mathematical operations.
 
@@ -733,7 +727,7 @@ int quotient = a / b;   // Division
 int remainder = a % b;  // Modulus (remainder)
 ```
 
-## 1.25. Assignment Operators
+### 1.6.2. Assignment Operators
 
 Assignment operators are used to assign values to variables.
 
@@ -756,7 +750,7 @@ int a = 10;
 a += 5; // Equivalent to a = a + 5;
 ```
 
-## 1.26. Relational (Comparison) Operators
+### 1.6.3. Relational (Comparison) Operators
 
 Relational operators are used to establish relationships between two values. This is important in programming, because it helps us to find answers and make decisions. The return value of a comparison is either `true` or `false`. These values are known as *Boolean values*, and you will learn more about them in the Booleans and If..Else topic.
 
@@ -778,7 +772,7 @@ boolean isEqual = a == b;
 boolean notEqual = a != b;
 ```
 
-## 1.27. Logical Operators
+### 1.6.4. Logical Operators
 
 You can also test for `true` or `false` values with logical operators. Logical operators are used to determine the logic between variables or values.
 
@@ -796,7 +790,7 @@ boolean result2 = x || y; // Logical OR
 boolean result3 = !x;     // Logical NOT (negation)
 ```
 
-## 1.28. Bitwise Operators
+### 1.6.5. Bitwise Operators
 
 Bitwise operators perform bitwise operations on integer operands.
 
@@ -811,7 +805,7 @@ int leftShift = a << 1;       // Left shift
 int rightShift = a >> 1;      // Right shift
 ```
 
-## 1.29. Conditional (Ternary) Operator
+### 1.6.6. Conditional (Ternary) Operator
 
 The conditional operator is a ternary operator that evaluates a boolean expression and returns one of two values depending on whether the expression is true or false.
 
@@ -843,7 +837,7 @@ System.out.println(result);
 
 These operators are fundamental in Java for performing various operations and making decisions based on conditions.
 
-## 1.30. Operator Precedence
+### 1.6.7. Operator Precedence
 
 Java follows a specific order for evaluating expressions with multiple operators (similar to mathematical order of operations). You can find a detailed precedence table online.
 
@@ -856,11 +850,11 @@ y++; // Postfix increment, y is now 11
 int result = (2 > 3) ? 10 : 20; // result will be 20
 ```
 
-## 1.31. Control Flow Statements
+## 1.7. Control Flow Statements
 
 Control flow statements in Java are used to control the flow of execution in a program based on certain conditions or loops.
 
-## 1.32. Selection Statements
+### 1.7.1. Selection Statements
 
 Java has the following conditional statements:
 
@@ -869,7 +863,7 @@ Java has the following conditional statements:
 - Use `else if` to specify a new condition to test, if the first condition is false
 - Use `switch` to specify many alternative blocks of code to be executed
 
-### 1.32.1. The if Statement
+#### 1.7.1.1. The if Statement
 
 Use the `if` statement to specify a block of Java code to be executed if a condition is `true`.
 
@@ -903,7 +897,7 @@ if (x > y) {
 
 In the example above we use two variables, **x** and **y**, to test whether x is greater than y (using the `>` operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that "x is greater than y".
 
-### 1.32.2. The if-else Statement
+#### 1.7.1.2. The if-else Statement
 
 Use the `else` statement to specify a block of code to be executed if the condition is `false`.
 
@@ -930,7 +924,7 @@ if (time < 18) {
 
 In the example above, time (20) is greater than 18, so the condition is `false`. Because of this, we move on to the `else` condition and print to the screen "Good evening". If the time was less than 18, the program would print "Good day".
 
-### 1.32.3. The if-else-if Ladder
+#### 1.7.1.3. The if-else-if Ladder
 
 Use the `else if` statement to specify a new condition if the first condition is `false`.
 
@@ -963,7 +957,7 @@ In the example above, time (22) is greater than 10, so the **first condition** i
 
 However, if the time was 14, our program would print "Good day."
 
-### 1.32.4. Switch-Case Statements
+#### 1.7.1.4. Switch-Case Statements
 
 Instead of writing **many** `if..else` statements, you can use the `switch` statement.
 
@@ -1021,11 +1015,11 @@ switch (day) {
 // Outputs "Thursday" (day 4)
 ```
 
-### 1.32.5. `break` Keyword
+##### 1.7.1.4.1. `break` Keyword
 
 When Java reaches a `break` keyword, it breaks out of the switch block.
 
-### 1.32.6. `default` Keyword
+##### 1.7.1.4.2. `default` Keyword
 
 The `default` keyword specifies some code to run if there is no case match:
 
@@ -1047,11 +1041,11 @@ switch (day) {
 
 Note that if the `default` statement is used as the last statement in a switch block, it does not need a break.
 
-## 1.33. Looping Statements
+### 1.7.2. Looping Statements
 
 Loops can execute a block of code as long as a specified condition is reached. Loops are handy because they save time, reduce errors, and they make code more readable.
 
-### 1.33.1. While Loop
+#### 1.7.2.1. While Loop
 
 The `while` loop loops through a block of code as long as a specified condition is `true`:
 
@@ -1074,7 +1068,7 @@ while (i < 5) {
 
 **Note:** Do not forget to increase the variable used in the condition, otherwise the loop will never end!
 
-### 1.33.2. Do/While Loop
+#### 1.7.2.2. Do/While Loop
 
 The `do/while` loop is a variant of the `while` loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
 
@@ -1098,7 +1092,7 @@ while (i < 5);
 
 Do not forget to increase the variable used in the condition, otherwise the loop will never end!
 
-### 1.33.3. For Loop
+#### 1.7.2.3. For Loop
 
 When you know exactly how many times you want to loop through a block of code, use the `for` loop instead of a `while` loop:
 
@@ -1129,7 +1123,7 @@ for (int i = 0; i <= 10; i = i + 2) {
 }
 ```
 
-### 1.33.4. The For-Each Loop
+#### 1.7.2.4. The For-Each Loop
 
 The for-each loop, also known as the enhanced for loop, provides a simple way to iterate over collections and arrays in Java. 
 
@@ -1155,7 +1149,7 @@ for (String language : list) {
 }
 ```
 
-### 1.33.5. Nested Loops
+#### 1.7.2.5. Nested Loops
 
 It is also possible to place a loop inside another loop. This is called a **nested loop**. The "inner loop" will be executed one time for each iteration of the "outer loop":
 
@@ -1171,9 +1165,9 @@ for (int i = 1; i <= 2; i++) {
 } 
 ```
 
-## 1.34. Jump Statements
+### 1.7.3. Jump Statements
 
-### 1.34.1. `break` Statement
+#### 1.7.3.1. `break` Statement
 
 Terminates the loop or switch statement and transfers control to the statement immediately following the loop or switch.
 
@@ -1186,7 +1180,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-### 1.34.2. `continue` Statement
+#### 1.7.3.2. `continue` Statement
 
 The `continue` statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
 
@@ -1199,7 +1193,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-### 1.34.3. `return` Statement
+#### 1.7.3.3. `return` Statement
 
 Exits the current method and returns a value (if applicable) to the caller.
 
@@ -1215,7 +1209,7 @@ These control flow statements provide essential mechanisms for directing the flo
 
 ## 2.1. Procedure-Oriented vs. Object-Oriented Programming
 
-## 2.2. Characteristics
+### 2.1.1. Characteristics
 
 **Procedure-Oriented Programming (POP)**:
 
@@ -1235,7 +1229,7 @@ These control flow statements provide essential mechanisms for directing the flo
 5. **Bottom-Up Approach**: Often follows a bottom-up approach, where objects are identified and modeled to represent real-world entities.
 6. **Examples:** Java, Python, C++, C#
 
-## 2.3. Differences
+### 2.1.2. Differences
 
 | Characteristic    | Procedure-Oriented                            | Object-Oriented                                              |
 | ----------------- | --------------------------------------------- | ------------------------------------------------------------ |
@@ -1249,11 +1243,11 @@ These control flow statements provide essential mechanisms for directing the flo
 
 In summary, while POP emphasizes procedures and functions, OOP revolves around objects and their interactions, offering better encapsulation, code reusability, and maintainability for complex software systems. The choice between them often depends on the nature and scale of the project, as well as the preferences of the development team.
 
-## 2.4. OOP Concepts
+## 2.2. OOP Concepts
 
 Object-Oriented Programming (OOP) is a programming paradigm that revolves around the concept of objects, which encapsulate data and behavior. OOP provides several key concepts to facilitate modular and organized software design.
 
-## 2.5. Classes and Objects
+### 2.2.1. Classes and Objects
 
 - **Class**: A class is a blueprint for creating objects. It defines the properties (attributes) and behaviors (methods) that objects of the class will have.
   
@@ -1281,7 +1275,7 @@ Object-Oriented Programming (OOP) is a programming paradigm that revolves around
   myCar.accelerate();
   ```
 
-## 2.6. Encapsulation
+### 2.2.2. Encapsulation
 
 - **Bundling:** Combining data (attributes) and code (methods) that operates on that data within a single unit (class).
 - **Protection:**  Controlling the visibility of data members using access modifiers (public, private, protected) to protect data integrity and hide implementation details.
@@ -1304,7 +1298,7 @@ public class BankAccount {
 }
 ```
 
-## 2.7. Abstraction
+### 2.2.3. Abstraction
 
 Abstraction refers to the process of hiding the implementation details of a class and showing only the essential features to the outside world. It focuses on what an object does rather than how it does it.
 
@@ -1331,7 +1325,7 @@ class Rectangle implements Shape {
 }
 ```
 
-## 2.8. Inheritance
+### 2.2.4. Inheritance
 
 Inheritance is a mechanism in which a new class (derived class or subclass) inherits properties and behaviors from an existing class (base class or superclass). It promotes code reuse and establishes a hierarchical relationship between classes.
 
@@ -1355,7 +1349,7 @@ class Dog extends Animal {
 }
 ```
 
-## 2.9. Polymorphism
+### 2.2.5. Polymorphism
 
 Polymorphism allows objects to be treated as instances of their superclass or as instances of their subclass. It enables flexibility and dynamic behaviour in the program.
 
@@ -1387,9 +1381,9 @@ class Cat extends Animal {
 
 These OOP concepts form the foundation of object-oriented design and programming. They enable developers to create modular, maintainable, and scalable software systems by modeling real-world entities and interactions in a structured and organized manner.
 
-## 2.10. Classes and Objects
+## 2.3. Classes and Objects
 
-## 2.11. Creating Classes
+### 2.3.1. Creating Classes
 
 In Java, a class is a blueprint for creating objects. It defines the structure and behavior of objects of that type.
 
@@ -1439,7 +1433,7 @@ public class Car { // 'public' allows access from anywhere
 }
 ```
 
-## 2.12. Creating Objects
+### 2.3.2. Creating Objects
 
 In Java, an object is created from a class. Objects are instances of classes. They are created using the `new` keyword followed by the class constructor
 
@@ -1457,7 +1451,7 @@ public class Main {
  
 ```
 
-### 2.12.1. Multiple Objects
+#### 2.3.2.1. Multiple Objects
 
 You can create multiple objects of one class:
 
@@ -1476,7 +1470,7 @@ public class Main {
 }
 ```
 
-### 2.12.2. Using Multiple Classes
+#### 2.3.2.2. Using Multiple Classes
 
 You can also create an object of a class and access it in another class. This is often used for better organization of classes (one class has all the attributes and methods, while the other class holds the `main()` method (code to be executed)).
 
@@ -1502,7 +1496,7 @@ class Second {
 }
 ```
 
-### 2.12.3. `this` Keyword
+#### 2.3.2.3. `this` Keyword
 
 Inside a method or constructor, `this` refers to the current object. It is used to differentiate between instance variables and local variables with the same name.
 
@@ -1516,7 +1510,7 @@ public class Person {
 }
 ```
 
-## 2.13. Class Attributes
+## 2.4. Class Attributes
 
 Attributes are variables that define the state of objects. They represent the data associated with objects of the class.
 
@@ -1531,7 +1525,7 @@ public class Main {
 
 Another term for class attributes is **fields**.
 
-### 2.13.1. Accessing Attributes
+### 2.4.1. Accessing Attributes
 
 You can access attributes by creating an object of the class, and by using the dot syntax (`.`):
 
@@ -1550,7 +1544,7 @@ public class Main {
 }
 ```
 
-### 2.13.2. Modify Attributes
+### 2.4.2. Modify Attributes
 
 You can also modify attribute values: Set the value of `x` to 40:
 
@@ -1598,7 +1592,7 @@ public class Main {
 
 The `final` keyword is useful when you want a variable to always store the same value, like PI (3.14159...).
 
-### 2.13.3. Attributes of Multiple Objects
+### 2.4.3. Attributes of Multiple Objects
 
 If you create multiple objects of one class, you can change the attribute values in one object, without affecting the attribute values in the other: Change the value of `x` to 25 in `myObj2`, and leave `x` in `myObj1` unchanged:
 
@@ -1616,7 +1610,7 @@ public class Main {
 }
 ```
 
-### 2.13.4. Multiple Attributes of same Object
+### 2.4.4. Multiple Attributes of same Object
 
 You can specify as many attributes as you want:
 
@@ -1648,8 +1642,7 @@ public class Main {
   }
   ```
 
-
-## 2.14. Class Methods
+## 2.5. Class Methods
 
 - A **method** is a block of code which only runs when it is called.
 
@@ -1659,7 +1652,7 @@ public class Main {
 
 - Why use methods? To reuse code: define the code once, and use it many times.
 
-## 2.15. Create a Method
+### 2.5.1. Create a Method
 
 A method must be declared within a class. It is defined with the name of the method, followed by parentheses **()**. Java provides some pre-defined methods, such as `System.out.println()`, but you can also create your own methods to perform certain actions:
 
@@ -1677,7 +1670,7 @@ public class Main {
 - `static` means that the method belongs to the Main class and not an object of the Main class. You will learn more about objects and how to access methods through objects later here.
 - `void` means that this method does not have a return value. You will learn more about return values later here
 
-## 2.16. Call a Method
+### 2.5.2. Call a Method
 
 To call a method in Java, write the method's name followed by two parentheses **()** and a semicolon**;**
 
@@ -1719,7 +1712,7 @@ public class Main {
 // I just got executed! 
 ```
 
-## 2.17. Method Parameters and Arguments
+### 2.5.3. Method Parameters and Arguments
 
 Information can be passed to methods as parameter. Parameters act as variables inside the method.
 
@@ -1746,7 +1739,7 @@ public class Main {
 
 When a **parameter** is passed to the method, it is called an **argument**. So, from the example above: `fname` is a **parameter**, while `Liam`, `Jenny` and `Anja` are **arguments**.
 
-### 2.17.1. Multiple Parameters
+#### 2.5.3.1. Multiple Parameters
 
 You can have as many parameters as you like:
 
@@ -1770,7 +1763,7 @@ public class Main {
 
 Note that when you are working with multiple parameters, the method call must have the same number of arguments as there are parameters, and the arguments must be passed in the same order.
 
-## 2.18. Return Values
+### 2.5.4. Return Values
 
 The `void` keyword, used in the examples above, indicates that the method should not return a value. If you want the method to return a value, you can use a primitive data type (such as `int`, `char`, etc.) instead of `void`, and use the `return` keyword inside the method:
 
@@ -1819,7 +1812,7 @@ public class Main {
 // Outputs 8 (5 + 3)
 ```
 
-## 2.19. Access Methods With an Object
+### 2.5.5. Access Methods With an Object
 
 Create a Car object named `myCar`. Call the `fullThrottle()` and `speed()` methods on the `myCar` object, and run the program:
 
@@ -1849,7 +1842,7 @@ public class Main {
 // Max speed is: 200
 ```
 
-## 2.20. Method Signatures
+### 2.5.6. Method Signatures
 
 A method signature consists of the method name and the parameter list (type and order of parameters). The return type may also be considered part of the method signature, but it's not required for method overloading.
 
@@ -1865,7 +1858,7 @@ public void methodName(int parameter1, String parameter2) {
 }
 ```
 
-## 2.21. Passing Arguments
+### 2.5.7. Passing Arguments
 
 - **Passing by Value**: Primitive data types are passed by value, meaning a copy of the value is passed to the method. Changes to the parameter inside the method do not affect the original value.
 
@@ -1883,7 +1876,7 @@ public void methodName(int parameter1, String parameter2) {
   }
   ```
 
-## 2.22. Returning Values
+### 2.5.8. Returning Values
 
 Methods can return values using the `return` statement.
 
@@ -1899,7 +1892,7 @@ public int add(int a, int b) {
 
 These concepts help in organizing code, improving code reusability, and managing resources effectively in Java programs.
 
-## 2.23. Constructors
+## 2.6. Constructors
 
 A constructor in Java is a **special method** that is used to initialize objects. The constructor is called when an object of a class is created. It can be used to set initial values for object attributes
 
@@ -1926,14 +1919,14 @@ public class Main {
 
 All classes have constructors by default: if you do not create a class constructor yourself, Java creates one for you. However, then you are not able to set initial values for object attributes.
 
-## 2.24. Types of Constructors
+### 2.6.1. Types of Constructors
 
-### 2.24.1. Default Constructors
+#### 2.6.1.1. Default Constructors
 
 - If you don't define a constructor, Java provides a no-argument default constructor.
 - It typically initializes members to their default values (e.g., 0 for numbers, null for objects).
 
-### 2.24.2. Parameterized Constructors
+#### 2.6.1.2. Parameterized Constructors
 
 Parameterized constructors allow initialisation of object attributes with specific values passed as arguments during object creation. Used to provide flexibility when creating objects.
 
@@ -1950,7 +1943,7 @@ public class Student {
 }
 ```
 
-### 2.24.3. Copy Constructors
+#### 2.6.1.3. Copy Constructors
 
 A copy constructor creates a new object by copying the attributes of an existing object. It takes an object of the same class as a parameter.
 
@@ -1966,7 +1959,7 @@ public class Student {
 }
 ```
 
-## 2.25. Constructor Overloading
+### 2.6.2. Constructor Overloading
 
 Constructor overloading allows a class to have multiple constructors with different parameter lists. Java differentiates between constructors based on the number and types of parameters.
 
@@ -1995,14 +1988,14 @@ In the example above, `MyClass` has three constructors: a default constructor, a
 
 Constructors are essential for initializing objects and setting up their initial state. They provide flexibility in object creation and initialization in Java.
 
-## 2.26. Modifiers
+## 2.7. Modifiers
 
 We divide modifiers into two groups:
 
 - **Access Modifiers** - controls the access level
 - **Non-Access Modifiers** - do not control access level, but provides other functionality
 
-## 2.27. Access Modifiers
+### 2.7.1. Access Modifiers
 
 Access modifiers control the visibility of classes, attributes, methods, and constructors.
 
@@ -2049,7 +2042,7 @@ public class MyClass {
 }
 ```
 
-## 2.28. Non-Access Modifiers
+### 2.7.2. Non-Access Modifiers
 
 For **classes**, you can use either `final` or `abstract`:
 
@@ -2069,7 +2062,7 @@ For **attributes and methods**, you can use the one of the following:
 | `synchronized` | Methods can only be accessed by one thread at a time         |
 | `volatile`     | The value of an attribute is not cached thread-locally, and is always read from the "main memory" |
 
-### 2.28.1. `final`
+#### 2.7.2.1. `final`
 
 If you don't want the ability to override existing attribute values, declare attributes as `final`:
 
@@ -2087,7 +2080,7 @@ public class Main {
 } 
 ```
 
-### 2.28.2. `static`
+#### 2.7.2.2. `static`
 
 The `static` keyword is used to create class-level variables and methods. These belong to the class rather than to individual objects of the class. They can be accessed without creating an instance of the class.
 
@@ -2161,7 +2154,7 @@ MyClass.printMessage();
 
 Static variables and methods are shared among all instances of the class and can be accessed directly from the class itself.
 
-### 2.28.3. `abstract`
+#### 2.7.2.3. `abstract`
 
 An `abstract` method belongs to an `abstract` class, and it does not have a body. The body is provided by the subclass:
 
@@ -2195,7 +2188,7 @@ class Second {
 }
 ```
 
-## 2.29. `String` Class
+## 2.8. `String` Class
 
 - In Java, strings are treated as objects of the `String` class. This class provides numerous methods for manipulating and working with strings.
 - **Immutability:**  It's important to remember that `String` objects in Java are immutable. Once a String is created, its contents cannot be changed.
@@ -2204,7 +2197,7 @@ class Second {
 String str = "Hello, World!";
 ```
 
-## 2.30. Strings - Special Characters
+### 2.8.1. Strings - Special Characters
 
 Because strings must be written within quotes, Java will misunderstand this string, and generate an error:
 
@@ -2248,7 +2241,7 @@ Other common escape sequences that are valid in Java are:
 | \b   | Backspace       |
 | \\f   | Form Feed       |
 
-## 2.31. Common `String` Methods
+### 2.8.2. Common `String` Methods
 
 - **String Concatenation:** The `+` operator can be used between strings to combine them. This is called **concatenation**:
 
@@ -2336,11 +2329,11 @@ These are some of the commonly used methods provided by the `String` class in Ja
   - `==` in the case of strings compares object references, not always the content.
 - **StringBuilder:** For frequent modifications, look into the `StringBuilder` class, which is mutable and may be more efficient.
 
-## 2.32. `Scanner` Class (User Input)
+## 2.9. `Scanner` Class (User Input)
 
 In Java, the `Scanner` class is commonly used to read user input from the console. It provides various methods to read different types of input, such as integers, floating-point numbers, and strings.
 
-## 2.33. Input Types
+### 2.9.1. Input Types
 
 In the example above, we used the `nextLine()` method, which is used to read Strings. To read other types, look at the table below:
 
@@ -2355,7 +2348,7 @@ In the example above, we used the `nextLine()` method, which is used to read Str
 | `nextLong()`    | Reads a `long` value from the user    |
 | `nextShort()`   | Reads a `short` value from the user   |
 
-## 2.34. Using `Scanner` Class
+### 2.9.2. Using `Scanner` Class
 
 1. **Import `Scanner` class**: First, import the `Scanner` class from the `java.util` package.
 
@@ -2415,7 +2408,7 @@ class Main {
 
 **Note:** If you enter wrong input (e.g. text in a numerical input), you will get an exception/error message (like "`InputMismatchException`").
 
-## 2.35. Command-line Arguments
+## 2.10. Command-line Arguments
 
 Java programs can also accept command-line arguments, which are passed to the `main` method when the program is executed from the command line.
 
@@ -2453,7 +2446,7 @@ Command-line arguments are useful for passing information to a Java program when
 
 Inheritance is a key concept in object-oriented programming (OOP) that allows a class to inherit properties and behavior from another class. It promotes code reuse and establishes a hierarchical relationship between classes.
 
-## 3.2. Basics of Inheritance
+### 3.1.1. Basics of Inheritance
 
 - **Base Class (Superclass)**: The class whose properties and behavior are inherited by another class is called the base class or superclass.
 
@@ -2473,7 +2466,7 @@ Inheritance is a key concept in object-oriented programming (OOP) that allows a 
   }
   ```
 
-## 3.3. Types of Inheritance
+### 3.1.2. Types of Inheritance
 
 1. **Single Inheritance:** A subclass inherits from only one superclass.
 
@@ -2502,7 +2495,7 @@ Inheritance is a key concept in object-oriented programming (OOP) that allows a 
 
 5. **Hybrid Inheritance:**  A combination of multiple inheritance types. This can get complex, and Java doesn't directly support all variations.
 
-## 3.4. `extends` Keyword
+### 3.1.3. `extends` Keyword
 
 The `extends` keyword is used to establish an inheritance relationship between classes in Java.
 
@@ -2512,7 +2505,7 @@ class Subclass extends Superclass {
 }
 ```
 
-## 3.5. `super` Keyword
+### 3.1.4. `super` Keyword
 
 The `super` keyword is used to refer to the superclass or call superclass constructors and methods from the subclass.
 
@@ -2540,7 +2533,7 @@ The `super` keyword is used to refer to the superclass or call superclass constr
 
 In summary, inheritance allows classes to inherit properties and behavior from other classes, promoting code reuse and establishing a hierarchical relationship between classes. Java supports various types of inheritance, and the `extends` and `super` keywords are used to implement and work with inheritance in Java programs.
 
-## 3.6. Polymorphism
+### 3.1.5. Polymorphism
 
 The word "polymorphism" means "many forms." In Java, it refers to the ability of objects to behave differently depending on their specific type, enabling us to write more flexible and reusable code.
 
@@ -2605,7 +2598,7 @@ class Main {
 }
 ```
 
-## 3.7. Method Overloading
+#### 3.1.5.1. Method Overloading
 
 Method overloading allows a class to have multiple methods with the same name but different parameter lists. The methods must have different parameter types or a different number of parameters.
 
@@ -2624,7 +2617,7 @@ class Calculator {
 }
 ```
 
-## 3.8. Method Overriding
+#### 3.1.5.2. Method Overriding
 
 Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The method signature (name and parameters) must be the same.
 
@@ -2647,7 +2640,7 @@ class Dog extends Animal {
 }
 ```
 
-### 3.8.1. Overriding Object Class Methods
+##### 3.1.5.2.1. Overriding Object Class Methods
 
 Java provides a set of methods in the `Object` class that can be overridden in subclasses to provide custom behavior. Commonly overridden methods include:
 
@@ -2675,7 +2668,7 @@ class Student {
 }
 ```
 
-## 3.9. Method Dynamic Dispatch
+### 3.1.6. Method Dynamic Dispatch
 
 Method dynamic dispatch (or dynamic method dispatch) is the process by which the correct version of a method is invoked at runtime, based on the actual type of the object.
 
@@ -2688,14 +2681,14 @@ In the example above, even though the reference `animal` is of type `Animal`, th
 
 Polymorphism, achieved through method overloading, overriding, and dynamic dispatch, allows for flexible and reusable code by enabling objects of different types to be treated uniformly.
 
-## 3.10. Interfaces
+## 3.2. Interfaces
 
 - An interface is like a contract. It defines a set of methods that a class must implement, ensuring certain behaviors are guaranteed by the class.
 - **Abstract:** Interfaces cannot be instantiated directly. They are used to achieve abstraction and provide a way to achieve multiple inheritance in Java through interface implementation.
 - **Methods without Bodies:** Methods in an interface are by default abstract (without a body).
 - **`implements` Keyword:** Classes implement interfaces using the `implements` keyword.
 
-## 3.11. Defining Interfaces
+### 3.2.1. Defining Interfaces
 
 An interface is declared using the `interface` keyword followed by the interface name and a list of method signatures (without method bodies).
 
@@ -2706,7 +2699,7 @@ interface Shape {
 }
 ```
 
-## 3.12. Implementing Interfaces
+### 3.2.2. Implementing Interfaces
 
 To implement an interface, a class uses the `implements` keyword followed by the interface name. The class must provide implementations for all the methods declared in the interface.
 
@@ -2728,7 +2721,7 @@ class Circle implements Shape {
 }
 ```
 
-## 3.13. Multiple Inheritance Using Interfaces
+### 3.2.3. Multiple Inheritance Using Interfaces
 
 Java supports multiple inheritance through interfaces, as a class can implement multiple interfaces. This allows a class to inherit from multiple sources, providing flexibility in code design.
 
@@ -2758,7 +2751,7 @@ class Rectangle implements Drawable, Colorable {
 
 In the example above, the `Rectangle` class implements both the `Drawable` and `Colorable` interfaces, allowing it to provide implementations for methods defined in both interfaces.
 
-## 3.14. Notes on Interfaces:
+**Notes on Interfaces:**
 
 - Like **abstract classes**, interfaces **cannot** be used to create objects (in the example above, it is not possible to create an "Animal" object in the MyMainClass)
 - Interface methods do not have a body - the body is provided by the "implement" class
@@ -2767,12 +2760,12 @@ In the example above, the `Rectangle` class implements both the `Drawable` and `
 - Interface attributes are by default `public`, `static` and `final`
 - An interface cannot contain a constructor (as it cannot be used to create objects)
 
-## 3.15. Why And When To Use Interfaces?
+**Why And When To Use Interfaces?**
 
 1) To achieve security - hide certain details and only show the important details of an object (interface).
 2) Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can **implement** multiple interfaces. **Note:** To implement multiple interfaces, separate them with a comma (see example below).
 
-## 3.16. Benefits of Interfaces
+**Benefits of Interfaces:**
 
 - **Polymorphism:** You can treat objects of different classes that implement the same interface uniformly.
 - **Multiple Inheritance (via Interfaces):** A class can implement multiple interfaces, overcoming Java's restriction on direct multiple inheritance of classes.
@@ -2781,7 +2774,7 @@ In the example above, the `Rectangle` class implements both the `Drawable` and `
 
 Interfaces provide a way to achieve abstraction, decoupling the definition of methods from their implementation. They also enable code reuse and multiple inheritance, making Java programs more flexible and maintainable.
 
-## 3.17. Abstraction
+## 3.3. Abstraction
 
 Data **abstraction** is the process of hiding certain details and showing only essential information to the user.
 Abstraction can be achieved with either **abstract classes** or **interfaces** (which you will learn more about in the next topic).
@@ -2819,7 +2812,7 @@ class Main {
 }
 ```
 
-## 3.18. Abstract Class
+### 3.3.1. Abstract Class
 
 An abstract class in Java is a class that cannot be instantiated directly and may contain abstract methods, which are declared but not implemented in the abstract class itself. Abstract classes are used to define a common interface for a group of subclasses while allowing subclasses to provide specific implementations for abstract methods.
 
@@ -2838,7 +2831,7 @@ abstract class Shape {
 }
 ```
 
-## 3.19. Abstract Method
+### 3.3.2. Abstract Method
 
 An abstract method is declared using the `abstract` keyword and does not have an implementation in the abstract class. Subclasses must provide implementations for all abstract methods.
 
@@ -2862,7 +2855,7 @@ abstract class Vehicle {
 }
 ```
 
-## 3.20. Differences from Interfaces
+### 3.3.3. Differences from Interfaces
 
 | Feature              | Interface                                 | Abstract Class                                       |
 | -------------------- | ----------------------------------------- | ---------------------------------------------------- |
@@ -2877,7 +2870,7 @@ abstract class Vehicle {
 - Default implementations exist for some behaviors.
 - You want to enforce a certain structure on your class hierarchy.
 
-## 3.21. Final Class
+## 3.4. Final Class
 
 - **Definition:** A class declared `final` cannot have any subclasses. It's like the end of an inheritance chain.
 - Use Cases:
@@ -2887,7 +2880,7 @@ abstract class Vehicle {
 
 Final classes are typically used when a class should not be extended or when all its methods are already implemented and should not be overridden.
 
-## 3.22. Final Class Syntax
+### 3.4.1. Final Class Syntax
 
 A final class is declared using the `final` keyword.
 
@@ -2897,7 +2890,7 @@ final class FinalClass {
 }
 ```
 
-## 3.23. Final Method
+### 3.4.2. Final Method
 
 In addition to final classes, individual methods can also be marked as final. A final method cannot be overridden by subclasses.
 
@@ -2916,14 +2909,14 @@ class Child extends Parent {
 }
 ```
 
-## 3.24. Summary
+**Summary**
 
 - Abstract classes provide a way to define a common interface for a group of subclasses and allow for both abstract and non-abstract methods.
 - Final classes cannot be subclassed, and final methods cannot be overridden.
 - Abstract classes are used when a class should not be instantiated directly, while final classes are used when a class should not be extended.
 - You cannot have a class that is both `abstract` and `final`. They represent opposite concepts in terms of inheritance.
 
-## 3.25. Inner Classes
+## 3.5. Inner Classes
 
 In Java, it is also possible to nest classes (a class within a class). The purpose of nested classes is to group classes that belong together, which makes your code more readable and maintainable.
 
@@ -2949,7 +2942,7 @@ public class Main {
 // Outputs 15 (5 + 10) 
 ```
 
-## 3.26. Private Inner Class
+### 3.5.1. Private Inner Class
 
 Unlike a "regular" class, an inner class can be `private` or `protected`. If you don't want outside objects to access the inner class, declare the class as `private`:
 
@@ -2977,7 +2970,7 @@ If you try to access a private inner class from an outside class, an error occur
 Main.java:13: error: OuterClass.InnerClass has private access in OuterClass  OuterClass.InnerClass myInner = myOuter.new InnerClass();       ^
 ```
 
-## 3.27. Static Inner Class
+### 3.5.2. Static Inner Class
 
 An inner class can also be `static`, which means that you can access it without creating an object of the outer class:
 
@@ -3002,7 +2995,7 @@ public class Main {
 
 **Note:** just like `static` attributes and methods, a `static` inner class does not have access to members of the outer class.
 
-## 3.28. Access Outer Class From Inner Class
+### 3.5.3. Access Outer Class From Inner Class
 
 One advantage of inner classes, is that they can access attributes and methods of the outer class:
 
@@ -3028,7 +3021,7 @@ public class Main {
 // Outputs 10
 ```
 
-## 3.29. Packages & API
+## 3.6. Packages & API
 
 A package in Java is used to group related classes. Think of it as **a folder in a file directory**. We use packages to avoid name conflicts, and to write a better maintainable code. 
 
@@ -3045,7 +3038,7 @@ Packages are divided into two categories:
 - Built-in Packages (packages from the Java API)
 - User-defined Packages (create your own packages)
 
-## 3.30. Built-in Packages
+### 3.6.1. Built-in Packages
 
 The Java API is a library of prewritten classes, that are free to use, included in the Java Development Environment.
 
@@ -3066,7 +3059,7 @@ import package.name.Class;   // Import a single class
 import package.name.*;   // Import the whole package
 ```
 
-## 3.31. Import a Class
+### 3.6.2. Import a Class
 
 If you find a class you want to use, for example, the `Scanner` class, **which is used to get user input**, write the following code:
 
@@ -3094,7 +3087,7 @@ class MyClass {
 }
 ```
 
-## 3.32. Import a Package
+### 3.6.3. Import a Package
 
 There are many packages to choose from. In the previous example, we used the `Scanner` class from the `java.util` package. This package also contains date and time facilities, random-number generator and other utility classes.
 
@@ -3104,7 +3097,7 @@ To import a whole package, end the sentence with an asterisk sign (`*`). The fol
 import java.util.*;
 ```
 
-## 3.33. User-defined Packages
+### 3.6.4. User-defined Packages
 
 To create a package, you use the `package` keyword at the top of your Java source file. Each file can only declare one package, and all types (classes, interfaces, enums) declared in the file will belong to that package.
 
@@ -3132,7 +3125,7 @@ The `-d` keyword specifies the destination for where to save the class file. You
 
 When we compiled the package in the example above, a new folder was created, called "mypack".
 
-## 3.34. Access Rules: Access Control Within Packages
+### 3.6.5. Access Rules: Access Control Within Packages
 
 Java uses access modifiers to control access levels for classes, constructors, methods, and variables. The access levels impact how members can be accessed from within their own package and from other packages.
 
@@ -3148,7 +3141,7 @@ Java uses access modifiers to control access levels for classes, constructors, m
 - **`default` (no modifier)**: The member is accessible only within its own package. If no access modifier is specified, the default access level is applied.
 - **`private`**: The member is accessible only within its own class.
 
-## 3.35. Example: Access Control
+### 3.6.6. Example: Access Control
 
 ```java
 package packageOne;
@@ -3171,12 +3164,12 @@ Packages and access modifiers together provide a robust mechanism for encapsulat
 
 Exception handling in Java is a powerful mechanism that handles runtime errors to maintain normal application flow. An exception is an event that disrupts the normal flow of the program's instructions.
 
-## 4.2. Errors vs. Exceptions
+### 4.1.1. Errors vs. Exceptions
 
 - **Errors**: Indicate serious problems that a reasonable application should not try to catch. Most errors are abnormal conditions. Examples include `OutOfMemoryError` and `StackOverflowError`.
 - **Exceptions**: Are conditions that a reasonable application might want to catch. Exceptions are divided into two categories: checked exceptions (those that must be caught or declared to be thrown) and unchecked exceptions (those that don't need to be explicitly caught or declared thrown).
 
-## 4.3. Java try and catch
+### 4.1.2. Java try and catch
 
 The `try` statement allows you to define a block of code to be tested for errors while it is being executed.
 
@@ -3235,7 +3228,7 @@ The output will be:
 Something went wrong.
 ```
 
-## 4.4. `try-catch-finally` Blocks
+### 4.1.3. `try-catch-finally` Blocks
 
 - **try block**: Contains code that might throw an exception.
 - **catch block**: Catches and handles the exception thrown by the try block.
@@ -3265,7 +3258,7 @@ try {
 }
 ```
 
-## 4.5. Throwing Exceptions
+## 4.2. Throwing Exceptions
 
 - **throw keyword**: Used within a method to throw an exception. Either the method must handle the exception using a try-catch block, or it must be declared to throw the exception using the `throws` keyword in the method signature.
 - **throws keyword**: Indicates that a method may throw one or more exceptions. The calling method must handle these exceptions.
@@ -3278,7 +3271,7 @@ public void myMethod() throws MyException {
 
 The `throw` statement is used together with an **exception type**. There are many exception types available in Java: `ArithmeticException`, `FileNotFoundException`, `ArrayIndexOutOfBoundsException`, `SecurityException`, etc.
 
-## 4.6. Common Built-in Exceptions
+### 4.2.1. Common Built-in Exceptions
 
 - `ArithmeticException`: Thrown for issues like division by zero.
 - `NullPointerException`: Attempting to access or modify a null object reference.
@@ -3326,7 +3319,7 @@ The output will be:
 Access granted - You are old enough!
 ```
 
-## 4.7. Creating Custom Exceptions
+### 4.2.2. Creating Custom Exceptions
 
 You can create custom exceptions by extending the `Exception` class (for checked exceptions) or the `RuntimeException` class (for unchecked exceptions).
 
@@ -3340,34 +3333,34 @@ class MyCustomException extends Exception {
 
 Custom exceptions allow you to create specific error types for your application, improving readability and maintainability.
 
-## 4.8. Benefits of Exception Handling
+### 4.2.3. Benefits of Exception Handling
 
 - **Separation of Error-handling Code:** Improves readability and maintainability.
 - **Graceful Recovery:** Allows your program to recover from errors instead of crashing.
 - **Propagation:** Exceptions can bubble up the call stack if not handled locally.
 
-## 4.9. Multi-threading in Java
+## 4.3. Multi-threading in Java
 
 Multi-threading in Java allows concurrent execution of multiple threads within a single process, enabling better utilization of CPU resources and improved application responsiveness. Here's an overview of key concepts and features:
 
-## 4.10. Concepts of Threads and Processes
+### 4.3.1. Concepts of Threads and Processes
 
 - **Process**: A process is an executing instance of a program that has its own memory space, resources, and state.
 - **Thread**: A thread is the smallest unit of execution within a process. Threads share the same memory space and resources within a process.
 
-## 4.11. Multi-threading Benefits
+### 4.3.2. Multi-threading Benefits
 
 - **Responsiveness:** UI remains responsive even during long-running tasks.
 - **Resource Utilization:** Maximize CPU usage by allowing multiple threads to run concurrently.
 - **Simplification:** Can break down complex tasks into smaller, independently running threads.
 
-## 4.12. Creating a Thread
+### 4.3.3. Creating a Thread
 
 There are two ways to create a thread.
 
 It can be created by extending the `Thread` class and overriding its `run()` method:
 
-### 4.12.1. Extend Syntax
+#### 4.3.3.1. Extend Syntax
 
 ```java
 public class Main extends Thread {
@@ -3379,7 +3372,7 @@ public class Main extends Thread {
 
 Another way to create a thread is to implement the `Runnable` interface:
 
-### 4.12.2. Implement Syntax
+#### 4.3.3.2. Implement Syntax
 
 ```java
 public class Main implements Runnable {
@@ -3389,11 +3382,11 @@ public class Main implements Runnable {
 }
 ```
 
-## 4.13. Running Threads
+### 4.3.4. Running Threads
 
 If the class extends the `Thread` class, the thread can be run by creating an instance of the class and call its `start()` method:
 
-### 4.13.1. Extend Example
+#### 4.3.4.1. Extend Example
 
 ```java
 public class Main extends Thread {
@@ -3410,7 +3403,7 @@ public class Main extends Thread {
 
 If the class implements the `Runnable` interface, the thread can be run by passing an instance of the class to a `Thread` object's constructor and then calling the thread's `start()` method:
 
-### 4.13.2. Implement Example
+#### 4.3.4.2. Implement Example
 
 ```java
 public class Main implements Runnable {
@@ -3426,11 +3419,11 @@ public class Main implements Runnable {
 }
 ```
 
-### 4.13.3. Differences between "extending" and "implementing" Threads
+#### 4.3.4.3. Differences between "extending" and "implementing" Threads
 
 The major difference is that when a class extends the Thread class, you cannot extend any other class, but by implementing the Runnable interface, it is possible to extend from another class as well, like: class `MyClass extends OtherClass implements Runnable`.
 
-## 4.14. Concurrency Problems
+### 4.3.5. Concurrency Problems
 
 Because threads run at the same time as other parts of the program, there is no way to know in which order the code will run. When the threads and main program are reading and writing the same variables, the values are unpredictable. The problems that result from this are called concurrency problems.
 
@@ -3480,7 +3473,7 @@ public class Main extends Thread {
 }
 ```
 
-## 4.15. Thread Lifecycle
+### 4.3.6. Thread Lifecycle
 
 The lifecycle of a thread in Java consists of several states:
 
@@ -3490,7 +3483,7 @@ The lifecycle of a thread in Java consists of several states:
 - **Blocked/Waiting**: The thread is in the blocked/waiting state when it's waiting for a resource or another thread to perform a task.
 - **Terminated**: The thread is in the terminated state when it has completed its execution.
 
-## 4.16. Thread Priority
+### 4.3.7. Thread Priority
 
 Thread priority is used by the scheduler to determine the order of thread execution.
 
@@ -3503,7 +3496,7 @@ thread.setPriority(Thread.MAX_PRIORITY); // Set highest priority
 thread.setPriority(Thread.MIN_PRIORITY); // Set lowest priority
 ```
 
-## 4.17. Thread Exception Handling
+### 4.3.8. Thread Exception Handling
 
 Exception handling in threads is similar to exception handling in other Java programs. 
 
@@ -3523,7 +3516,7 @@ class MyThread extends Thread {
 }
 ```
 
-## 4.18. Synchronization
+### 4.3.9. Synchronization
 
 Synchronization in Java is used to control access to shared resources by multiple threads. It prevents concurrent access to shared resources, avoiding data corruption and inconsistency.
 
@@ -3547,17 +3540,15 @@ Synchronization in Java is used to control access to shared resources by multipl
   }
   ```
 
-## 4.19. Summary
+**Summary**
 
 Multithreading in Java allows concurrent execution of multiple threads within a single process. It enables better utilization of CPU resources, improves application responsiveness, and supports concurrent programming paradigms. Understanding thread concepts, lifecycle, synchronization, and exception handling is crucial for building robust multithreaded applications.
 
 # 5. Unit 5: File Handling and Collections Framework
 
-## 5.1. File Handling in Java
-
 File handling in Java involves reading from and writing to files. Java has several methods for creating, reading, updating, and deleting files. 
 
-## 5.2. File Handling using `File` Class
+## 5.1. File Handling using `File` Class
 
 The `File` class from the `java.io` package, allows us to work with files.
 
@@ -3584,7 +3575,7 @@ The `File` class has many useful methods for creating and getting information ab
 | `list()`            | String[] | Returns an array of the files in the directory |
 | `mkdir()`           | Boolean  | Creates a directory                            |
 
-### 5.2.1. Create a File
+### 5.1.1. Create a File
 
 To create a file in Java, you can use the `createNewFile()` method. This method returns a boolean value: `true` if the file was successfully created, and `false` if the file already exists. Note that the method is enclosed in a `try...catch` block. This is necessary because it throws an `IOException` if an error occurs (if the file cannot be created for some reason):
 
@@ -3621,7 +3612,7 @@ To create a file in a specific directory (requires permission), specify the path
 File myObj = new File("C:\\Users\\MyName\\filename.txt");
 ```
 
-### 5.2.2. Write To a File
+### 5.1.2. Write To a File
 
 In the following example, we use the `FileWriter` class together with its `write()` method to write some text to the file we created in the example above. Note that when you are done writing to the file, you should close it with the `close()` method:
 
@@ -3650,7 +3641,7 @@ The output will be:
 Successfully wrote to the file.
 ```
 
-### 5.2.3. Read a File
+### 5.1.3. Read a File
 
 In the previous topic, you learned how to create and write to a file.
 
@@ -3685,7 +3676,7 @@ The output will be:
 Files in Java might be tricky, but it is fun enough!
 ```
 
-### 5.2.4. Get File Information
+### 5.1.4. Get File Information
 
 To get more information about a file, use any of the `File` methods:
 
@@ -3717,7 +3708,7 @@ File name: filename.txtAbsolute path: C:\Users\MyName\filename.txtWriteable: tru
 
 **Tip:** To delete a file, read our Java Delete Files topic.
 
-### 5.2.5. Delete a File
+### 5.1.5. Delete a File
 
 To delete a file in Java, use the `delete()` method:
 
@@ -3742,7 +3733,7 @@ The output will be:
 Deleted the file: filename.txt
 ```
 
-### 5.2.6. Delete a Folder
+### 5.1.6. Delete a Folder
 
 You can also delete a folder. However, it must be empty:
 
@@ -3767,9 +3758,9 @@ The output will be:
 Deleted the folder: Test
 ```
 
-## 5.3. File Handling using `Streams` Class
+## 5.2. File Handling using `Streams` Class
 
-### 5.3.1. Streams and Stream Classes
+### 5.2.1. Streams and Stream Classes
 
 File handling in Java can be achieved using streams and various stream classes provided by the `java.io` package.
 
@@ -3779,7 +3770,7 @@ File handling in Java can be achieved using streams and various stream classes p
   - **Character Streams:**  Handle character-based data (text files).
 - **Stream Classes**: Java provides a variety of stream classes for handling input and output operations. These include byte streams (`InputStream`, `OutputStream`) and character streams (`Reader`, `Writer`).
 
-### 5.3.2. `FileInputStream` and `FileOutputStream`
+### 5.2.2. `FileInputStream` and `FileOutputStream`
 
 - **`FileInputStream`**: Used for reading data from a file as a stream of bytes.
 - **`FileOutputStream`**: Used for writing data to a file as a stream of bytes.
@@ -3804,7 +3795,7 @@ try (FileOutputStream fos = new FileOutputStream("output.txt")) {
 }
 ```
 
-### 5.3.3. `FileOutputStream` to Write to File
+### 5.2.3. `FileOutputStream` to Write to File
 
 You can use file output streams (`FileOutputStream`, `FileWriter`) to write to a file.
 
@@ -3835,7 +3826,7 @@ public class WriteToFile {
 }
 ```
 
-### 5.3.4. `FileInputStream` to Read from a File
+### 5.2.4. `FileInputStream` to Read from a File
 
  You can use file input streams (`FileInputStream`, `FileReader`) to read from a file.
 
@@ -3858,7 +3849,7 @@ public class ReadFromFile {
 }
 ```
 
-### 5.3.5. Closing Streams
+### 5.2.5. Closing Streams
 
 It's important to close streams after using them to release system resources.
 
@@ -3870,7 +3861,7 @@ try (FileInputStream fis = new FileInputStream("input.txt")) {
 } // Stream will be closed automatically after the try block
 ```
 
-## 5.4. Summary
+**Summary**
 
 File handling in Java involves reading from and writing to files using streams and stream classes. `FileInputStream` and `FileOutputStream` are used for byte-level file handling, while `FileReader` and `FileWriter` are used for character-level file handling. It's essential to properly handle exceptions and close streams after using them to avoid resource leaks.
 
@@ -3881,11 +3872,11 @@ File handling in Java involves reading from and writing to files using streams a
 - **Other File Operations:** Java provides classes for deleting, renaming, and getting file metadata.
 - **Buffered Streams:** For performance optimization, use `BufferedInputStream` and `BufferedOutputStream` to wrap file streams.
 
-## 5.5. Collections Framework in Java
+## 5.3. Collections Framework in Java
 
 The Collections Framework in Java provides a unified architecture for representing and manipulating collections of objects. It includes interfaces, implementations, and algorithms for working with collections efficiently.
 
-## 5.6. Overview and Hierarchy
+### 5.3.1. Overview and Hierarchy
 
 The Collections Framework includes several key interfaces and classes organized in a hierarchy:
 
@@ -3912,7 +3903,7 @@ Collection
         |-- HashMap  
 ```
 
-## 5.7. `ArrayList`
+### 5.3.2. `ArrayList`
 
 The `ArrayList` class is a resizable [array], which can be found in the `java.util` package.
 
@@ -3923,14 +3914,14 @@ The difference between a built-in array and an `ArrayList` in Java, is that the 
 - Provides dynamic resizing, fast random access, and fast iteration.
 - Efficient for accessing elements by index, but less efficient for insertion and deletion in the middle of the list.
 
-### 5.7.1. Creating an `ArrayList`
+#### 5.3.2.1. Creating an `ArrayList`
 
 ```java
 import java.util.ArrayList; // import the ArrayList class
 ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
 ```
 
-### 5.7.2. Add Items
+#### 5.3.2.2. Add Items
 
 The `ArrayList` class has many useful methods. For example, to add elements to the `ArrayList`, use the `add()` method:
 
@@ -3949,7 +3940,7 @@ public class Main {
 }
 ```
 
-### 5.7.3. Access an Item
+#### 5.3.2.3. Access an Item
 
 To access an element in the `ArrayList`, use the `get()` method and refer to the index number:
 
@@ -3959,7 +3950,7 @@ cars.get(0);
 
 **Remember:** Array indexes start with 0: [0] is the first element. [1] is the second element, etc.
 
-### 5.7.4. Change an Item
+#### 5.3.2.4. Change an Item
 
 To modify an element, use the `set()` method and refer to the index number:
 
@@ -3967,7 +3958,7 @@ To modify an element, use the `set()` method and refer to the index number:
 cars.set(0, "Opel");
 ```
 
-### 5.7.5. Remove an Item
+#### 5.3.2.5. Remove an Item
 
 To remove an element, use the `remove()` method and refer to the index number:
 
@@ -3981,7 +3972,7 @@ To remove all the elements in the `ArrayList`, use the `clear()` method:
 cars.clear();
 ```
 
-### 5.7.6. `ArrayList` Size
+#### 5.3.2.6. `ArrayList` Size
 
 To find out how many elements an ArrayList have, use the `size` method:
 
@@ -3989,7 +3980,7 @@ To find out how many elements an ArrayList have, use the `size` method:
 cars.size();
 ```
 
-### 5.7.7. Loop Through an `ArrayList`
+#### 5.3.2.7. Loop Through an `ArrayList`
 
 Loop through the elements of an `ArrayList` with a `for` loop, and use the `size()` method to specify how many times the loop should run:
 
@@ -4025,7 +4016,7 @@ public class Main {
 }
 ```
 
-### 5.7.8. Other Types
+#### 5.3.2.8. Other Types
 
 Elements in an ArrayList are actually objects. In the examples above, we created elements (objects) of type "String". Remember that a String in Java is an object (not a primitive type). To use other types, such as int, you must specify an equivalent wrapper class: `Integer`. For other primitive types, use: `Boolean` for boolean, `Character` for char, `Double` for double, etc:
 
@@ -4048,7 +4039,7 @@ public class Main {
 }
 ```
 
-### 5.7.9. Sort an ArrayList
+#### 5.3.2.9. Sort an ArrayList
 
 Another useful class in the `java.util` package is the `Collections` class, which include the `sort()` method for sorting lists alphabetically or numerically:
 
@@ -4098,7 +4089,7 @@ public class Main {
 }
 ```
 
-## 5.8. `LinkedList`
+### 5.3.3. `LinkedList`
 
 In the previous topic, you learned about the `ArrayList` class. The `LinkedList` class is almost identical to the `ArrayList`.
 
@@ -4123,7 +4114,7 @@ public class Main {
 }
 ```
 
-### 5.8.1. ArrayList vs. LinkedList
+#### 5.3.3.1. ArrayList vs. LinkedList
 
 The `LinkedList` class is a collection which can contain many objects of the same type, just like the `ArrayList`.
 
@@ -4131,19 +4122,19 @@ The `LinkedList` class has all of the same methods as the `ArrayList` class beca
 
 However, while the `ArrayList` class and the `LinkedList` class can be used in the same way, they are built very differently.
 
-### 5.8.2. How the ArrayList works
+#### 5.3.3.2. How the ArrayList works
 
 The `ArrayList` class has a regular array inside it. When an element is added, it is placed into the array. If the array is not big enough, a new, larger array is created to replace the old one and the old one is removed.
 
-### 5.8.3. How the LinkedList works
+#### 5.3.3.3. How the LinkedList works
 
 The `LinkedList` stores its items in "containers." The list has a link to the first container and each container has a link to the next container in the list. To add an element to the list, the element is placed into a new container and that container is linked to one of the other containers in the list.
 
-### 5.8.4. When To Use
+#### 5.3.3.4. When To Use
 
 Use an `ArrayList` for storing and accessing data, and `LinkedList` to manipulate data.
 
-### 5.8.5. LinkedList Methods
+#### 5.3.3.5. LinkedList Methods
 
 For many cases, the `ArrayList` is more efficient as it is common to need access to random items in the list, but the `LinkedList` provides several methods to do certain operations more efficiently:
 
@@ -4156,7 +4147,7 @@ For many cases, the `ArrayList` is more efficient as it is common to need access
 | getFirst()    | Get the item at the beginning of the list      |
 | getLast()     | Get the item at the end of the list            |
 
-## 5.9. `HashMap`
+### 5.3.4. `HashMap`
 
 In the `ArrayList` topic, you learned that Arrays store items as an ordered collection, and you have to access them with an index number (`int` type). A `HashMap` however, store items in "**key**/**value**" pairs, and you can access them by an index of another type (e.g. a `String`).
 
@@ -4175,7 +4166,7 @@ import java.util.HashMap; // import the HashMap class
 HashMap<String, String> capitalCities = new HashMap<String, String>();
 ```
 
-### 5.9.1. Add Items
+#### 5.3.4.1. Add Items
 
 The `HashMap` class has many useful methods. For example, to add items to it, use the `put()` method:
 
@@ -4198,7 +4189,7 @@ public class Main {
 }
 ```
 
-### 5.9.2. Access an Item
+#### 5.3.4.2. Access an Item
 
 To access a value in the `HashMap`, use the `get()` method and refer to its key:
 
@@ -4206,7 +4197,7 @@ To access a value in the `HashMap`, use the `get()` method and refer to its key:
 capitalCities.get("England");
 ```
 
-### 5.9.3. Remove an Item
+#### 5.3.4.3. Remove an Item
 
 To remove an item, use the `remove()` method and refer to the key:
 
@@ -4220,7 +4211,7 @@ To remove all items, use the `clear()` method:
 capitalCities.clear();
 ```
 
-### 5.9.4. HashMap Size
+#### 5.3.4.4. HashMap Size
 
 To find out how many items there are, use the `size()` method:
 
@@ -4228,7 +4219,7 @@ To find out how many items there are, use the `size()` method:
 capitalCities.size();
 ```
 
-### 5.9.5. Loop Through a HashMap
+#### 5.3.4.5. Loop Through a HashMap
 
 Loop through the items of a `HashMap` with a **for-each** loop.
 
@@ -4255,7 +4246,7 @@ for (String i : capitalCities.keySet()) {
 }
 ```
 
-### 5.9.6. Other Types
+#### 5.3.4.6. Other Types
 
 Keys and values in a HashMap are actually objects. In the examples above, we used objects of type "String". Remember that a String in Java is an object (not a primitive type). To use other types, such as int, you must specify an equivalent wrapper class: `Integer`. For other primitive types, use: `Boolean` for boolean, `Character` for char, `Double` for double, etc:
 
@@ -4280,7 +4271,7 @@ public class Main {
 }
 ```
 
-## 5.10. `HashSet`
+### 5.3.5. `HashSet`
 
 A HashSet is a collection of items where every item is unique, and it is found in the `java.util` package.
 
@@ -4297,7 +4288,7 @@ import java.util.HashSet; // Import the HashSet class
 HashSet<String> cars = new HashSet<String>();
 ```
 
-### 5.10.1. Add Items
+#### 5.3.5.1. Add Items
 
 The `HashSet` class has many useful methods. For example, to add items to it, use the `add()` method:
 
@@ -4320,7 +4311,7 @@ public class Main {
 
 **Note:** In the example above, even though BMW is added twice it only appears once in the set because every item in a set has to be unique.
 
-### 5.10.2. Check If an Item Exists
+#### 5.3.5.2. Check If an Item Exists
 
 To check whether an item exists in a HashSet, use the `contains()` method:
 
@@ -4328,7 +4319,7 @@ To check whether an item exists in a HashSet, use the `contains()` method:
 cars.contains("Mazda");
 ```
 
-### 5.10.3. Remove an Item
+#### 5.3.5.3. Remove an Item
 
 To remove an item, use the `remove()` method:
 
@@ -4342,7 +4333,7 @@ To remove all items, use the `clear()` method:
 cars.clear();
 ```
 
-### 5.10.4. HashSet Size
+#### 5.3.5.4. HashSet Size
 
 To find out how many items there are, use the `size` method:
 
@@ -4350,7 +4341,7 @@ To find out how many items there are, use the `size` method:
 cars.size();
 ```
 
-### 5.10.5. Loop Through a HashSet
+#### 5.3.5.5. Loop Through a HashSet
 
 Loop through the items of an `HashSet` with a **for-each** loop:
 
@@ -4360,7 +4351,7 @@ for (String i : cars) {
 }
 ```
 
-### 5.10.6. Other Types
+#### 5.3.5.6. Other Types
 
 Items in an HashSet are actually objects. In the examples above, we created items (objects) of type "String". Remember that a String in Java is an object (not a primitive type). To use other types, such as int, you must specify an equivalent wrapper class: `Integer`. For other primitive types, use: `Boolean` for boolean, `Character` for char, `Double` for double, etc:
 
@@ -4394,13 +4385,13 @@ public class Main {
 
 The Collections Framework in Java provides a powerful and efficient way to work with collections of objects. Understanding its interfaces and implementations, such as `ArrayList`, `LinkedList`, `HashMap`, and `HashSet`, along with the for-each loop, is essential for effective Java programming.
 
-## 5.11. Iterator
+### 5.3.6. Iterator
 
 An `Iterator` is an object that can be used to loop through collections, like ArrayList and HashSet. It is called an "iterator" because "iterating" is the technical term for looping.
 
 To use an Iterator, you must import it from the `java.util` package.
 
-### 5.11.1. Getting an Iterator
+#### 5.3.6.1. Getting an Iterator
 
 The `iterator()` method can be used to get an `Iterator` for any collection:
 
@@ -4428,7 +4419,7 @@ public class Main {
 }
 ```
 
-### 5.11.2. Looping Through a Collection
+#### 5.3.6.2. Looping Through a Collection
 
 To loop through a collection, use the `hasNext()` and `next()` methods of the `Iterator`:
 
@@ -4438,7 +4429,7 @@ while(it.hasNext()) {
 }
 ```
 
-### 5.11.3. Removing Items from a Collection
+#### 5.3.6.3. Removing Items from a Collection
 
 Iterators are designed to easily change the collections that they loop through. The `remove()` method can remove items from a collection while looping.
 
