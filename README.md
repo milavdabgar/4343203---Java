@@ -8,13 +8,13 @@ This Repository contains Study Materials of Java Programming Subject being offer
 
 - [Java Book by MJD](Notes/Java_Book_MJD.md)
 - [Java Revision Notes](Notes/Java_Revision_Notes.md)
-- [Java GTU Program Solutions](Paper_Solutions/Java_GTU_Paper_Solutions.md)
+- [Java GTU Papers Solutions](Paper_Solutions/Java_GTU_Paper_Solutions.md)
 
 **Latex PDF (Best for Prints):**
 
 - [Java Book by MJD](Notes/Java_Book_MJD_Latex.pdf)
 - [Java Revision Notes](Notes/Java_Revision_Notes_Latex.pdf)
-- [Java GTU Program Solutions](Paper_Solutions/Java_GTU_Paper_Solutions_Latex.pdf)
+- [Java GTU Papers Solutions](Paper_Solutions/Java_GTU_Paper_Solutions_Latex.pdf)
 - [Java The Complete Reference](Books/Java_The_Complete_Reference.pdf)
 - [IIT Madras Java Slides](Slides/2201_Java_Slides.pdf)
 
