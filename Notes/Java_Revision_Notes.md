@@ -224,7 +224,7 @@ These are the fundamental building blocks provided by Java.
 
 ## Arrays
 
-## **Definition:** 
+**Definition:** 
 
 An array is a data structure that stores a fixed-size collection of elements of the same data type. Each element is accessed by its index (position) within the array.
 
@@ -397,7 +397,7 @@ The conditional operator is a ternary operator that evaluates a boolean expressi
 
 These operators are fundamental in Java for performing various operations and making decisions based on conditions.
 
-## **Operator Precedence**
+## Operator Precedence
 
 Java follows a specific order for evaluating expressions with multiple operators (similar to mathematical order of operations). You can find a detailed precedence table online.
 
@@ -634,7 +634,7 @@ In summary, while POP emphasizes procedures and functions, OOP revolves around o
 
 Object-Oriented Programming (OOP) is a programming paradigm that revolves around the concept of objects, which encapsulate data and behavior. OOP provides several key concepts to facilitate modular and organized software design.
 
-## 1. Classes and Objects
+## Classes and Objects
 
 - **Class**: A class is a blueprint for creating objects. It defines the properties (attributes) and behaviors (methods) that objects of the class will have.
   
@@ -662,7 +662,7 @@ Object-Oriented Programming (OOP) is a programming paradigm that revolves around
   myCar.accelerate();
   ```
 
-## 2. Encapsulation
+## Encapsulation
 
 - **Bundling:** Combining data (attributes) and code (methods) that operates on that data within a single unit (class).
 - **Protection:**  Controlling the visibility of data members using access modifiers (public, private, protected) to protect data integrity and hide implementation details.
@@ -685,7 +685,7 @@ public class BankAccount {
 }
 ```
 
-## 3. Abstraction
+## Abstraction
 
 Abstraction refers to the process of hiding the implementation details of a class and showing only the essential features to the outside world. It focuses on what an object does rather than how it does it.
 
@@ -712,7 +712,7 @@ class Rectangle implements Shape {
 }
 ```
 
-## 4. Inheritance
+## Inheritance
 
 Inheritance is a mechanism in which a new class (derived class or subclass) inherits properties and behaviors from an existing class (base class or superclass). It promotes code reuse and establishes a hierarchical relationship between classes.
 
@@ -736,7 +736,7 @@ class Dog extends Animal {
 }
 ```
 
-## 5. Polymorphism
+## Polymorphism
 
 Polymorphism allows objects to be treated as instances of their superclass or as instances of their subclass. It enables flexibility and dynamic behavior in the program.
 
@@ -1016,12 +1016,12 @@ These concepts help in organizing code, improving code reusability, and managing
 
 ## Types of Constructors
 
-### Default Constructors
+## Default Constructors
 
 - If you don't define a constructor, Java provides a no-argument default constructor.
 - It typically initializes members to their default values (e.g., 0 for numbers, null for objects).
 
-### Parameterized Constructors
+## Parameterized Constructors
 
 Parameterized constructors allow initialization of object attributes with specific values passed as arguments during object creation. Used to provide flexibility when creating objects.
 
@@ -1038,7 +1038,7 @@ public class Student {
 }
 ```
 
-### Copy Constructors, Passing Object as a Parameter
+## Copy Constructors, Passing Object as a Parameter
 
 A copy constructor creates a new object by copying the attributes of an existing object. It takes an object of the same class as a parameter.
 
@@ -1598,7 +1598,7 @@ class Child extends Parent {
 }
 ```
 
-## Summary
+**Summary**
 
 - Abstract classes provide a way to define a common interface for a group of subclasses and allow for both abstract and non-abstract methods.
 - Final classes cannot be subclassed, and final methods cannot be overridden.
@@ -1763,7 +1763,7 @@ class MyCustomException extends Exception {
 
 Custom exceptions allow you to create specific error types for your application, improving readability and maintainability.
 
-## **Benefits of Exception Handling**
+## Benefits of Exception Handling
 
 - **Separation of Error-handling Code:** Improves readability and maintainability.
 - **Graceful Recovery:** Allows your program to recover from errors instead of crashing.
@@ -1883,7 +1883,7 @@ Synchronization in Java is used to control access to shared resources by multipl
   }
   ```
 
-## Summary
+**Summary**
 
 Multithreading in Java allows concurrent execution of multiple threads within a single process. It enables better utilization of CPU resources, improves application responsiveness, and supports concurrent programming paradigms. Understanding thread concepts, lifecycle, synchronization, and exception handling is crucial for building robust multithreaded applications.
 
@@ -1930,7 +1930,7 @@ try (FileOutputStream fos = new FileOutputStream("output.txt")) {
 
 ## Creation, Reading, and Writing Files
 
-### **File Creation**
+## File Creation
 
 You can create a new file using the `File` class.
 
@@ -1960,7 +1960,7 @@ public class CreateFile {
 }
 ```
 
-### ***\*Writing to a File\****
+## Writing to a File
 
 You can use file output streams (`FileOutputStream`, `FileWriter`) to write to a file.
 
@@ -1991,7 +1991,7 @@ public class WriteToFile {
 }
 ```
 
-### **Reading from a File**
+## Reading from a File
 
  You can use file input streams (`FileInputStream`, `FileReader`) to read from a file.
 
@@ -2014,7 +2014,7 @@ public class ReadFromFile {
 }
 ```
 
-### Closing Streams
+## Closing Streams
 
 It's important to close streams after using them to release system resources.
 
@@ -2026,7 +2026,7 @@ try (FileInputStream fis = new FileInputStream("input.txt")) {
 } // Stream will be closed automatically after the try block
 ```
 
-## Summary
+**Summary**
 
 File handling in Java involves reading from and writing to files using streams and stream classes. `FileInputStream` and `FileOutputStream` are used for byte-level file handling, while `FileReader` and `FileWriter` are used for character-level file handling. It's essential to properly handle exceptions and close streams after using them to avoid resource leaks.
 
