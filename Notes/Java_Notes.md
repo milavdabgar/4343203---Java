@@ -1,250 +1,46 @@
 ---
-title: "Java Book"
+title: Java Notes
+subtitle: As per Competency-focused Outcome-based Green Curriculum-2021 (COGC-2021)
 author: Milav Dabgar
+documentclass: book
+toc: True
+# toc-depth: 3
+# lof: True
+# lot: True
+papersize: a4
 geometry: "left=2.5cm,right=2.5cm,top=2cm,bottom=2cm"
+# fontfamily: libertinus
+# fontfamilyoptions:
+#   - osf
+#   - p
 header-includes:
-  - \title{Java Book}
-  - \author{Milav Dabgar}
-  - \usepackage{fancyhdr}
-  - \pagestyle{fancy}
-  - \fancyhf{}
-  - \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
-  - \renewcommand{\footrulewidth}{0.4pt}
-  - \lhead[L]{\small\textbf{\leftmark}}
-  - \rhead{\small\textbf{\thepage}}
-  - \lfoot{\small\textbf{\thetitle}} 
-  - \rfoot{\small\textbf{\theauthor}}
-  - \makeatletter
-  - \let\thetitle\@title
-  - \let\theauthor\@author
-  - \makeatother
-  - \usepackage{listings}
-  - \lstset{breaklines=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}}
+  - |
+    ```{=latex}
+    % \let\oldsection\section
+    % \renewcommand{\section}[1]{\clearpage\oldsection{#1}}
+    \title{Java Notes}
+    \author{Milav Dabgar}
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+    \renewcommand{\footrulewidth}{0.4pt}
+    \lhead{\small\textbf{\leftmark}}
+    \rhead{\small\textbf{\thepage}}
+    \lfoot{\small\textbf{\thetitle}}
+    \rfoot{\small\textbf{\theauthor}}
+    \makeatletter
+    \let\thetitle\@title
+    \let\theauthor\@author
+    \makeatother
+    \usepackage{listings}
+    \lstset{breaklines=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}}
+    ```
 ---
 
 [TOC]
 
-- [1. Unit 1: Introduction to Java Programming Language](#1-unit-1-introduction-to-java-programming-language)
-  - [1.1. Java Overview](#11-java-overview)
-    - [1.1.1. Brief History \& Evolution of Java](#111-brief-history--evolution-of-java)
-    - [1.1.2. Java Features](#112-java-features)
-    - [1.1.3. Java Applications](#113-java-applications)
-  - [1.2. Java Environment Setup \& Basic Java Syntax](#12-java-environment-setup--basic-java-syntax)
-    - [1.2.1. Java Components](#121-java-components)
-    - [1.2.2. Setting up Java Development Environment](#122-setting-up-java-development-environment)
-    - [1.2.3. Structure of a Java Program](#123-structure-of-a-java-program)
-      - [1.2.3.1. Class Declaration](#1231-class-declaration)
-      - [1.2.3.2. Main Method](#1232-main-method)
-      - [1.2.3.3. Output in Java](#1233-output-in-java)
-        - [1.2.3.3.1. The `println()` Method](#12331-the-println-method)
-        - [1.2.3.3.2. The `print()` Method](#12332-the-print-method)
-      - [1.2.3.4. Comments](#1234-comments)
-        - [1.2.3.4.1. Single-line Comments](#12341-single-line-comments)
-        - [1.2.3.4.2. Multi-line Comments](#12342-multi-line-comments)
-    - [1.2.4. Compilation and Execution of Java Program](#124-compilation-and-execution-of-java-program)
-    - [1.2.5. Importance of Bytecode \& Garbage Collection](#125-importance-of-bytecode--garbage-collection)
-  - [1.3. Data Types](#13-data-types)
-    - [1.3.1. Primitive Data Types](#131-primitive-data-types)
-    - [1.3.2. Non-Primitive Data Types](#132-non-primitive-data-types)
-    - [1.3.3. Type Conversion and Casting](#133-type-conversion-and-casting)
-      - [1.3.3.1. Implicit Conversion (Widening)](#1331-implicit-conversion-widening)
-      - [1.3.3.2. Explicit Conversion (Narrowing)](#1332-explicit-conversion-narrowing)
-  - [1.4. Identifiers](#14-identifiers)
-    - [1.4.1. Naming Rules \& Conventions](#141-naming-rules--conventions)
-      - [1.4.1.1. Naming Rules](#1411-naming-rules)
-      - [1.4.1.2. Naming Conventions](#1412-naming-conventions)
-    - [1.4.2. Variables](#142-variables)
-    - [1.4.3. Constants (`final` Keyword)](#143-constants-final-keyword)
-    - [1.4.4. Scope of Variables](#144-scope-of-variables)
-  - [1.5. Arrays](#15-arrays)
-    - [1.5.1. One-dimensional Arrays](#151-one-dimensional-arrays)
-    - [1.5.2. Multidimensional Arrays](#152-multidimensional-arrays)
-  - [1.6. Operators](#16-operators)
-    - [1.6.1. Arithmetic Operators](#161-arithmetic-operators)
-    - [1.6.2. Assignment Operators](#162-assignment-operators)
-    - [1.6.3. Relational (Comparison) Operators](#163-relational-comparison-operators)
-    - [1.6.4. Logical Operators](#164-logical-operators)
-    - [1.6.5. Bitwise Operators](#165-bitwise-operators)
-    - [1.6.6. Conditional (Ternary) Operator](#166-conditional-ternary-operator)
-    - [1.6.7. Operator Precedence](#167-operator-precedence)
-  - [1.7. Control Flow Statements](#17-control-flow-statements)
-    - [1.7.1. Selection Statements](#171-selection-statements)
-      - [1.7.1.1. The if Statement](#1711-the-if-statement)
-      - [1.7.1.2. The if-else Statement](#1712-the-if-else-statement)
-      - [1.7.1.3. The if-else-if Ladder](#1713-the-if-else-if-ladder)
-      - [1.7.1.4. Switch-Case Statements](#1714-switch-case-statements)
-        - [1.7.1.4.1. `break` Keyword](#17141-break-keyword)
-        - [1.7.1.4.2. `default` Keyword](#17142-default-keyword)
-    - [1.7.2. Looping Statements](#172-looping-statements)
-      - [1.7.2.1. While Loop](#1721-while-loop)
-      - [1.7.2.2. Do/While Loop](#1722-dowhile-loop)
-      - [1.7.2.3. For Loop](#1723-for-loop)
-      - [1.7.2.4. The For-Each Loop](#1724-the-for-each-loop)
-      - [1.7.2.5. Nested Loops](#1725-nested-loops)
-    - [1.7.3. Jump Statements](#173-jump-statements)
-      - [1.7.3.1. `break` Statement](#1731-break-statement)
-      - [1.7.3.2. `continue` Statement](#1732-continue-statement)
-      - [1.7.3.3. `return` Statement](#1733-return-statement)
-- [2. Unit 2: Object-Oriented Programming](#2-unit-2-object-oriented-programming)
-  - [2.1. Procedure-Oriented vs. Object-Oriented Programming](#21-procedure-oriented-vs-object-oriented-programming)
-    - [2.1.1. Characteristics](#211-characteristics)
-    - [2.1.2. Differences](#212-differences)
-  - [2.2. OOP Concepts](#22-oop-concepts)
-    - [2.2.1. Classes and Objects](#221-classes-and-objects)
-    - [2.2.2. Encapsulation](#222-encapsulation)
-    - [2.2.3. Abstraction](#223-abstraction)
-    - [2.2.4. Inheritance](#224-inheritance)
-    - [2.2.5. Polymorphism](#225-polymorphism)
-  - [2.3. Classes and Objects](#23-classes-and-objects)
-    - [2.3.1. Creating Classes](#231-creating-classes)
-    - [2.3.2. Creating Objects](#232-creating-objects)
-      - [2.3.2.1. Multiple Objects](#2321-multiple-objects)
-      - [2.3.2.2. Using Multiple Classes](#2322-using-multiple-classes)
-      - [2.3.2.3. `this` Keyword](#2323-this-keyword)
-  - [2.4. Class Attributes](#24-class-attributes)
-    - [2.4.1. Accessing Attributes](#241-accessing-attributes)
-    - [2.4.2. Modify Attributes](#242-modify-attributes)
-    - [2.4.3. Attributes of Multiple Objects](#243-attributes-of-multiple-objects)
-    - [2.4.4. Multiple Attributes of same Object](#244-multiple-attributes-of-same-object)
-  - [2.5. Class Methods](#25-class-methods)
-    - [2.5.1. Create a Method](#251-create-a-method)
-    - [2.5.2. Call a Method](#252-call-a-method)
-    - [2.5.3. Method Parameters and Arguments](#253-method-parameters-and-arguments)
-      - [2.5.3.1. Multiple Parameters](#2531-multiple-parameters)
-    - [2.5.4. Return Values](#254-return-values)
-    - [2.5.5. Access Methods With an Object](#255-access-methods-with-an-object)
-    - [2.5.6. Method Signatures](#256-method-signatures)
-    - [2.5.7. Passing Arguments](#257-passing-arguments)
-    - [2.5.8. Returning Values](#258-returning-values)
-  - [2.6. Constructors](#26-constructors)
-    - [2.6.1. Types of Constructors](#261-types-of-constructors)
-      - [2.6.1.1. Default Constructors](#2611-default-constructors)
-      - [2.6.1.2. Parameterized Constructors](#2612-parameterized-constructors)
-      - [2.6.1.3. Copy Constructors](#2613-copy-constructors)
-    - [2.6.2. Constructor Overloading](#262-constructor-overloading)
-  - [2.7. Modifiers](#27-modifiers)
-    - [2.7.1. Access Modifiers](#271-access-modifiers)
-    - [2.7.2. Non-Access Modifiers](#272-non-access-modifiers)
-      - [2.7.2.1. `final`](#2721-final)
-      - [2.7.2.2. `static`](#2722-static)
-      - [2.7.2.3. `abstract`](#2723-abstract)
-  - [2.8. `String` Class](#28-string-class)
-    - [2.8.1. Strings - Special Characters](#281-strings---special-characters)
-    - [2.8.2. Common `String` Methods](#282-common-string-methods)
-  - [2.9. `Scanner` Class (User Input)](#29-scanner-class-user-input)
-    - [2.9.1. Input Types](#291-input-types)
-    - [2.9.2. Using `Scanner` Class](#292-using-scanner-class)
-  - [2.10. Command-line Arguments](#210-command-line-arguments)
-- [3. Unit 3: Inheritance, Packages, and Interfaces](#3-unit-3-inheritance-packages-and-interfaces)
-  - [3.1. Inheritance](#31-inheritance)
-    - [3.1.1. Basics of Inheritance](#311-basics-of-inheritance)
-    - [3.1.2. Types of Inheritance](#312-types-of-inheritance)
-    - [3.1.3. `extends` Keyword](#313-extends-keyword)
-    - [3.1.4. `super` Keyword](#314-super-keyword)
-    - [3.1.5. Polymorphism](#315-polymorphism)
-      - [3.1.5.1. Method Overloading](#3151-method-overloading)
-      - [3.1.5.2. Method Overriding](#3152-method-overriding)
-        - [3.1.5.2.1. Overriding Object Class Methods](#31521-overriding-object-class-methods)
-    - [3.1.6. Method Dynamic Dispatch](#316-method-dynamic-dispatch)
-  - [3.2. Interfaces](#32-interfaces)
-    - [3.2.1. Defining Interfaces](#321-defining-interfaces)
-    - [3.2.2. Implementing Interfaces](#322-implementing-interfaces)
-    - [3.2.3. Multiple Inheritance Using Interfaces](#323-multiple-inheritance-using-interfaces)
-  - [3.3. Abstraction](#33-abstraction)
-    - [3.3.1. Abstract Class](#331-abstract-class)
-    - [3.3.2. Abstract Method](#332-abstract-method)
-    - [3.3.3. Differences from Interfaces](#333-differences-from-interfaces)
-  - [3.4. Final Class](#34-final-class)
-    - [3.4.1. Final Class Syntax](#341-final-class-syntax)
-    - [3.4.2. Final Method](#342-final-method)
-  - [3.5. Inner Classes](#35-inner-classes)
-    - [3.5.1. Private Inner Class](#351-private-inner-class)
-    - [3.5.2. Static Inner Class](#352-static-inner-class)
-    - [3.5.3. Access Outer Class From Inner Class](#353-access-outer-class-from-inner-class)
-  - [3.6. Packages \& API](#36-packages--api)
-    - [3.6.1. Built-in Packages](#361-built-in-packages)
-    - [3.6.2. Import a Class](#362-import-a-class)
-    - [3.6.3. Import a Package](#363-import-a-package)
-    - [3.6.4. User-defined Packages](#364-user-defined-packages)
-    - [3.6.5. Access Rules: Access Control Within Packages](#365-access-rules-access-control-within-packages)
-    - [3.6.6. Example: Access Control](#366-example-access-control)
-- [4. Unit 4: Exception Handling and Multithreading](#4-unit-4-exception-handling-and-multithreading)
-  - [4.1. Exception Handling in Java](#41-exception-handling-in-java)
-    - [4.1.1. Errors vs. Exceptions](#411-errors-vs-exceptions)
-    - [4.1.2. Java try and catch](#412-java-try-and-catch)
-    - [4.1.3. `try-catch-finally` Blocks](#413-try-catch-finally-blocks)
-  - [4.2. Throwing Exceptions](#42-throwing-exceptions)
-    - [4.2.1. Common Built-in Exceptions](#421-common-built-in-exceptions)
-    - [4.2.2. Creating Custom Exceptions](#422-creating-custom-exceptions)
-    - [4.2.3. Benefits of Exception Handling](#423-benefits-of-exception-handling)
-  - [4.3. Multi-threading in Java](#43-multi-threading-in-java)
-    - [4.3.1. Concepts of Threads and Processes](#431-concepts-of-threads-and-processes)
-    - [4.3.2. Multi-threading Benefits](#432-multi-threading-benefits)
-    - [4.3.3. Creating a Thread](#433-creating-a-thread)
-      - [4.3.3.1. Extend Syntax](#4331-extend-syntax)
-      - [4.3.3.2. Implement Syntax](#4332-implement-syntax)
-    - [4.3.4. Running Threads](#434-running-threads)
-      - [4.3.4.1. Extend Example](#4341-extend-example)
-      - [4.3.4.2. Implement Example](#4342-implement-example)
-      - [4.3.4.3. Differences between "extending" and "implementing" Threads](#4343-differences-between-extending-and-implementing-threads)
-    - [4.3.5. Concurrency Problems](#435-concurrency-problems)
-    - [4.3.6. Thread Lifecycle](#436-thread-lifecycle)
-    - [4.3.7. Thread Priority](#437-thread-priority)
-    - [4.3.8. Thread Exception Handling](#438-thread-exception-handling)
-    - [4.3.9. Synchronization](#439-synchronization)
-- [5. Unit 5: File Handling and Collections Framework](#5-unit-5-file-handling-and-collections-framework)
-  - [5.1. File Handling using `File` Class](#51-file-handling-using-file-class)
-    - [5.1.1. Create a File](#511-create-a-file)
-    - [5.1.2. Write To a File](#512-write-to-a-file)
-    - [5.1.3. Read a File](#513-read-a-file)
-    - [5.1.4. Get File Information](#514-get-file-information)
-    - [5.1.5. Delete a File](#515-delete-a-file)
-    - [5.1.6. Delete a Folder](#516-delete-a-folder)
-  - [5.2. File Handling using `Streams` Class](#52-file-handling-using-streams-class)
-    - [5.2.1. Streams and Stream Classes](#521-streams-and-stream-classes)
-    - [5.2.2. `FileInputStream` and `FileOutputStream`](#522-fileinputstream-and-fileoutputstream)
-    - [5.2.3. `FileOutputStream` to Write to File](#523-fileoutputstream-to-write-to-file)
-    - [5.2.4. `FileInputStream` to Read from a File](#524-fileinputstream-to-read-from-a-file)
-    - [5.2.5. Closing Streams](#525-closing-streams)
-  - [5.3. Collections Framework in Java](#53-collections-framework-in-java)
-    - [5.3.1. Overview and Hierarchy](#531-overview-and-hierarchy)
-    - [5.3.2. `ArrayList`](#532-arraylist)
-      - [5.3.2.1. Creating an `ArrayList`](#5321-creating-an-arraylist)
-      - [5.3.2.2. Add Items](#5322-add-items)
-      - [5.3.2.3. Access an Item](#5323-access-an-item)
-      - [5.3.2.4. Change an Item](#5324-change-an-item)
-      - [5.3.2.5. Remove an Item](#5325-remove-an-item)
-      - [5.3.2.6. `ArrayList` Size](#5326-arraylist-size)
-      - [5.3.2.7. Loop Through an `ArrayList`](#5327-loop-through-an-arraylist)
-      - [5.3.2.8. Other Types](#5328-other-types)
-      - [5.3.2.9. Sort an ArrayList](#5329-sort-an-arraylist)
-    - [5.3.3. `LinkedList`](#533-linkedlist)
-      - [5.3.3.1. ArrayList vs. LinkedList](#5331-arraylist-vs-linkedlist)
-      - [5.3.3.2. How the ArrayList works](#5332-how-the-arraylist-works)
-      - [5.3.3.3. How the LinkedList works](#5333-how-the-linkedlist-works)
-      - [5.3.3.4. When To Use](#5334-when-to-use)
-      - [5.3.3.5. LinkedList Methods](#5335-linkedlist-methods)
-    - [5.3.4. `HashMap`](#534-hashmap)
-      - [5.3.4.1. Add Items](#5341-add-items)
-      - [5.3.4.2. Access an Item](#5342-access-an-item)
-      - [5.3.4.3. Remove an Item](#5343-remove-an-item)
-      - [5.3.4.4. HashMap Size](#5344-hashmap-size)
-      - [5.3.4.5. Loop Through a HashMap](#5345-loop-through-a-hashmap)
-      - [5.3.4.6. Other Types](#5346-other-types)
-    - [5.3.5. `HashSet`](#535-hashset)
-      - [5.3.5.1. Add Items](#5351-add-items)
-      - [5.3.5.2. Check If an Item Exists](#5352-check-if-an-item-exists)
-      - [5.3.5.3. Remove an Item](#5353-remove-an-item)
-      - [5.3.5.4. HashSet Size](#5354-hashset-size)
-      - [5.3.5.5. Loop Through a HashSet](#5355-loop-through-a-hashset)
-      - [5.3.5.6. Other Types](#5356-other-types)
-    - [5.3.6. Iterator](#536-iterator)
-      - [5.3.6.1. Getting an Iterator](#5361-getting-an-iterator)
-      - [5.3.6.2. Looping Through a Collection](#5362-looping-through-a-collection)
-      - [5.3.6.3. Removing Items from a Collection](#5363-removing-items-from-a-collection)
-
-
-# 1. Unit 1: Introduction to Java Programming Language
+# 1. Introduction to Java Programming Language
 
 ## 1.1. Java Overview
 
@@ -1205,7 +1001,7 @@ public int add(int a, int b) {
 
 These control flow statements provide essential mechanisms for directing the flow of execution in Java programs, allowing developers to implement conditional logic and repetitive tasks efficiently.
 
-# 2. Unit 2: Object-Oriented Programming
+# 2. Object-Oriented Programming
 
 ## 2.1. Procedure-Oriented vs. Object-Oriented Programming
 
@@ -2440,7 +2236,7 @@ java CommandLineDemo hello world
 
 Command-line arguments are useful for passing information to a Java program when it is executed, such as configuration settings or file paths. They can be accessed and processed as needed within the program.
 
-# 3. Unit 3: Inheritance, Packages, and Interfaces
+# 3. Inheritance, Packages, and Interfaces
 
 ## 3.1. Inheritance
 
@@ -3158,7 +2954,7 @@ If another class in a different package tries to access these methods, only `pub
 
 Packages and access modifiers together provide a robust mechanism for encapsulating and organizing code, ensuring that internal implementations are well-protected and that the public interface of classes is clearly defined.
 
-# 4. Unit 4: Exception Handling and Multithreading
+# 4. Exception Handling and Multithreading
 
 ## 4.1. Exception Handling in Java
 
@@ -3544,7 +3340,7 @@ Synchronization in Java is used to control access to shared resources by multipl
 
 Multithreading in Java allows concurrent execution of multiple threads within a single process. It enables better utilization of CPU resources, improves application responsiveness, and supports concurrent programming paradigms. Understanding thread concepts, lifecycle, synchronization, and exception handling is crucial for building robust multithreaded applications.
 
-# 5. Unit 5: File Handling and Collections Framework
+# 5. File Handling and Collections Framework
 
 File handling in Java involves reading from and writing to files. Java has several methods for creating, reading, updating, and deleting files. 
 

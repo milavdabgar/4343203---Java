@@ -68,7 +68,7 @@ public class Main {
 }
 ```
 
-**how** to run the code above. Save the code in Notepad as "Main.java". Open Command Prompt (cmd.exe), navigate to the directory where you saved your file, and type "javac Main.java": 
+how to run the code above. Save the code in Notepad as "Main.java". Open Command Prompt (cmd.exe), navigate to the directory where you saved your file, and type "javac Main.java": 
 
 C:\Users\*Your Name*>javac Main.java
 
