@@ -77,11 +77,6 @@ def create_markdown(java_files):
     """Create a markdown file from Java files"""
     markdown_content = "# Java Programming Practicals\n\n## Table of Contents\n"
     
-    # Create table of contents
-    for file_path in sorted(java_files, key=extract_practical_number):
-        practical_name = os.path.basename(file_path).replace('.java', '')
-        markdown_content += f"- [{practical_name}](#{practical_name.lower()})\n"
-    
     markdown_content += "\n## Practicals\n"
     
     # Add each practical
@@ -90,7 +85,7 @@ def create_markdown(java_files):
             content = f.read()
             
         practical_name = os.path.basename(file_path).replace('.java', '')
-        markdown_content += f"\n### {practical_name} <a name='{practical_name.lower()}'></a>\n"
+        markdown_content += f"\n### {practical_name}\n"
         markdown_content += "```java\n"
         markdown_content += content
         markdown_content += "\n```\n"

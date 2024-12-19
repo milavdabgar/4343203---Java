@@ -1,40 +1,10 @@
 # Java Programming Practicals
 
 ## Table of Contents
-- [Practical01](#practical01)
-- [Practical02](#practical02)
-- [Practical03](#practical03)
-- [Practical04](#practical04)
-- [Practical05](#practical05)
-- [Practical06](#practical06)
-- [Practical07](#practical07)
-- [Practical08](#practical08)
-- [Practical09](#practical09)
-- [Practical10](#practical10)
-- [Practical11](#practical11)
-- [Practical12](#practical12)
-- [Practical13](#practical13)
-- [Practical14](#practical14)
-- [Practical15](#practical15)
-- [Practical16](#practical16)
-- [Practical17](#practical17)
-- [Practical18](#practical18)
-- [Practical19](#practical19)
-- [Practical20](#practical20)
-- [Practical21](#practical21)
-- [Practical22](#practical22)
-- [Practical23](#practical23)
-- [Practical24](#practical24)
-- [Practical25](#practical25)
-- [Practical26](#practical26)
-- [Practical27](#practical27)
-- [Practical28](#practical28)
-- [Practical29](#practical29)
-- [Practical30](#practical30)
 
 ## Practicals
 
-### Practical01 <a name='practical01'></a>
+### Practical01
 ```java
 // Practical01.java - Basic Java program demonstrating output methods
 
@@ -74,7 +44,7 @@ public class Practical01 {
 }
 ```
 
-### Practical02 <a name='practical02'></a>
+### Practical02
 ```java
 // Practical02.java - Find maximum of three numbers using conditional operator
 
@@ -133,7 +103,7 @@ public class Practical02 {
 }
 ```
 
-### Practical03 <a name='practical03'></a>
+### Practical03
 ```java
 // Practical03.java - Reverse digits of a number using while loop
 
@@ -224,7 +194,7 @@ public class Practical03 {
 }
 ```
 
-### Practical04 <a name='practical04'></a>
+### Practical04
 ```java
 // Practical04.java - Add two 3x3 matrices
 
@@ -321,7 +291,7 @@ public class Practical04 {
 }
 ```
 
-### Practical05 <a name='practical05'></a>
+### Practical05
 ```java
 // Practical05.java - Generate first n prime numbers
 
@@ -424,7 +394,7 @@ public class Practical05 {
 }
 ```
 
-### Practical06 <a name='practical06'></a>
+### Practical06
 ```java
 // Practical06.java - Create Student class and demonstrate object creation
 
@@ -510,7 +480,7 @@ public class Practical06 {
 }
 ```
 
-### Practical07 <a name='practical07'></a>
+### Practical07
 ```java
 // Practical07.java - Rectangle class with constructor initialization
 
@@ -635,7 +605,7 @@ public class Practical07 {
 }
 ```
 
-### Practical08 <a name='practical08'></a>
+### Practical08
 ```java
 // Practical08.java - Demonstrate use of 'this' keyword
 
@@ -693,7 +663,7 @@ public class Practical08 {
 }
 ```
 
-### Practical09 <a name='practical09'></a>
+### Practical09
 ```java
 // Practical09.java - Demonstrate use of 'static' keyword
 
@@ -768,7 +738,7 @@ public class Practical09 {
 }
 ```
 
-### Practical10 <a name='practical10'></a>
+### Practical10
 ```java
 // Practical10.java - Demonstrate use of 'final' keyword
 
@@ -862,7 +832,7 @@ public class Practical10 {
 }
 ```
 
-### Practical11 <a name='practical11'></a>
+### Practical11
 ```java
 // Practical11.java - Demonstrate method overloading with Shape class
 
@@ -941,7 +911,7 @@ public class Practical11 {
 }
 ```
 
-### Practical12 <a name='practical12'></a>
+### Practical12
 ```java
 // Practical12.java - Demonstrate constructor overloading
 
@@ -1033,7 +1003,7 @@ public class Practical12 {
 }
 ```
 
-### Practical13 <a name='practical13'></a>
+### Practical13
 ```java
 // Practical13.java - Demonstrate String class methods
 
@@ -1120,7 +1090,7 @@ public class Practical13 {
 }
 ```
 
-### Practical14 <a name='practical14'></a>
+### Practical14
 ```java
 // Practical14.java - Demonstrate single inheritance
 
@@ -1214,7 +1184,7 @@ public class Practical14 {
 }
 ```
 
-### Practical15 <a name='practical15'></a>
+### Practical15
 ```java
 // Practical15.java - Demonstrate multilevel inheritance
 
@@ -1336,7 +1306,7 @@ public class Practical15 {
 }
 ```
 
-### Practical16 <a name='practical16'></a>
+### Practical16
 ```java
 // Practical16.java - Demonstrate hierarchical inheritance
 
@@ -1495,7 +1465,7 @@ public class Practical16 {
 }
 ```
 
-### Practical17 <a name='practical17'></a>
+### Practical17
 ```java
 // Practical17.java - Demonstrate method overriding
 
@@ -1643,7 +1613,7 @@ public class Practical17 {
 }
 ```
 
-### Practical18 <a name='practical18'></a>
+### Practical18
 ```java
 // Practical18.java - Demonstrate toString() method overriding
 
@@ -1740,7 +1710,7 @@ public class Practical18 {
 }
 ```
 
-### Practical19 <a name='practical19'></a>
+### Practical19
 ```java
 // Practical19.java - Demonstrate multiple inheritance using interfaces
 
@@ -1897,7 +1867,7 @@ public class Practical19 {
 }
 ```
 
-### Practical20 <a name='practical20'></a>
+### Practical20
 ```java
 // Practical20.java - Demonstrate abstract class and method overriding
 
@@ -2036,7 +2006,7 @@ public class Practical20 {
 }
 ```
 
-### Practical21 <a name='practical21'></a>
+### Practical21
 ```java
 // Practical21.java - Demonstrate use of final class
 
@@ -2141,7 +2111,7 @@ public class Practical21 {
 }
 ```
 
-### Practical22 <a name='practical22'></a>
+### Practical22
 ```java
 // File: Practical22.java
 import shapes.Circle;
@@ -2179,7 +2149,7 @@ public class Practical22 {
 }
 ```
 
-### Practical23 <a name='practical23'></a>
+### Practical23
 ```java
 // Practical23.java - Demonstrate user defined exception for divide by zero
 
@@ -2267,7 +2237,7 @@ public class Practical23 {
 }
 ```
 
-### Practical24 <a name='practical24'></a>
+### Practical24
 ```java
 // Practical24.java - Banking Application with custom exception
 
@@ -2380,7 +2350,7 @@ public class Practical24 {
 }
 ```
 
-### Practical25 <a name='practical25'></a>
+### Practical25
 ```java
 // Practical25.java - Demonstrate thread creation and execution
 
@@ -2462,7 +2432,7 @@ public class Practical25 {
 }
 ```
 
-### Practical26 <a name='practical26'></a>
+### Practical26
 ```java
 // Practical26.java - Demonstrate threads printing even and odd numbers
 
@@ -2575,7 +2545,7 @@ public class Practical26 {
 }
 ```
 
-### Practical27 <a name='practical27'></a>
+### Practical27
 ```java
 // Practical27.java - Demonstrate read and write operations on a text file
 
@@ -2687,7 +2657,7 @@ public class Practical27 {
 }
 ```
 
-### Practical28 <a name='practical28'></a>
+### Practical28
 ```java
 // Practical28.java - Demonstrate use of List (ArrayList and LinkedList)
 
@@ -2787,7 +2757,7 @@ public class Practical28 {
 }
 ```
 
-### Practical29 <a name='practical29'></a>
+### Practical29
 ```java
 // Practical29.java - Demonstrate HashSet operations with colors
 
@@ -2879,7 +2849,7 @@ public class Practical29 {
 }
 ```
 
-### Practical30 <a name='practical30'></a>
+### Practical30
 ```java
 // Practical30.java - Demonstrate HashMap with Student Data
 
