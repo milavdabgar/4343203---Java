@@ -1,7 +1,5 @@
 # Java Programming Practicals
 
-## Table of Contents
-
 ## Practicals
 
 ### Practical01
@@ -2149,7 +2147,66 @@ public class Practical22 {
 }
 ```
 
+```java
+// File: shapes/Circle.java
+package shapes;
+
+public class Circle {
+    private double radius;
+    
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+    
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+    
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
+    }
+}
+```
+
+```java
+// File: shapes/Rectangle.java
+package shapes;
+
+public class Rectangle {
+    private double length;
+    private double width;
+    
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+    
+    public double getArea() {
+        return length * width;
+    }
+    
+    public double getPerimeter() {
+        return 2 * (length + width);
+    }
+}
+```
+
+```java
+// File: util/Calculator.java
+package util;
+
+public class Calculator {
+    public static double round(double value, int places) {
+        double scale = Math.pow(10, places);
+        return Math.round(value * scale) / scale;
+    }
+}
+```
+
+
+
 ### Practical23
+
 ```java
 // Practical23.java - Demonstrate user defined exception for divide by zero
 

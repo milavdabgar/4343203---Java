@@ -75,7 +75,7 @@ def create_jupyter_notebook(java_files):
 
 def create_markdown(java_files):
     """Create a markdown file from Java files"""
-    markdown_content = "# Java Programming Practicals\n\n## Table of Contents\n"
+    markdown_content = "# Java Programming Practicals\n"
     
     markdown_content += "\n## Practicals\n"
     
