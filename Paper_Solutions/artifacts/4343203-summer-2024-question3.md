@@ -205,8 +205,8 @@ graph TD
     A --> D[Call parent constructor]
     
     B --> B1[super.variable]
-    C --> C1[super.method()]
-    D --> D1[super()]
+    C --> C1["super.method()"]
+    D --> D1["super()"]
 ```
 
 **Main uses of 'super' keyword**:
@@ -400,8 +400,8 @@ graph TD
     A --> E[IS-A relationship]
     A --> F[Runtime polymorphism]
     
-    G[Parent Class] --> G1[method()]
-    H[Child Class] --> H1[method()]
+    G[Parent Class] --> G1["method()"]
+    H[Child Class] --> H1["method()"]
     
     G1 -->|overrides| H1
 ```

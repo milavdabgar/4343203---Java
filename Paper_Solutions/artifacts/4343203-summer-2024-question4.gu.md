@@ -57,11 +57,11 @@ class Circle extends Shape {
 
 ```mermaid
 graph LR
-    A[New] -->|start()| B[Runnable]
+    A[New] -->|"start()"| B[Runnable]
     B -->|શેડ્યુલર પસંદ કરે| C[Running]
     C -->|sleep/wait| D[Blocked/Waiting]
     D -->|notify/timeout| B
-    C -->|run() પૂર્ણ| E[Dead]
+    C -->|"run() પૂર્ણ"| E[Dead]
 ```
 
 **Thread લાઇફ સાયકલના તબક્કા**:
@@ -253,8 +253,8 @@ graph TD
     A --> C[NORM_PRIORITY = 5]
     A --> D[MAX_PRIORITY = 10]
     
-    E[setPriority()] --> F[Thread priority બદલો]
-    G[getPriority()] --> H[વર્તમાન priority મેળવો]
+    E["setPriority()"] --> F[Thread priority બદલો]
+    G["getPriority()"] --> H[વર્તમાન priority મેળવો]
 ```
 
 **મુખ્ય મુદ્દાઓ**:

@@ -186,23 +186,23 @@ graph TD
     A --> E[File Deletion]
     A --> F[Directory Operations]
     
-    B --> B1[createNewFile()]
+    B --> B1["createNewFile()"]
     
-    C --> C1[exists()]
-    C --> C2[isFile()]
-    C --> C3[isDirectory()]
-    C --> C4[length()]
-    C --> C5[canRead()]
-    C --> C6[canWrite()]
+    C --> C1["exists()"]
+    C --> C2["isFile()"]
+    C --> C3["isDirectory()"]
+    C --> C4["length()"]
+    C --> C5["canRead()"]
+    C --> C6["canWrite()"]
     
     D --> D1[FileReader/FileWriter]
     D --> D2[FileInputStream/FileOutputStream]
     D --> D3[BufferedReader/BufferedWriter]
     
-    E --> E1[delete()]
+    E --> E1["delete()"]
     
-    F --> F1[mkdir()]
-    F --> F2[list()]
+    F --> F1["mkdir()"]
+    F --> F2["list()"]
 ```
 
 **Common File Operations**:
