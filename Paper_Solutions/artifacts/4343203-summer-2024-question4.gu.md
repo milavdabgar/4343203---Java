@@ -304,3 +304,107 @@ public class ThreadPriorityDemo {
         high.start();
     }
 }
+```
+
+**યાદ રાખવા માટે**: "**HOPS**" - Higher values get preference, OS dependent, Priority 1-10, Scheduling hint
+
+## પ્રશ્ન ૪(ક OR): Exception શું છે? Arithmetic Exception નો ઉપયોગ દર્શાવતો પ્રોગ્રામ લખો. (ગુણ: ૭)
+
+### જવાબ ૪(ક OR):
+
+**Exception**: એક ઘટના જે પ્રોગ્રામના સામાન્ય પ્રવાહને વિક્ષેપિત કરે છે.
+
+```mermaid
+graph TD
+    A[Exception પ્રકારો] --> B[Checked Exceptions]
+    A --> C[Unchecked Exceptions]
+    A --> D[Errors]
+    
+    C --> E[ArithmeticException]
+    C --> F[NullPointerException]
+    C --> G[ArrayIndexOutOfBoundsException]
+```
+
+**ArithmeticException**: જ્યારે અસાધારણ ગાણિતિક સ્થિતિ ઉદ્ભવે છે, જેમ કે શૂન્ય વડે વિભાજન, ત્યારે થ્રો થાય છે.
+
+**ArithmeticException દર્શાવતો પ્રોગ્રામ**:
+
+```java
+import java.util.Scanner;
+
+public class ArithmeticExceptionDemo {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        try {
+            // વપરાશકર્તા પાસેથી બે નંબર મેળવો
+            System.out.print("પ્રથમ નંબર દાખલ કરો: ");
+            int num1 = input.nextInt();
+            
+            System.out.print("બીજો નંબર દાખલ કરો: ");
+            int num2 = input.nextInt();
+            
+            // વિભાજન કરો
+            System.out.println("\nવિભાજન કરી રહ્યા છીએ...");
+            int result = divideNumbers(num1, num2);
+            System.out.println(num1 + " / " + num2 + " = " + result);
+            
+        } catch (ArithmeticException e) {
+            // શૂન્ય વડે વિભાજનને હેન્ડલ કરો
+            System.out.println("\nException પકડાયું: " + e.getMessage());
+            System.out.println("શૂન્ય વડે વિભાજિત કરી શકાતું નથી!");
+            
+        } catch (Exception e) {
+            // અન્ય exceptions હેન્ડલ કરો
+            System.out.println("\nભૂલ: " + e.getMessage());
+            
+        } finally {
+            // રિસોર્સીસ ક્લીન અપ કરો
+            System.out.println("\nFinally બ્લોક એક્ઝિક્યુટ થયો.");
+            input.close();
+        }
+        
+        System.out.println("પ્રોગ્રામ પૂર્ણ થયો.");
+    }
+    
+    // મેથડ જે ArithmeticException થ્રો કરી શકે છે
+    public static int divideNumbers(int a, int b) {
+        return a / b;  // જો b 0 હોય તો ArithmeticException થ્રો થાય છે
+    }
+}
+```
+
+**સેમ્પલ આઉટપુટ 1** (માન્ય ઇનપુટ સાથે):
+```
+પ્રથમ નંબર દાખલ કરો: 10
+બીજો નંબર દાખલ કરો: 2
+
+વિભાજન કરી રહ્યા છીએ...
+10 / 2 = 5
+
+Finally બ્લોક એક્ઝિક્યુટ થયો.
+પ્રોગ્રામ પૂર્ણ થયો.
+```
+
+**સેમ્પલ આઉટપુટ 2** (શૂન્ય વડે વિભાજન સાથે):
+```
+પ્રથમ નંબર દાખલ કરો: 10
+બીજો નંબર દાખલ કરો: 0
+
+વિભાજન કરી રહ્યા છીએ...
+
+Exception પકડાયું: / by zero
+શૂન્ય વડે વિભાજિત કરી શકાતું નથી!
+
+Finally બ્લોક એક્ઝિક્યુટ થયો.
+પ્રોગ્રામ પૂર્ણ થયો.
+```
+
+**Exception હેન્ડલિંગ ઘટકો**:
+* **try**: કોડ જે exceptions થ્રો કરી શકે છે
+* **catch**: ચોક્કસ exceptions ને હેન્ડલ કરે છે 
+* **finally**: હંમેશા એક્ઝિક્યુટ થાય છે (ક્લીનઅપ માટે)
+* **throw**: સ્પષ્ટપણે exception થ્રો કરે છે
+* **throws**: જાહેર કરે છે કે મેથડ કઈ exceptions થ્રો કરી શકે છે
+
+**યાદ રાખવા માટે**: "**ATCF**" - ArithmeticException, Try-catch blocks, Cleanup in finally, Flow control
